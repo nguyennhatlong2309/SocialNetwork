@@ -1,0 +1,135 @@
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Left panel */
+.register-left {
+  position: relative;
+  background: #0d0b16;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 48px;
+}
+
+.register-left-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(80, 40, 120, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 70%, rgba(120, 50, 80, 0.3) 0%, transparent 50%);
+}
+
+.register-left-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 40% 30%, rgba(200, 100, 150, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 60% 60%, rgba(100, 60, 180, 0.2) 0%, transparent 35%);
+}
+
+.register-brand {
+  position: relative;
+  z-index: 1;
+}
+
+.register-brand h1 {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.register-brand p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+/* Right panel */
+.register-right {
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.register-form-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.register-form-card {
+  padding: 36px 32px;
+}
+
+.register-form-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.register-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  margin: 4px 0;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.social-icon-g {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+.social-icon-apple {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.register-footer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+  .register-left {
+    min-height: 200px;
+    padding: 32px;
+  }
+}

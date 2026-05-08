@@ -1,0 +1,262 @@
+.feed-page {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 0;
+  min-height: 100vh;
+  padding: 0 24px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Stories */
+.stories-bar {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.stories-bar::-webkit-scrollbar { display: none; }
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.story-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.story-item:hover .story-avatar {
+  transform: scale(1.05);
+}
+
+.story-avatar-ring {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.story-avatar-add {
+  background: var(--bg-tertiary) !important;
+  border: 2px dashed var(--border-color);
+  position: relative;
+}
+
+.story-initial {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.story-name {
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* Posts */
+.feed-main {
+  padding-right: 28px;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card {
+  padding: 20px;
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.post-card:hover {
+  transform: translateY(-1px);
+  border-color: var(--border-active);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.post-author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.post-time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.post-menu-btn {
+  color: var(--text-muted);
+}
+
+.post-content {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.post-hashtag {
+  color: var(--accent-light);
+  font-weight: 500;
+}
+
+.post-image-wrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-actions-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+}
+
+.action-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.action-btn.liked {
+  color: #e05c6e;
+}
+
+.action-btn.saved {
+  color: var(--accent-light);
+}
+
+/* Right Sidebar */
+.feed-sidebar {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-section {
+  padding: 20px;
+}
+
+.sidebar-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.suggest-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.suggest-item:last-child { margin-bottom: 0; }
+
+.suggest-info {
+  flex: 1;
+}
+
+.suggest-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.suggest-role {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.suggest-follow-btn {
+  background: none;
+  border: none;
+  color: var(--accent-light);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.suggest-follow-btn:hover { color: var(--accent-secondary); }
+
+.trending-item {
+  margin-bottom: 16px;
+}
+
+.trending-item:last-child { margin-bottom: 0; }
+
+.trending-category {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.trending-tag {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2px 0;
+}
+
+.trending-count {
+  font-size: 11px;
+  color: var(--text-muted);
+}

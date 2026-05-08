@@ -1,0 +1,168 @@
+.inbox-page {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 100vh;
+}
+
+/* Conversation List */
+.conversation-list {
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.inbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 12px;
+}
+
+.inbox-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.inbox-search {
+  position: relative;
+  padding: 0 16px 12px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-60%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  padding-left: 36px;
+}
+
+.conversations {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.conversation-item:hover,
+.conversation-item.active {
+  background: var(--bg-hover);
+}
+
+.conversation-item.has-unread {
+  border-left-color: var(--accent-primary);
+}
+
+.conv-avatar-wrap {
+  position: relative;
+}
+
+.online-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--success);
+  border: 2px solid var(--bg-secondary);
+}
+
+.unread-badge {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  background: var(--danger);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.conv-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.conv-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.conv-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.conv-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.conv-last-msg {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Empty state */
+.inbox-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.inbox-empty-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.inbox-empty h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.inbox-empty p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 300px;
+  line-height: 1.6;
+}
