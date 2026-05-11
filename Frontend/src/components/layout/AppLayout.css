@@ -1,1 +1,38 @@
 /* AppLayout specific styles already in index.css */
+
+/**
+ * ── Keep-Alive Page Wrapper Styles ─────────────────────────────────────────
+ *
+ * .ka-page   — wrapper chung, chiếm toàn bộ không gian main-content
+ * .ka-hidden — page đang ẩn (display: none), KHÔNG unmount khỏi DOM
+ * .ka-visible — page đang hiện, có fade-in animation nhẹ
+ *
+ * Quan trọng: display:none giữ nguyên DOM element và mọi state trong React
+ * (scroll position, local state, query cache) — đây là cốt lõi của Keep-Alive.
+ */
+
+/* Base: chiếm full size của main-content */
+.ka-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Mỗi page tự quản lý scroll bên trong */
+}
+
+/* Ẩn page — component vẫn mounted, chỉ không render ra viewport */
+.ka-hidden {
+  display: none !important;
+}
+
+/* Hiện page — fade-in nhẹ để transition mượt mà */
+@keyframes pageReveal {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+.ka-visible {
+  display: block;
+  animation: pageReveal 0.2s ease-out forwards;
+  height: 100%;
+  width: 100%;
+}
+

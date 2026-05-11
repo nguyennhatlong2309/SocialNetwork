@@ -1,0 +1,48 @@
+/* ─── Progressive Image ────────────────────────────────────────────────────
+ * Hiệu ứng: blur placeholder → ảnh thật (transition mượt)
+ * ─────────────────────────────────────────────────────────────────────── */
+
+.progressive-image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-tertiary, #2a2a3e);
+  border-radius: var(--radius-md, 12px);
+}
+
+/* Ảnh thật — ẩn cho đến khi load xong */
+.progressive-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Bắt đầu ở trạng thái blur + trong suốt */
+  filter: blur(12px);
+  opacity: 0;
+  transform: scale(1.05); /* Zoom nhẹ để che viền blur */
+  transition:
+    filter 0.5s ease,
+    opacity 0.4s ease,
+    transform 0.5s ease;
+}
+
+/* Khi ảnh đã load xong (class --loaded được thêm vào) */
+.progressive-image--loaded {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Placeholder màu (skeleton) hiển thị khi ảnh đang load */
+.progressive-image-placeholder {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* Khi ảnh đã load → fade out placeholder */
+.progressive-image--loaded ~ .progressive-image-placeholder,
+.progressive-image-wrap.--img-loaded .progressive-image-placeholder {
+  opacity: 0;
+}

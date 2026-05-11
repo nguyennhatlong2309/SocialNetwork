@@ -1,50 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Heart, MessageCircle, Send, Bookmark, Share2, MoreHorizontal } from 'lucide-react';
+import postApi from '../api/postApi';
 import './PostDetailPage.css';
 
-const POST = {
-  id: 1,
-  author: { name: '@sarah_vfx', avatar: null, color: '#9b7fe8' },
-  timeAgo: '2 hours ago in Explore',
-  following: false,
-  image: 'https://images.unsplash.com/photo-1545486332-9e0999c535b2?w=800&q=80',
-  content: 'Late night rendering sessions paying off. The refraction indices on the glass materials finally look physically accurate. Built with Custom Shaders and pure math. ✨',
-  tags: ['#VFX', '#DigitalArt', '#Glassmorphism'],
-  likes: 24500,
-  liked: false,
-  saved: false,
-};
+const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];
 
-const COMMENTS = [
-  {
-    id: 1,
-    author: '@josh_renders',
-    color: '#5c9cbf',
-    timeAgo: '1h',
-    content: 'Insane level of detail! Would you ever consider doing a breakdown tutorial on those shader nodes?',
-    likes: 124,
-    replies: [
-      {
-        id: 2,
-        author: '@sarah_vfx',
-        color: '#9b7fe8',
-        timeAgo: '45m',
-        content: 'Thanks! Planning to drop a Patreon video on it next week. Keep an eye out 👀',
-        likes: 42,
-      }
-    ]
-  },
-  {
-    id: 3,
-    author: '@maya_design',
-    color: '#e05c8e',
-    timeAgo: '30m',
-    content: 'The lighting in this is absolutely perfect. Saving this to my moodboard immediately.',
-    likes: 8,
-    replies: []
-  },
-];
+function timeSince(date) {
+  const seconds = Math.floor((new Date() - new Date(date)) / 1000);
+  let interval = seconds / 3600;
+  if (interval > 1) return Math.floor(interval) + "h ago";
+  interval = seconds / 60;
+  if (interval > 1) return Math.floor(interval) + "m ago";
+  return Math.floor(seconds) + "s ago";
+}
 
 function formatCount(n) {
   if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
@@ -54,41 +23,82 @@ function formatCount(n) {
 export default function PostDetailPage() {
   const { postId } = useParams();
   const navigate = useNavigate();
-  const [post, setPost] = useState(POST);
+  const [post, setPost] = useState(null);
+  const [liked, setLiked] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [likes, setLikes] = useState(0);
   const [comment, setComment] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    postApi.getPostById(postId).then(res => {
+      setPost(res.data);
+      setLikes(res.data.likeCount);
+    }).catch(err => {
+      console.error('Failed to load post', err);
+    }).finally(() => setLoading(false));
+  }, [postId]);
 
   const toggleLike = () => {
-    setPost(p => ({ ...p, liked: !p.liked, likes: p.liked ? p.likes - 1 : p.likes + 1 }));
+    setLiked(prev => !prev);
+    setLikes(prev => liked ? prev - 1 : prev + 1);
   };
+
+  if (loading) {
+    return (
+      <div className="post-detail-page" style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <div className="card" style={{ padding: '2rem', color: 'var(--text-secondary)' }}>Loading post...</div>
+      </div>
+    );
+  }
+
+  if (!post) {
+    return (
+      <div className="post-detail-page" style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <div className="card" style={{ padding: '2rem', color: 'var(--text-secondary)' }}>
+          Post not found. <button className="text-link" onClick={() => navigate(-1)}>Go back</button>
+        </div>
+      </div>
+    );
+  }
+
+  const authorName = post.user?.fullName || post.user?.username || 'Unknown';
+  const authorColor = AVATAR_COLORS[(post.userId - 1) % AVATAR_COLORS.length];
+  const comments = post.comments || [];
 
   return (
     <div className="post-detail-page">
-      {/* Left: Image */}
+      {/* Left: Image / Content panel */}
       <div className="post-detail-image-panel">
         <button className="back-btn" onClick={() => navigate(-1)} id="back-btn">
           <ArrowLeft size={18} />
         </button>
-        <img
-          src={post.image}
-          alt="post"
-          className="post-detail-image"
-        />
+        {post.media && post.media.length > 0 ? (
+          <img src={post.media[0].mediaUrl} alt="post" className="post-detail-image" />
+        ) : (
+          <div style={{
+            flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: '2rem', color: 'var(--text-secondary)', fontSize: '1.1rem', textAlign: 'center'
+          }}>
+            {post.content}
+          </div>
+        )}
         {/* Bottom actions */}
         <div className="post-detail-image-actions">
           <button
-            className={`action-btn ${post.liked ? 'liked' : ''}`}
+            className={`action-btn ${liked ? 'liked' : ''}`}
             onClick={toggleLike}
             id="detail-like-btn"
           >
-            <Heart size={20} fill={post.liked ? 'currentColor' : 'none'} />
-            <span>{formatCount(post.likes)}</span>
+            <Heart size={20} fill={liked ? 'currentColor' : 'none'} />
+            <span>{formatCount(likes)}</span>
           </button>
           <button
-            className={`action-btn ${post.saved ? 'saved' : ''}`}
-            onClick={() => setPost(p => ({ ...p, saved: !p.saved }))}
+            className={`action-btn ${saved ? 'saved' : ''}`}
+            onClick={() => setSaved(p => !p)}
             id="detail-save-btn"
           >
-            <Bookmark size={20} fill={post.saved ? 'currentColor' : 'none'} />
+            <Bookmark size={20} fill={saved ? 'currentColor' : 'none'} />
           </button>
         </div>
       </div>
@@ -99,24 +109,22 @@ export default function PostDetailPage() {
         <div className="post-detail-header">
           <div className="post-author">
             <div className="avatar-placeholder avatar-md"
-              style={{ background: `linear-gradient(135deg, ${post.author.color}, ${post.author.color}88)` }}>
-              {post.author.name[1].toUpperCase()}
+              style={{ background: `linear-gradient(135deg, ${authorColor}, ${authorColor}88)` }}>
+              {authorName[0].toUpperCase()}
             </div>
             <div>
-              <p className="post-author-name">{post.author.name}</p>
-              <p className="post-time">{post.timeAgo}</p>
+              <p className="post-author-name">{authorName}</p>
+              <p className="post-time">@{post.user?.username}</p>
             </div>
           </div>
-          <button className="btn btn-secondary btn-sm" id="follow-author-btn">
-            {post.following ? 'Following' : 'Follow'}
-          </button>
+          <button className="btn btn-secondary btn-sm" id="follow-author-btn">Follow</button>
         </div>
 
         {/* Content */}
         <div className="post-detail-content">
           <p>{post.content}</p>
           <div className="post-detail-tags">
-            {post.tags.map(tag => (
+            {post.content.match(/#\w+/g)?.map(tag => (
               <span key={tag} className="post-hashtag">{tag}</span>
             ))}
           </div>
@@ -124,52 +132,34 @@ export default function PostDetailPage() {
 
         {/* Comments list */}
         <div className="comments-list">
-          {COMMENTS.map(c => (
-            <div key={c.id} className="comment-item">
-              <div className="avatar-placeholder avatar-sm"
-                style={{ background: `linear-gradient(135deg, ${c.color}, ${c.color}88)` }}>
-                {c.author[1].toUpperCase()}
-              </div>
-              <div className="comment-body">
-                <div className="comment-header">
-                  <span className="comment-author">{c.author}</span>
-                  <span className="comment-time">{c.timeAgo}</span>
+          {comments.length === 0 && (
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', padding: '1rem 0' }}>No comments yet. Be the first!</p>
+          )}
+          {comments.map((c, idx) => {
+            const cName = c.user?.fullName || c.user?.username || 'User';
+            const cColor = AVATAR_COLORS[idx % AVATAR_COLORS.length];
+            return (
+              <div key={c.id} className="comment-item">
+                <div className="avatar-placeholder avatar-sm"
+                  style={{ background: `linear-gradient(135deg, ${cColor}, ${cColor}88)` }}>
+                  {cName[0].toUpperCase()}
                 </div>
-                <p className="comment-text">{c.content}</p>
-                <div className="comment-actions">
-                  <button className="comment-action-btn">Reply</button>
-                  <button className="comment-action-btn">
-                    <Heart size={12} /> {c.likes}
-                  </button>
-                </div>
-                {/* Replies */}
-                {c.replies?.map(r => (
-                  <div key={r.id} className="reply-item">
-                    <div className="avatar-placeholder" style={{
-                      background: `linear-gradient(135deg, ${r.color}, ${r.color}88)`,
-                      width: 24, height: 24, fontSize: 10,
-                      borderRadius: '50%', flexShrink: 0,
-                      display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700
-                    }}>
-                      {r.author[1].toUpperCase()}
-                    </div>
-                    <div className="comment-body">
-                      <div className="comment-header">
-                        <span className="comment-author">{r.author}</span>
-                        <span className="comment-time">{r.timeAgo}</span>
-                      </div>
-                      <p className="comment-text">{r.content}</p>
-                      <div className="comment-actions">
-                        <button className="comment-action-btn">
-                          <Heart size={12} /> {r.likes}
-                        </button>
-                      </div>
-                    </div>
+                <div className="comment-body">
+                  <div className="comment-header">
+                    <span className="comment-author">@{c.user?.username || 'user'}</span>
+                    <span className="comment-time">{timeSince(c.createdAt)}</span>
                   </div>
-                ))}
+                  <p className="comment-text">{c.content}</p>
+                  <div className="comment-actions">
+                    <button className="comment-action-btn">Reply</button>
+                    <button className="comment-action-btn">
+                      <Heart size={12} /> 0
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Comment input */}
@@ -193,3 +183,4 @@ export default function PostDetailPage() {
     </div>
   );
 }
+

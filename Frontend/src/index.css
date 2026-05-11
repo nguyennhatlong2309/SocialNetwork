@@ -170,7 +170,8 @@ input, textarea {
 /* App Layout */
 .app-layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Sidebar */
@@ -288,8 +289,11 @@ input, textarea {
 .main-content {
   margin-left: var(--sidebar-width);
   flex: 1;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;  /* Ka-pages tự quản lý scroll bên trong — tránh double scrollbar */
+  position: relative;
 }
+
 
 /* Avatar */
 .avatar {

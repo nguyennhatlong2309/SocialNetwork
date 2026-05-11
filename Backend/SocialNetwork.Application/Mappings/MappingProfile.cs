@@ -1,5 +1,6 @@
 using AutoMapper;
 using SocialNetwork.Application.DTOs.Message;
+using SocialNetwork.Application.DTOs.Notification;
 using SocialNetwork.Application.DTOs.Post;
 using SocialNetwork.Application.DTOs.User;
 using SocialNetwork.Domain.Entities;
@@ -31,6 +32,17 @@ public class MappingProfile : Profile
 
         CreateMap<Comment, CommentDto>();
 
+        // ===== Notification =====
+        CreateMap<Notification, NotificationDto>()
+            .ForMember(dest => dest.Type,
+                opt => opt.MapFrom(src => src.Type.ToString().ToLower()))
+            .ForMember(dest => dest.SenderName,
+                opt => opt.MapFrom(src => src.Sender != null
+                    ? src.Sender.FullName ?? src.Sender.Username
+                    : null))
+            .ForMember(dest => dest.SenderAvatar,
+                opt => opt.MapFrom(src => src.Sender != null ? src.Sender.AvatarUrl : null));
+
         // ===== Message =====
         CreateMap<Message, MessageDto>()
             .ForMember(dest => dest.MessageType,
@@ -54,3 +66,4 @@ public class MappingProfile : Profile
                 opt => opt.MapFrom(src => src.Role.ToString().ToLower()));
     }
 }
+

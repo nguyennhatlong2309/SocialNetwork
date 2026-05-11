@@ -206,3 +206,40 @@
 .conv-avatar-wrap {
   position: relative;
 }
+
+/* Back button – hidden on desktop, shown on mobile */
+.chat-back-btn {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.chat-back-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .chat-back-btn {
+    display: flex;
+  }
+}
+
+/* Loading spinner inside chat */
+.chat-loading {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 40px;
+}
+

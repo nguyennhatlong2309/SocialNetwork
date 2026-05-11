@@ -60,9 +60,13 @@
   border-left: 3px solid transparent;
 }
 
-.conversation-item:hover,
+.conversation-item:hover {
+  background: var(--bg-hover);
+}
+
 .conversation-item.active {
   background: var(--bg-hover);
+  border-left-color: var(--accent-primary);
 }
 
 .conversation-item.has-unread {
@@ -165,4 +169,15 @@
   color: var(--text-secondary);
   max-width: 300px;
   line-height: 1.6;
+}
+
+/* ── Responsive / Mobile ── */
+@media (max-width: 768px) {
+  .inbox-page {
+    grid-template-columns: 1fr;
+  }
+
+  .inbox-page.chat-open .conversation-list {
+    display: none;
+  }
 }

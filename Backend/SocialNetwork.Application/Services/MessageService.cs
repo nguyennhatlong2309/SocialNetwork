@@ -10,15 +10,18 @@ public class MessageService : IMessageService
 {
     private readonly IMessageRepository _messageRepository;
     private readonly IRepository<ConversationMember> _memberRepository;
+    private readonly IRealtimeChatService _realtimeChatService;
     private readonly IMapper _mapper;
 
     public MessageService(
         IMessageRepository messageRepository,
         IRepository<ConversationMember> memberRepository,
+        IRealtimeChatService realtimeChatService,
         IMapper mapper)
     {
         _messageRepository = messageRepository;
         _memberRepository = memberRepository;
+        _realtimeChatService = realtimeChatService;
         _mapper = mapper;
     }
 
@@ -49,8 +52,12 @@ public class MessageService : IMessageService
         var messages = await _messageRepository
             .GetConversationMessagesAsync(dto.ConversationId, 1, 1);
         var sent = messages.FirstOrDefault(m => m.Id == message.Id);
+        var messageDto = _mapper.Map<MessageDto>(sent ?? message);
 
-        return _mapper.Map<MessageDto>(sent ?? message);
+        // Push real-time tới tất cả members trong conversation
+        await _realtimeChatService.PushNewMessageAsync(dto.ConversationId, messageDto);
+
+        return messageDto;
     }
 
     public async Task<IEnumerable<MessageDto>> GetConversationMessagesAsync(

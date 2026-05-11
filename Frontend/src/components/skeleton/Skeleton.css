@@ -1,0 +1,62 @@
+/* ─── Skeleton Component System ───────────────────────────────────────────
+ * Dùng CSS Variables từ index.css để tự động adapt dark/light mode
+ * Shimmer animation tạo hiệu ứng loading sóng từ trái sang phải
+ * ─────────────────────────────────────────────────────────────────────── */
+
+/* Base shimmer keyframe */
+@keyframes skeleton-shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+
+/* Mixin base — tất cả skeleton kế thừa từ đây */
+.skeleton-base {
+  background: linear-gradient(
+    90deg,
+    var(--bg-tertiary, #2a2a3e) 25%,
+    var(--bg-secondary, #1e1e2e) 50%,
+    var(--bg-tertiary, #2a2a3e) 75%
+  );
+  background-size: 600px 100%;
+  animation: skeleton-shimmer 1.5s infinite ease-in-out;
+  border-radius: var(--radius-sm, 6px);
+}
+
+/* ─── Avatar ─────────────────────────────────────────────────────────────── */
+.skeleton-avatar {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.skeleton-avatar--sm { width: 32px;  height: 32px; }
+.skeleton-avatar--md { width: 40px;  height: 40px; }
+.skeleton-avatar--lg { width: 56px;  height: 56px; }
+
+/* ─── Text line ──────────────────────────────────────────────────────────── */
+.skeleton-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.skeleton-text__line {
+  height: 12px;
+  border-radius: 6px;
+}
+/* Tạo visual hierarchy: line đầu dài hơn */
+.skeleton-text__line:first-child  { width: 70%; }
+.skeleton-text__line:nth-child(2) { width: 90%; }
+.skeleton-text__line:nth-child(3) { width: 55%; }
+.skeleton-text__line:nth-child(4) { width: 80%; }
+.skeleton-text__line:nth-child(n+5) { width: 65%; }
+
+/* ─── Image block ────────────────────────────────────────────────────────── */
+.skeleton-image {
+  width: 100%;
+  border-radius: var(--radius-md, 12px);
+}
+
+/* ─── Generic block ──────────────────────────────────────────────────────── */
+.skeleton-block {
+  border-radius: var(--radius-sm, 6px);
+}

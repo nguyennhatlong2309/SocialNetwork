@@ -9,6 +9,8 @@ using SocialNetwork.Application.Services;
 using SocialNetwork.Domain.Entities;
 using SocialNetwork.Infrastructure.Data;
 using SocialNetwork.Infrastructure.Repositories;
+using SocialNetwork.API.Hubs;
+using SocialNetwork.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,12 +29,23 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 
 // ===== Services =====
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
+builder.Services.AddScoped<INotificationService, NotificationService>();
+builder.Services.AddScoped<ILikeService, LikeService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+
+// ===== SignalR Real-time Services =====
+// ConnectionManager là Singleton vì nó lưu state kết nối trong bộ nhớ
+builder.Services.AddSingleton<IConnectionManager, ConnectionManager>();
+// Implement interfaces từ Application layer, đặt ở API layer
+builder.Services.AddScoped<IRealtimeNotificationService, HubNotificationService>();
+builder.Services.AddScoped<IRealtimeChatService, HubChatService>();
 
 // ===== AutoMapper =====
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
@@ -59,12 +72,39 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(secretKey),
         ClockSkew = TimeSpan.Zero
     };
+
+    // ===== SignalR JWT: đọc token từ query string =====
+    // WebSocket không thể gửi Authorization header, nên SignalR dùng query string
+    // Frontend sẽ kết nối: /hubs/notifications?access_token=<jwt>
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var accessToken = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
+
+            if (!string.IsNullOrEmpty(accessToken) &&
+                (path.StartsWithSegments("/hubs/notifications") ||
+                 path.StartsWithSegments("/hubs/chat")))
+            {
+                context.Token = accessToken;
+            }
+
+            return Task.CompletedTask;
+        }
+    };
 });
 
 builder.Services.AddAuthorization();
 
 // ===== Controllers =====
 builder.Services.AddControllers();
+
+// ===== SignalR =====
+builder.Services.AddSignalR(options =>
+{
+    options.EnableDetailedErrors = builder.Environment.IsDevelopment();
+});
 
 // ===== Swagger =====
 builder.Services.AddEndpointsApiExplorer();
@@ -105,13 +145,22 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // ===== CORS =====
+// QUAN TRỌNG: SignalR WebSocket yêu cầu AllowCredentials()
+// AllowCredentials() KHÔNG tương thích với AllowAnyOrigin()
+// Phải chỉ định rõ origin của frontend
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        policy
+            .WithOrigins(
+                "http://localhost:5173",   // Vite dev server
+                "http://localhost:3000",   // CRA dev server (nếu dùng)
+                "https://yourdomain.com"   // Production URL (cập nhật khi deploy)
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials(); // BẮT BUỘC cho SignalR WebSocket
     });
 });
 
@@ -132,9 +181,14 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");   // Phải đặt TRƯỚC UseAuthentication và MapHub
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
+// ===== SignalR Hubs =====
+app.MapHub<NotificationHub>("/hubs/notifications");
+app.MapHub<ChatHub>("/hubs/chat");
+
 app.Run();
+

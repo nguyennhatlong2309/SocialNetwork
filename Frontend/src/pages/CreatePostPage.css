@@ -1,5 +1,7 @@
+/* Scroll wrapper — cần thiết khi main-content là overflow:hidden (Keep-Alive layout) */
 .create-page {
-  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
