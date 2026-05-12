@@ -2,9 +2,6 @@ import axios from 'axios';
 
 const axiosClient = axios.create({
   baseURL: 'http://localhost:5231/api',
-  headers: {
-    'Content-Type': 'application/json',
-  },
 });
 
 // Add a request interceptor
@@ -35,6 +32,10 @@ axiosClient.interceptors.response.use(
     return response.data;
   },
   function (error) {
+    if (error.response && error.response.status === 401) {
+      localStorage.removeItem('aurasocial_user');
+      window.location.href = '/login';
+    }
     return Promise.reject(error.response?.data || error.message);
   }
 );

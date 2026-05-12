@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { InboxStateProvider } from './contexts/PageStateContext';
+import { SignalRProvider } from './contexts/SignalRContext';
 import AppLayout from './components/layout/AppLayout';
 import OnboardingPage from './pages/OnboardingPage';
 import LoginPage from './pages/LoginPage';
@@ -65,10 +66,15 @@ export default function App() {
       {/* InboxStateProvider lưu selectedConversationId của InboxPage
           — cần persist vì ChatView là conditional render bên trong InboxPage */}
       <InboxStateProvider>
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
+        {/* SignalRProvider nằm trong AuthProvider để đọc được isAuthenticated + accessToken.
+            Tự động kết nối 2 hubs khi login, ngắt khi logout. */}
+        <SignalRProvider>
+          <BrowserRouter>
+            <AppRoutes />
+          </BrowserRouter>
+        </SignalRProvider>
       </InboxStateProvider>
     </AuthProvider>
   );
 }
+

@@ -31,6 +31,9 @@ builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
 builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 
+// ===== File Storage =====
+builder.Services.AddScoped<IFileStorageService, LocalFileStorageService>();
+
 // ===== Services =====
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -181,6 +184,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Serve wwwroot/uploads/ cho ảnh đã upload
 app.UseCors("AllowFrontend");   // Phải đặt TRƯỚC UseAuthentication và MapHub
 app.UseAuthentication();
 app.UseAuthorization();

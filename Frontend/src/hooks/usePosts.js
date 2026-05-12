@@ -22,11 +22,16 @@ function formatPost(p) {
     },
     timeAgo: timeSince(p.createdAt),
     content: p.content,
-    image: p.media && p.media.length > 0 ? p.media[0].mediaUrl : null,
+    image: p.media && p.media.length > 0
+      ? (p.media[0].mediaUrl?.startsWith('http')
+          ? p.media[0].mediaUrl
+          : `http://localhost:5231${p.media[0].mediaUrl}`)
+      : null,
     likes: p.likeCount,
     comments: p.commentCount,
-    liked: p.liked ?? false,   // server sẽ trả về trạng thái liked thật sự
-    saved: p.saved ?? false,
+    likes: p.likeCount,
+    liked: p.isLiked ?? false,
+    saved: p.isSaved ?? false,
   };
 }
 
@@ -88,11 +93,12 @@ export function useToggleLike() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: async ({ postId, liked }) => {
-      // TODO: Khi có backend thật, gọi: await postApi.toggleLike(postId)
-      // Hiện tại dùng mock delay
-      await new Promise(r => setTimeout(r, 200));
-      return { postId, liked };
+    mutationFn: async ({ postId }) => {
+      // Gọi API thật: POST /api/Posts/{postId}/like
+      // axiosClient unwrap response.data, backend trả ApiResponse<LikeResultDto>
+      // → kết quả là { postId, isLiked, totalLikes }
+      const res = await postApi.toggleLike(postId);
+      return res?.data ?? res; // hỗ trợ cả hai trường hợp unwrap
     },
 
     // Step 1: Cập nhật cache ngay trước khi API response
@@ -105,12 +111,17 @@ export function useToggleLike() {
 
       // Cập nhật tất cả cached list queries chứa post này
       queryClient.setQueriesData({ queryKey: postKeys.all }, (oldData) => {
-        if (!Array.isArray(oldData)) return oldData;
-        return oldData.map(post =>
-          post.id === postId
-            ? { ...post, liked: !liked, likes: liked ? post.likes - 1 : post.likes + 1 }
-            : post
-        );
+        if (Array.isArray(oldData)) {
+          return oldData.map(post =>
+            post.id === postId
+              ? { ...post, liked: !liked, likes: liked ? post.likes - 1 : post.likes + 1 }
+              : post
+          );
+        } else if (oldData && oldData.id === postId) {
+          // If the cached data is a single post object (from detail query)
+          return { ...oldData, liked: !liked, likes: liked ? oldData.likes - 1 : oldData.likes + 1 };
+        }
+        return oldData;
       });
 
       // Trả về context để dùng trong onError
@@ -170,6 +181,33 @@ export function useToggleSave() {
     },
 
     onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: postKeys.all });
+    },
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Hook: useCreatePost
+// Tạo bài post mới với nội dung text và/hoặc nhiều file media.
+//
+// Usage:
+//   const { mutate: createPost, isPending } = useCreatePost();
+//   createPost({ content, visibility, mediaFiles }, {
+//     onSuccess: () => navigate('/feed'),
+//   });
+// ═══════════════════════════════════════════════════════════════════════════
+export function useCreatePost() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: async ({ content, visibility = 'public', mediaFiles = [] }) => {
+      const res = await postApi.createPost({ content, visibility, mediaFiles });
+      // axiosClient trả về res.data (đã unwrap), backend trả ApiResponse<PostDto>
+      return res?.data ?? res;
+    },
+
+    onSuccess: () => {
+      // Invalidate toàn bộ post list để feed tự refresh — lấy data mới nhất từ server
       queryClient.invalidateQueries({ queryKey: postKeys.all });
     },
   });

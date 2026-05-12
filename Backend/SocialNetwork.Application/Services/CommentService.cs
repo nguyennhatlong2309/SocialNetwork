@@ -3,6 +3,7 @@ using SocialNetwork.Application.DTOs.Post;
 using SocialNetwork.Application.DTOs.Notification;
 using SocialNetwork.Application.Interfaces;
 using SocialNetwork.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using SocialNetwork.Domain.Enums;
 
 namespace SocialNetwork.Application.Services;
@@ -58,10 +59,11 @@ public class CommentService : ICommentService
         });
 
         // Reload comment với thông tin user
-        var comments = await _commentRepository.FindAsync(c => c.Id == comment.Id);
-        var created = comments.FirstOrDefault() ?? comment;
+        var created = await _commentRepository.Query()
+            .Include(c => c.User)
+            .FirstOrDefaultAsync(c => c.Id == comment.Id);
 
-        return _mapper.Map<CommentDto>(created);
+        return _mapper.Map<CommentDto>(created ?? comment);
     }
 
     public async Task DeleteCommentAsync(long userId, long commentId)
@@ -90,13 +92,13 @@ public class CommentService : ICommentService
 
     public async Task<IEnumerable<CommentDto>> GetCommentsAsync(long postId, int page, int pageSize)
     {
-        var comments = await _commentRepository.FindAsync(
-            c => c.PostId == postId && !c.IsDeleted);
-
-        var paged = comments
+        var paged = await _commentRepository.Query()
+            .Include(c => c.User)
+            .Where(c => c.PostId == postId && !c.IsDeleted)
             .OrderBy(c => c.CreatedAt)
             .Skip((page - 1) * pageSize)
-            .Take(pageSize);
+            .Take(pageSize)
+            .ToListAsync();
 
         return _mapper.Map<IEnumerable<CommentDto>>(paged);
     }

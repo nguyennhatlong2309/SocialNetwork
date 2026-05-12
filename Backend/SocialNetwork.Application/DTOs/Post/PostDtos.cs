@@ -13,6 +13,7 @@ public class PostDto
     public bool IsEdited { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+    public bool IsLiked { get; set; }
 
     public UserDto User { get; set; } = null!;
     public List<PostMediaDto> Media { get; set; } = new();

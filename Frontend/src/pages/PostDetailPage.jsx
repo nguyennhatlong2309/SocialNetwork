@@ -1,7 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ArrowLeft, Heart, MessageCircle, Send, Bookmark, Share2, MoreHorizontal } from 'lucide-react';
+import { ArrowLeft, Heart, Send, Bookmark, MoreHorizontal } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 import postApi from '../api/postApi';
+import { useToggleLike, postKeys } from '../hooks/usePosts';
+import { useComments, useAddComment } from '../hooks/useComments';
 import './PostDetailPage.css';
 
 const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];
@@ -23,28 +26,71 @@ function formatCount(n) {
 export default function PostDetailPage() {
   const { postId } = useParams();
   const navigate = useNavigate();
-  const [post, setPost] = useState(null);
-  const [liked, setLiked] = useState(false);
-  const [saved, setSaved] = useState(false);
-  const [likes, setLikes] = useState(0);
   const [comment, setComment] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [saved, setSaved] = useState(false);
+  const commentInputRef = useRef(null);
 
-  useEffect(() => {
-    postApi.getPostById(postId).then(res => {
-      setPost(res.data);
-      setLikes(res.data.likeCount);
-    }).catch(err => {
-      console.error('Failed to load post', err);
-    }).finally(() => setLoading(false));
-  }, [postId]);
+  // ─── Fetch post detail ──────────────────────────────────────────────────
+  const {
+    data: post,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: postKeys.detail(postId),
+    queryFn: async () => {
+      const res = await postApi.getPostById(postId);
+      // axiosClient unwrap lần 1 → res = ApiResponse<PostDetailDto>
+      return res?.data ?? res;
+    },
+    enabled: !!postId,
+    staleTime: 1000 * 60, // 1 phút
+  });
 
-  const toggleLike = () => {
-    setLiked(prev => !prev);
-    setLikes(prev => liked ? prev - 1 : prev + 1);
+  // ─── Fetch comments (riêng để refetch độc lập) ──────────────────────────
+  const { data: comments = [] } = useComments(postId);
+
+  // ─── Toggle Like (optimistic) ───────────────────────────────────────────
+  const toggleLikeMutation = useToggleLike();
+
+  // Derive liked state từ post data (server là source of truth)
+  const liked = post?.liked ?? false;
+  const likeCount = post?.likeCount ?? 0;
+
+  const handleToggleLike = () => {
+    if (!post) return;
+    toggleLikeMutation.mutate({ postId: Number(postId), liked });
   };
 
-  if (loading) {
+  // ─── Add Comment ────────────────────────────────────────────────────────
+  const addCommentMutation = useAddComment();
+
+  const handleSendComment = () => {
+    const trimmed = comment.trim();
+    if (!trimmed || addCommentMutation.isPending) return;
+
+    addCommentMutation.mutate(
+      { postId: Number(postId), content: trimmed },
+      {
+        onSuccess: () => {
+          setComment(''); // clear input sau khi submit thành công
+          commentInputRef.current?.blur();
+        },
+        onError: (err) => {
+          console.error('Failed to add comment:', err);
+        },
+      }
+    );
+  };
+
+  const handleCommentKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSendComment();
+    }
+  };
+
+  // ─── Loading / Error states ─────────────────────────────────────────────
+  if (isLoading) {
     return (
       <div className="post-detail-page" style={{ alignItems: 'center', justifyContent: 'center' }}>
         <div className="card" style={{ padding: '2rem', color: 'var(--text-secondary)' }}>Loading post...</div>
@@ -52,7 +98,7 @@ export default function PostDetailPage() {
     );
   }
 
-  if (!post) {
+  if (isError || !post) {
     return (
       <div className="post-detail-page" style={{ alignItems: 'center', justifyContent: 'center' }}>
         <div className="card" style={{ padding: '2rem', color: 'var(--text-secondary)' }}>
@@ -63,8 +109,7 @@ export default function PostDetailPage() {
   }
 
   const authorName = post.user?.fullName || post.user?.username || 'Unknown';
-  const authorColor = AVATAR_COLORS[(post.userId - 1) % AVATAR_COLORS.length];
-  const comments = post.comments || [];
+  const authorColor = AVATAR_COLORS[(post.user?.id ?? 0) % AVATAR_COLORS.length];
 
   return (
     <div className="post-detail-page">
@@ -87,11 +132,12 @@ export default function PostDetailPage() {
         <div className="post-detail-image-actions">
           <button
             className={`action-btn ${liked ? 'liked' : ''}`}
-            onClick={toggleLike}
+            onClick={handleToggleLike}
+            disabled={toggleLikeMutation.isPending}
             id="detail-like-btn"
           >
             <Heart size={20} fill={liked ? 'currentColor' : 'none'} />
-            <span>{formatCount(likes)}</span>
+            <span>{formatCount(likeCount)}</span>
           </button>
           <button
             className={`action-btn ${saved ? 'saved' : ''}`}
@@ -124,7 +170,7 @@ export default function PostDetailPage() {
         <div className="post-detail-content">
           <p>{post.content}</p>
           <div className="post-detail-tags">
-            {post.content.match(/#\w+/g)?.map(tag => (
+            {post.content?.match(/#\w+/g)?.map(tag => (
               <span key={tag} className="post-hashtag">{tag}</span>
             ))}
           </div>
@@ -133,7 +179,9 @@ export default function PostDetailPage() {
         {/* Comments list */}
         <div className="comments-list">
           {comments.length === 0 && (
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', padding: '1rem 0' }}>No comments yet. Be the first!</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', padding: '1rem 0' }}>
+              No comments yet. Be the first!
+            </p>
           )}
           {comments.map((c, idx) => {
             const cName = c.user?.fullName || c.user?.username || 'User';
@@ -153,7 +201,7 @@ export default function PostDetailPage() {
                   <div className="comment-actions">
                     <button className="comment-action-btn">Reply</button>
                     <button className="comment-action-btn">
-                      <Heart size={12} /> 0
+                      <Heart size={12} /> {c.likeCount || 0}
                     </button>
                   </div>
                 </div>
@@ -169,18 +217,28 @@ export default function PostDetailPage() {
           </div>
           <input
             id="comment-input"
+            ref={commentInputRef}
             type="text"
             className="input-field comment-input"
             placeholder="Add a comment..."
             value={comment}
             onChange={e => setComment(e.target.value)}
+            onKeyDown={handleCommentKeyDown}
+            disabled={addCommentMutation.isPending}
           />
-          <button className="btn btn-primary btn-sm" disabled={!comment} id="send-comment-btn">
-            <Send size={14} />
+          <button
+            className="btn btn-primary btn-sm"
+            onClick={handleSendComment}
+            disabled={!comment.trim() || addCommentMutation.isPending}
+            id="send-comment-btn"
+          >
+            {addCommentMutation.isPending
+              ? <span style={{ fontSize: '0.75rem' }}>...</span>
+              : <Send size={14} />
+            }
           </button>
         </div>
       </div>
     </div>
   );
 }
-

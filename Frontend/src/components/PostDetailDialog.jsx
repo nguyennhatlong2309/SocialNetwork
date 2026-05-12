@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { X, Heart, MessageCircle, Send, Bookmark, Share2 } from 'lucide-react';
+import { X, Heart, MessageCircle, Send, Bookmark, Share2, Loader2 } from 'lucide-react';
 import postApi from '../api/postApi';
+import { useComments, useAddComment } from '../hooks/useComments';
 import './PostDetailDialog.css';
 
 const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];
@@ -24,6 +25,7 @@ export default function PostDetailDialog() {
   const { postId } = useParams();
   const navigate = useNavigate();
   const dialogRef = useRef(null);
+  const commentInputRef = useRef(null);
 
   const [post, setPost] = useState(null);
   const [liked, setLiked] = useState(false);
@@ -32,6 +34,10 @@ export default function PostDetailDialog() {
   const [comment, setComment] = useState('');
   const [loading, setLoading] = useState(true);
   const [visible, setVisible] = useState(false);
+
+  // Fetch comments via TanStack Query
+  const { data: comments = [], isLoading: commentsLoading } = useComments(postId);
+  const addCommentMutation = useAddComment();
 
   // Animate in
   useEffect(() => {
@@ -75,9 +81,28 @@ export default function PostDetailDialog() {
     setLikes(prev => liked ? prev - 1 : prev + 1);
   };
 
+  const handleSendComment = async () => {
+    const trimmed = comment.trim();
+    if (!trimmed || addCommentMutation.isPending) return;
+
+    try {
+      await addCommentMutation.mutateAsync({ postId, content: trimmed });
+      setComment('');
+      commentInputRef.current?.focus();
+    } catch (err) {
+      console.error('Failed to add comment:', err);
+    }
+  };
+
+  const handleCommentKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSendComment();
+    }
+  };
+
   const authorName = post?.user?.fullName || post?.user?.username || 'Unknown';
   const authorColor = AVATAR_COLORS[((post?.userId ?? 1) - 1) % AVATAR_COLORS.length];
-  const comments = post?.comments || [];
 
   return (
     <div
@@ -115,7 +140,13 @@ export default function PostDetailDialog() {
             {/* Left — image / content */}
             <div className="pd-image-panel">
               {post.media && post.media.length > 0 ? (
-                <img src={post.media[0].mediaUrl} alt="post" className="pd-image" />
+                <img
+                  src={post.media[0].mediaUrl?.startsWith('http')
+                    ? post.media[0].mediaUrl
+                    : `http://localhost:5231${post.media[0].mediaUrl}`}
+                  alt="post"
+                  className="pd-image"
+                />
               ) : (
                 <div className="pd-text-content">
                   <p>{post.content}</p>
@@ -165,7 +196,7 @@ export default function PostDetailDialog() {
               <div className="pd-caption">
                 <p>{post.content}</p>
                 <div className="pd-tags">
-                  {post.content.match(/#\w+/g)?.map(tag => (
+                  {(post.content || '').match(/#\w+/g)?.map(tag => (
                     <span key={tag} className="post-hashtag">{tag}</span>
                   ))}
                 </div>
@@ -215,9 +246,16 @@ export default function PostDetailDialog() {
                   placeholder="Add a comment..."
                   value={comment}
                   onChange={e => setComment(e.target.value)}
+                  onKeyDown={handleCommentKeyDown}
+                  ref={commentInputRef}
                 />
-                <button className="btn btn-primary btn-sm" disabled={!comment} id="pd-send-btn">
-                  <Send size={14} />
+                <button 
+                  className="btn btn-primary btn-sm" 
+                  disabled={!comment || addCommentMutation.isPending} 
+                  id="pd-send-btn"
+                  onClick={handleSendComment}
+                >
+                  {addCommentMutation.isPending ? <Loader2 size={14} className="animate-spin" /> : <Send size={14} />}
                 </button>
               </div>
             </div>

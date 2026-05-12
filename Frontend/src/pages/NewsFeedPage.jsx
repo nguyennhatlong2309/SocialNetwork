@@ -70,14 +70,18 @@ function PostCard({ post, onOpenPost, onToggleLike, onToggleSave }) {
             <p className="post-time">{post.timeAgo}</p>
           </div>
         </div>
-        <button className="btn btn-ghost btn-sm post-menu-btn" aria-label="Post options">
+        <button
+          className="btn btn-ghost btn-sm post-menu-btn"
+          aria-label="Post options"
+          onClick={(e) => { e.stopPropagation(); alert('More options clicked'); }}
+        >
           <MoreHorizontal size={18} />
         </button>
       </div>
 
       {/* Content */}
       <p className="post-content" onClick={() => onOpenPost(post.id)}>
-        {post.content.split(/(#\w+)/g).map((part, i) =>
+        {(post.content || '').split(/(#\w+)/g).map((part, i) =>
           part.startsWith('#')
             ? <span key={i} className="post-hashtag">{part}</span>
             : part
@@ -89,7 +93,7 @@ function PostCard({ post, onOpenPost, onToggleLike, onToggleSave }) {
         <ProgressiveImage
           src={post.image}
           alt={`Post by ${post.author.name}`}
-          height="260px"
+          height="400px"
           onClick={() => onOpenPost(post.id)}
         />
       )}
