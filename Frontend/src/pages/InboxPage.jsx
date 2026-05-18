@@ -20,7 +20,16 @@ function getColor(userId) {
 
 function formatTime(isoString) {
   if (!isoString) return '';
-  const d = new Date(isoString);
+
+  // Đảm bảo JS luôn parse timestamp như UTC:
+  // Backend dùng DateTime.UtcNow nhưng EF/serializer có thể bỏ suffix 'Z'
+  // → "2026-05-15T13:54:27" bị JS hiểu là local time → lệch múi giờ
+  // Fix: nếu không có 'Z' hay '+', tự thêm 'Z' trước khi parse
+  const normalized = /[Zz]|[+-]\d{2}:?\d{2}$/.test(isoString)
+    ? isoString
+    : isoString + 'Z';
+
+  const d = new Date(normalized);
   const now = new Date();
   const diffMs = now - d;
   const diffMins = Math.floor(diffMs / 60000);

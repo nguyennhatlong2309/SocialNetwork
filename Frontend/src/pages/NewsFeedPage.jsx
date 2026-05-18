@@ -11,15 +11,18 @@
  * Like/Save:     local state toggle → useToggleLike / useToggleSave (optimistic update)
  */
 
+import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Plus, RefreshCw } from 'lucide-react';
 
 // ─── TanStack Query hooks ───────────────────────────────────────────────────
 import { usePosts, useToggleLike, useToggleSave } from '../hooks/usePosts';
+import { useSuggestedUsers, useToggleFollow } from '../hooks/useUsers';
 
 // ─── Skeleton + Progressive Image ──────────────────────────────────────────
 import FeedSkeleton from '../components/skeleton/FeedSkeleton';
 import ProgressiveImage from '../components/ui/ProgressiveImage';
+import UserAvatar from '../components/ui/UserAvatar';
 
 import './NewsFeedPage.css';
 
@@ -32,10 +35,7 @@ const STORIES = [
   { id: 4, name: 'Sarah J.', color: '#bf7c5c' },
 ];
 
-const SUGGESTED = [
-  { id: 1, name: 'David Chen', role: 'Digital Artist', color: '#4285f4' },
-  { id: 2, name: 'Maya S.',    role: 'UX Designer',    color: '#e05c8e' },
-];
+// SUGGESTED mock data đã được xóa — dữ liệu thật load từ useSuggestedUsers()
 
 const TRENDING = [
   { category: 'Design', tag: '#Glassmorphism',    posts: '42.5K' },
@@ -48,8 +48,72 @@ function formatCount(n) {
   return n;
 }
 
+// ─── Media Gallery Component — hỗ trợ nhiều ảnh với slider ───────────────
+function MediaGallery({ images, onClick }) {
+  const [current, setCurrent] = useState(0);
+  if (!images || images.length === 0) return null;
+
+  const prev = (e) => { e.stopPropagation(); setCurrent(i => (i - 1 + images.length) % images.length); };
+  const next = (e) => { e.stopPropagation(); setCurrent(i => (i + 1) % images.length); };
+
+  return (
+    <div style={{ position: 'relative', width: '100%', borderRadius: '12px', overflow: 'hidden', cursor: 'pointer' }} onClick={onClick}>
+      <img
+        src={images[current]}
+        alt={`media-${current}`}
+        style={{ width: '100%', maxHeight: '400px', objectFit: 'cover', display: 'block' }}
+      />
+      {images.length > 1 && (
+        <>
+          {/* Prev / Next buttons */}
+          <button
+            onClick={prev}
+            style={{
+              position: 'absolute', left: '8px', top: '50%', transform: 'translateY(-50%)',
+              background: 'rgba(0,0,0,0.45)', border: 'none', borderRadius: '50%',
+              width: '30px', height: '30px', color: '#fff', cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px',
+            }}
+          >‹</button>
+          <button
+            onClick={next}
+            style={{
+              position: 'absolute', right: '8px', top: '50%', transform: 'translateY(-50%)',
+              background: 'rgba(0,0,0,0.45)', border: 'none', borderRadius: '50%',
+              width: '30px', height: '30px', color: '#fff', cursor: 'pointer',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px',
+            }}
+          >›</button>
+          {/* Dot indicators */}
+          <div style={{ position: 'absolute', bottom: '8px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '5px' }}>
+            {images.map((_, i) => (
+              <span
+                key={i}
+                onClick={(e) => { e.stopPropagation(); setCurrent(i); }}
+                style={{
+                  width: i === current ? '18px' : '7px', height: '7px',
+                  borderRadius: '4px', background: i === current ? '#fff' : 'rgba(255,255,255,0.5)',
+                  cursor: 'pointer', transition: 'width 0.25s ease',
+                }}
+              />
+            ))}
+          </div>
+          {/* Counter badge */}
+          <div style={{
+            position: 'absolute', top: '8px', right: '8px',
+            background: 'rgba(0,0,0,0.55)', color: '#fff',
+            borderRadius: '12px', padding: '2px 8px', fontSize: '12px',
+          }}>
+            {current + 1}/{images.length}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ─── Post Card Component (tách ra để dễ memo sau này) ──────────────────────
-function PostCard({ post, onOpenPost, onToggleLike, onToggleSave }) {
+function PostCard({ post, onOpenPost, onToggleLike, onToggleSave, onOpenProfile }) {
   return (
     <article
       key={post.id}
@@ -58,16 +122,23 @@ function PostCard({ post, onOpenPost, onToggleLike, onToggleSave }) {
     >
       {/* Header */}
       <div className="post-header">
-        <div className="post-author" onClick={() => onOpenPost(post.id)}>
-          <div
-            className="avatar-placeholder avatar-md"
-            style={{ background: `linear-gradient(135deg, ${post.author.color}, ${post.author.color}88)` }}
-          >
-            {post.author.name[0]}
-          </div>
+        <div
+          className="post-author"
+          onClick={(e) => { e.stopPropagation(); onOpenProfile(post.user?.id); }}
+          style={{ cursor: 'pointer' }}
+          title={`View ${post.user?.fullName || post.user?.username || 'Unknown'}'s profile`}
+        >
+          <UserAvatar
+            avatarUrl={post.user?.avatarUrl}
+            name={post.user?.fullName || post.user?.username || 'U'}
+            userId={post.user?.id}
+            size="md"
+          />
           <div>
-            <p className="post-author-name">{post.author.name}</p>
-            <p className="post-time">{post.timeAgo}</p>
+            <p className="post-author-name" style={{ cursor: 'pointer' }}>
+              {post.user?.fullName || post.user?.username || 'Unknown'}
+            </p>
+            <p className="post-time">@{post.user?.username || ''} · {post.timeAgo || 'Just now'}</p>
           </div>
         </div>
         <button
@@ -88,14 +159,9 @@ function PostCard({ post, onOpenPost, onToggleLike, onToggleSave }) {
         )}
       </p>
 
-      {/* Image: Progressive loading — blur → clear */}
-      {post.image && (
-        <ProgressiveImage
-          src={post.image}
-          alt={`Post by ${post.author.name}`}
-          height="400px"
-          onClick={() => onOpenPost(post.id)}
-        />
+      {/* Media Gallery: hỗ trợ nhiều ảnh */}
+      {post.images && post.images.length > 0 && (
+        <MediaGallery images={post.images} onClick={() => onOpenPost(post.id)} />
       )}
 
       {/* Actions */}
@@ -144,6 +210,13 @@ export default function NewsFeedPage() {
   const location = useLocation();
   // Không cần scroll save/restore — component được Keep-Alive (không unmount)
   // nên scrollTop trên .feed-page-scroll được trình duyệt bảo toàn tự nhiên.
+  
+  // ─── Suggested Users ───────────────────────────────────────────────────
+  const {
+    data: suggestedUsers = [],
+    isLoading: isSuggestedLoading,
+  } = useSuggestedUsers(8);
+  const toggleFollowMutation = useToggleFollow();
 
   /**
    * usePosts() — TanStack Query hook
@@ -161,12 +234,23 @@ export default function NewsFeedPage() {
     navigate(`/post/${postId}`, { state: { background: location } });
   };
 
+  const openProfile = (userId) => {
+    if (userId) navigate(`/profile/${userId}`);
+  };
+
   const handleToggleLike = (postId, liked) => {
     toggleLikeMutation.mutate({ postId, liked });
   };
 
   const handleToggleSave = (postId, saved) => {
     toggleSaveMutation.mutate({ postId, saved });
+  };
+
+  const handleToggleFollow = (user) => {
+    toggleFollowMutation.mutate({
+      userId: user.id,
+      currentIsFollowing: user.isFollowing,
+    });
   };
 
   return (
@@ -237,6 +321,7 @@ export default function NewsFeedPage() {
               key={post.id}
               post={post}
               onOpenPost={openPost}
+              onOpenProfile={openProfile}
               onToggleLike={handleToggleLike}
               onToggleSave={handleToggleSave}
             />
@@ -246,22 +331,77 @@ export default function NewsFeedPage() {
 
       {/* Right sidebar */}
       <aside className="feed-sidebar">
-        {/* Suggested */}
+        {/* Suggested for you */}
         <div className="sidebar-section card">
           <h3 className="sidebar-section-title">Suggested for you</h3>
-          {SUGGESTED.map(u => (
+
+          {/* Loading skeleton */}
+          {isSuggestedLoading && (
+            <>
+              {[1, 2, 3].map(i => (
+                <div key={i} className="suggest-item" style={{ opacity: 0.5 }}>
+                  <div className="avatar-placeholder avatar-sm" style={{
+                    background: 'var(--bg-tertiary)',
+                    animation: 'shimmer 1.5s infinite',
+                  }} />
+                  <div className="suggest-info">
+                    <div style={{ height: '12px', width: '80px', background: 'var(--bg-tertiary)', borderRadius: '6px', marginBottom: '6px', animation: 'shimmer 1.5s infinite' }} />
+                    <div style={{ height: '10px', width: '55px', background: 'var(--bg-tertiary)', borderRadius: '6px', animation: 'shimmer 1.5s infinite' }} />
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+
+          {/* Empty state */}
+          {!isSuggestedLoading && suggestedUsers.length === 0 && (
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', textAlign: 'center', padding: '12px 0' }}>
+              No suggestions available
+            </p>
+          )}
+
+          {/* Suggested user list */}
+          {!isSuggestedLoading && suggestedUsers.map(u => (
             <div key={u.id} className="suggest-item">
+              {/* Avatar — click → profile */}
               <div
-                className="avatar-placeholder avatar-sm"
-                style={{ background: `linear-gradient(135deg, ${u.color}, ${u.color}88)` }}
+                onClick={() => openProfile(u.id)}
+                style={{ cursor: 'pointer', flexShrink: 0 }}
+                title={`View ${u.fullName || u.username}'s profile`}
               >
-                {u.name[0]}
+                <UserAvatar
+                  avatarUrl={u.avatarUrl}
+                  name={u.fullName || u.username}
+                  userId={u.id}
+                  size="sm"
+                />
               </div>
-              <div className="suggest-info">
-                <p className="suggest-name">{u.name}</p>
-                <p className="suggest-role">{u.role}</p>
+
+              {/* Name + username — click → profile */}
+              <div
+                className="suggest-info"
+                onClick={() => openProfile(u.id)}
+                style={{ cursor: 'pointer', flex: 1, minWidth: 0 }}
+              >
+                <p className="suggest-name" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  {u.fullName || u.username}
+                  {u.isVerified && (
+                    <span title="Verified" style={{ color: '#4285f4', fontSize: '12px' }}>✓</span>
+                  )}
+                </p>
+                <p className="suggest-role">@{u.username}</p>
               </div>
-              <button className="suggest-follow-btn" id={`follow-btn-${u.id}`}>Follow</button>
+
+              {/* Follow / Unfollow button */}
+              <button
+                className={`suggest-follow-btn ${u.isFollowing ? 'following' : ''}`}
+                id={`follow-btn-${u.id}`}
+                onClick={() => handleToggleFollow(u)}
+                disabled={toggleFollowMutation.isPending}
+                title={u.isFollowing ? 'Unfollow' : 'Follow'}
+              >
+                {u.isFollowing ? 'Following' : 'Follow'}
+              </button>
             </div>
           ))}
         </div>

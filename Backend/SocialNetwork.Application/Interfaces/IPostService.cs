@@ -5,6 +5,7 @@ namespace SocialNetwork.Application.Interfaces;
 public interface IPostService
 {
     Task<IEnumerable<PostDto>> GetPostsAsync(long userId, int page, int pageSize);
+    Task<IEnumerable<PostDto>> GetUserPostsAsync(long currentUserId, long authorId, int page, int pageSize);
     Task<PostDetailDto?> GetPostByIdAsync(long userId, long postId);
 
     /// <summary>

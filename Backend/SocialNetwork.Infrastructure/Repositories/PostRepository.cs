@@ -22,6 +22,19 @@ public class PostRepository : Repository<Post>, IPostRepository
             .ToListAsync();
     }
 
+    public async Task<IEnumerable<Post>> GetUserPostsAsync(long userId, int page, int pageSize)
+    {
+        return await _dbSet
+            .Where(p => !p.IsDeleted && p.UserId == userId)
+            .Include(p => p.User)
+            .Include(p => p.Media)
+            .OrderByDescending(p => p.CreatedAt)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .AsNoTracking()
+            .ToListAsync();
+    }
+
     public async Task<Post?> GetPostWithDetailsAsync(long postId)
     {
         return await _dbSet

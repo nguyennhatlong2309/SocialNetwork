@@ -34,6 +34,24 @@ public class MessagesController : ControllerBase
     }
 
     /// <summary>
+    /// Get or create direct conversation with another user
+    /// </summary>
+    [HttpPost("conversation/with/{otherUserId}")]
+    public async Task<IActionResult> GetOrCreateDirectConversation(long otherUserId)
+    {
+        try
+        {
+            var userId = GetCurrentUserId();
+            var conversation = await _messageService.GetOrCreateDirectConversationAsync(userId, otherUserId);
+            return Ok(ApiResponse<ConversationDto>.SuccessResponse(conversation));
+        }
+        catch (UnauthorizedAccessException ex)
+        {
+            return Forbid(ex.Message);
+        }
+    }
+
+    /// <summary>
     /// Get messages in a conversation (paginated)
     /// </summary>
     [HttpGet("conversation/{conversationId}")]

@@ -13,16 +13,69 @@ public class MessageService : IMessageService
     private readonly IRealtimeChatService _realtimeChatService;
     private readonly IMapper _mapper;
 
+    private readonly IRepository<Conversation> _conversationRepository;
+
     public MessageService(
         IMessageRepository messageRepository,
         IRepository<ConversationMember> memberRepository,
+        IRepository<Conversation> conversationRepository,
         IRealtimeChatService realtimeChatService,
         IMapper mapper)
     {
         _messageRepository = messageRepository;
         _memberRepository = memberRepository;
+        _conversationRepository = conversationRepository;
         _realtimeChatService = realtimeChatService;
         _mapper = mapper;
+    }
+
+    public async Task<ConversationDto> GetOrCreateDirectConversationAsync(long userId, long otherUserId)
+    {
+        // 1. Find existing private conversation
+        var userConversations = await _messageRepository.GetUserConversationsAsync(userId);
+        var existingConv = userConversations.FirstOrDefault(c => 
+            c.Type == ConversationType.Private && 
+            c.Members.Any(m => m.UserId == otherUserId));
+
+        if (existingConv != null)
+        {
+            return _mapper.Map<ConversationDto>(existingConv);
+        }
+
+        // 2. Create new if not exists
+        var newConv = new Conversation
+        {
+            Type = ConversationType.Private,
+            UpdatedAt = DateTime.UtcNow,
+            CreatedBy = userId
+        };
+
+        await _conversationRepository.AddAsync(newConv);
+
+        var member1 = new ConversationMember
+        {
+            ConversationId = newConv.Id,
+            UserId = userId,
+            Role = MemberRole.Member,
+            JoinedAt = DateTime.UtcNow
+        };
+
+        var member2 = new ConversationMember
+        {
+            ConversationId = newConv.Id,
+            UserId = otherUserId,
+            Role = MemberRole.Member,
+            JoinedAt = DateTime.UtcNow
+        };
+
+        await _memberRepository.AddAsync(member1);
+        await _memberRepository.AddAsync(member2);
+
+        // 3. Reload conversation to include navigation properties
+        var convs = await _messageRepository.GetUserConversationsAsync(userId);
+        var created = convs.FirstOrDefault(c => c.Id == newConv.Id);
+
+        return _mapper.Map<ConversationDto>(created ?? newConv);
     }
 
     public async Task<MessageDto> SendMessageAsync(long senderId, SendMessageDto dto)

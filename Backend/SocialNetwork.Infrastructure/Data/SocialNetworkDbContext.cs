@@ -396,8 +396,12 @@ public class SocialNetworkDbContext : DbContext
             e.Property(n => n.Content).HasColumnName("content").HasColumnType("text");
             e.Property(n => n.IsRead).HasColumnName("is_read");
             e.Property(n => n.CreatedAt).HasColumnName("created_at");
+            e.Property(n => n.UpdatedAt).HasColumnName("updated_at");  // Grouping timestamp
 
+            // Index chính để lookup nhanh thông báo gom nhóm
             e.HasIndex(n => n.ReceiverId);
+            e.HasIndex(n => new { n.ReceiverId, n.Type, n.ReferenceId })
+                .HasDatabaseName("IX_notifications_grouped");
 
             e.HasOne(n => n.Sender).WithMany(u => u.SentNotifications)
                 .HasForeignKey(n => n.SenderId).OnDelete(DeleteBehavior.SetNull);

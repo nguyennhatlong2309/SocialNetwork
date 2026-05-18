@@ -1,4 +1,5 @@
 using SocialNetwork.Domain.Entities;
+using SocialNetwork.Domain.Enums;
 
 namespace SocialNetwork.Application.Interfaces;
 
@@ -18,4 +19,16 @@ public interface INotificationRepository : IRepository<Notification>
     /// Lấy notification kèm thông tin Sender (để push real-time với avatar, tên).
     /// </summary>
     Task<Notification?> GetWithSenderAsync(long notificationId);
+
+    /// <summary>
+    /// Tìm thông báo đã được gom nhóm theo (ReceiverId, Type, ReferenceId).
+    /// Trả về null nếu chưa tồn tại.
+    /// </summary>
+    Task<Notification?> FindGroupedAsync(long receiverId, NotificationType type, long referenceId);
+
+    /// <summary>
+    /// Xóa thông báo đã gom nhóm theo (ReceiverId, Type, ReferenceId).
+    /// Không throw nếu không tìm thấy.
+    /// </summary>
+    Task DeleteGroupedAsync(long receiverId, NotificationType type, long referenceId);
 }

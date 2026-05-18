@@ -7,6 +7,7 @@ import NewsFeedPage    from '../../pages/NewsFeedPage';
 import InboxPage       from '../../pages/InboxPage';
 import NotificationsPage from '../../pages/NotificationsPage';
 
+import GlobalSearch from './GlobalSearch';
 import './AppLayout.css';
 
 const navItems = [
@@ -71,6 +72,8 @@ export default function AppLayout() {
             <span>Premium Social</span>
           </div>
         </div>
+
+        <GlobalSearch />
 
         <nav className="sidebar-nav">
           {navItems.map(({ path, icon: Icon, label, badge }) => (

@@ -90,7 +90,7 @@ export function useMessages(conversationId, currentUserId) {
       // res = ApiResponse<MessageDto[]> → { data: [...] }
       const list = res?.data ?? res;
       if (!Array.isArray(list)) return [];
-      return list.map(m => formatMessage(m, currentUserId));
+      return [...list].reverse().map(m => formatMessage(m, currentUserId));
     },
     enabled: !!conversationId && !!currentUserId,
     staleTime: 0, // Tin nhắn luôn fresh — SignalR sẽ push update

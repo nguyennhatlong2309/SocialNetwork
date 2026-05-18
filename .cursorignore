@@ -1,0 +1,35 @@
+# --- THƯ VIỆN & BUILD (Tốn token nhất) ---
+node_modules
+bin
+obj
+target
+build
+dist
+.gradle
+.m2
+vendor
+
+# --- DỮ LIỆU TẠM & LOG ---
+*.log
+*.tmp
+*.temp
+.cache
+.DS_Store
+Thumbs.db
+
+# --- QUẢN LÝ PHIÊN BẢN & IDE ---
+.git
+.svn
+.idea
+.vscode
+*.suo
+*.user
+
+# --- FILE NHỊ PHÂN & MEDIA ---
+*.exe
+*.dll
+*.so
+*.png
+*.jpg
+*.jpeg
+*.pdf

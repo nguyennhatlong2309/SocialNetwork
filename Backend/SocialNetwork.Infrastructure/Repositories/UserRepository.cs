@@ -20,4 +20,16 @@ public class UserRepository : Repository<User>, IUserRepository
 
     public async Task<bool> ExistsByEmailAsync(string email)
         => await _dbSet.AnyAsync(u => u.Email == email);
+
+    public async Task<IEnumerable<User>> SearchUsersAsync(string query, int count = 10)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+            return Enumerable.Empty<User>();
+
+        query = query.Trim().ToLower();
+        return await _dbSet
+            .Where(u => u.Username.ToLower().Contains(query) || (u.FullName != null && u.FullName.ToLower().Contains(query)))
+            .Take(count)
+            .ToListAsync();
+    }
 }

@@ -35,14 +35,43 @@ public class LikeService : ILikeService
 
         if (existingLike != null)
         {
-            // Unlike
+            // ── Unlike ────────────────────────────────────────────────────
             await _likeRepository.DeleteAsync(existingLike);
             post.LikeCount = Math.Max(0, post.LikeCount - 1);
             isLiked = false;
+
+            if (post.LikeCount == 0)
+            {
+                // Không còn ai thích → xóa thông báo hẳn
+                await _notificationService.DeleteNotificationAsync(
+                    post.UserId, NotificationType.Like, postId);
+            }
+            else
+            {
+                // Vẫn còn người khác đã like → cập nhật lại thông báo với người like gần nhất
+                // (Tìm người like gần nhất trong DB để làm SenderId mới)
+                var latestLike = (await _likeRepository.FindAsync(l => l.PostId == postId))
+                    .OrderByDescending(l => l.CreatedAt)
+                    .FirstOrDefault();
+
+                if (latestLike != null)
+                {
+                    await _notificationService.CreateOrUpdateAndPushAsync(
+                        new CreateNotificationDto
+                        {
+                            SenderId = latestLike.UserId,
+                            ReceiverId = post.UserId,
+                            Type = NotificationType.Like,
+                            ReferenceId = postId,
+                            Content = "đã thích bài viết của bạn."
+                        },
+                        actorCount: post.LikeCount);
+                }
+            }
         }
         else
         {
-            // Like
+            // ── Like ──────────────────────────────────────────────────────
             var like = new Like
             {
                 UserId = userId,
@@ -53,15 +82,17 @@ public class LikeService : ILikeService
             post.LikeCount++;
             isLiked = true;
 
-            // Gửi thông báo cho chủ post (không cần await — fire and forget qua interface)
-            await _notificationService.CreateAndPushAsync(new CreateNotificationDto
-            {
-                SenderId = userId,
-                ReceiverId = post.UserId,
-                Type = NotificationType.Like,
-                ReferenceId = postId,
-                Content = "đã thích bài viết của bạn."
-            });
+            // Gom nhóm thông báo: Upsert theo (ReceiverId=post.UserId, Type=Like, ReferenceId=postId)
+            await _notificationService.CreateOrUpdateAndPushAsync(
+                new CreateNotificationDto
+                {
+                    SenderId = userId,
+                    ReceiverId = post.UserId,
+                    Type = NotificationType.Like,
+                    ReferenceId = postId,
+                    Content = "đã thích bài viết của bạn."
+                },
+                actorCount: post.LikeCount);
         }
 
         await _postRepository.UpdateAsync(post);

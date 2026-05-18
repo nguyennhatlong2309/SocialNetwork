@@ -22,13 +22,15 @@ public class NotificationService : INotificationService
         _mapper = mapper;
     }
 
+    // ─────────────────────────────────────────────────────────────────────────
+    // Tạo mới thông báo (KHÔNG gom nhóm) — giữ nguyên để không breaking change
+    // ─────────────────────────────────────────────────────────────────────────
     public async Task CreateAndPushAsync(CreateNotificationDto dto)
     {
         // Không gửi thông báo cho chính mình
         if (dto.SenderId.HasValue && dto.SenderId.Value == dto.ReceiverId)
             return;
 
-        // Lưu vào DB
         var notification = new Notification
         {
             SenderId = dto.SenderId,
@@ -37,19 +39,85 @@ public class NotificationService : INotificationService
             ReferenceId = dto.ReferenceId,
             Content = dto.Content,
             IsRead = false,
-            CreatedAt = DateTime.UtcNow
+            CreatedAt = DateTime.UtcNow,
+            UpdatedAt = DateTime.UtcNow
         };
 
         await _notificationRepository.AddAsync(notification);
 
-        // Reload với thông tin sender để push
         var created = await _notificationRepository.GetWithSenderAsync(notification.Id);
-        var notifDto = MapToDto(created ?? notification);
-
-        // Push real-time xuống client (fire-and-forget, không block)
-        await _realtimeService.PushAsync(dto.ReceiverId, notifDto);
+        await _realtimeService.PushAsync(dto.ReceiverId, MapToDto(created ?? notification));
     }
 
+    // ─────────────────────────────────────────────────────────────────────────
+    // Gom nhóm thông báo: Upsert theo (ReceiverId, Type, ReferenceId)
+    // ─────────────────────────────────────────────────────────────────────────
+    public async Task CreateOrUpdateAndPushAsync(CreateNotificationDto dto, int actorCount = 1)
+    {
+        // Không gửi thông báo cho chính mình
+        if (dto.SenderId.HasValue && dto.SenderId.Value == dto.ReceiverId)
+            return;
+
+        // ReferenceId bắt buộc phải có với logic gom nhóm
+        if (!dto.ReferenceId.HasValue)
+        {
+            await CreateAndPushAsync(dto);
+            return;
+        }
+
+        var existing = await _notificationRepository
+            .FindGroupedAsync(dto.ReceiverId, dto.Type, dto.ReferenceId.Value);
+
+        Notification notification;
+
+        if (existing != null)
+        {
+            // ── Cập nhật thông báo đã có ──────────────────────────────────
+            existing.SenderId = dto.SenderId;                   // Người tương tác mới nhất
+            existing.Content = BuildGroupedContent(dto.Content, actorCount);
+            existing.IsRead = false;                            // Đánh dấu chưa đọc lại
+            existing.UpdatedAt = DateTime.UtcNow;
+
+            await _notificationRepository.UpdateAsync(existing);
+
+            // Reload để có navigation property Sender đầy đủ
+            notification = await _notificationRepository.GetWithSenderAsync(existing.Id)
+                           ?? existing;
+        }
+        else
+        {
+            // ── Tạo mới ──────────────────────────────────────────────────
+            var newNotification = new Notification
+            {
+                SenderId = dto.SenderId,
+                ReceiverId = dto.ReceiverId,
+                Type = dto.Type,
+                ReferenceId = dto.ReferenceId,
+                Content = BuildGroupedContent(dto.Content, actorCount),
+                IsRead = false,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+
+            await _notificationRepository.AddAsync(newNotification);
+            notification = await _notificationRepository.GetWithSenderAsync(newNotification.Id)
+                           ?? newNotification;
+        }
+
+        await _realtimeService.PushAsync(dto.ReceiverId, MapToDto(notification));
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Xóa thông báo gom nhóm
+    // ─────────────────────────────────────────────────────────────────────────
+    public async Task DeleteNotificationAsync(long receiverId, NotificationType type, long referenceId)
+    {
+        await _notificationRepository.DeleteGroupedAsync(receiverId, type, referenceId);
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Các method cũ (không thay đổi)
+    // ─────────────────────────────────────────────────────────────────────────
     public async Task<IEnumerable<NotificationDto>> GetNotificationsAsync(long userId, int page, int pageSize)
     {
         var notifications = await _notificationRepository.GetByReceiverIdAsync(userId, page, pageSize);
@@ -85,6 +153,25 @@ public class NotificationService : INotificationService
         return await _notificationRepository.CountUnreadAsync(userId);
     }
 
+    // ─────────────────────────────────────────────────────────────────────────
+    // Helpers
+    // ─────────────────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Sinh nội dung thông báo có gom nhóm.
+    /// actorCount = 1  → "đã thích bài viết của bạn."  (baseContent gốc)
+    /// actorCount = 2  → "và 1 người khác đã thích bài viết của bạn."
+    /// actorCount >= 3 → "và X người khác đã thích bài viết của bạn."
+    /// </summary>
+    private static string BuildGroupedContent(string? baseContent, int actorCount)
+    {
+        if (actorCount <= 1 || string.IsNullOrWhiteSpace(baseContent))
+            return baseContent ?? string.Empty;
+
+        int others = actorCount - 1;
+        return $"và {others} người khác {baseContent}";
+    }
+
     private static NotificationDto MapToDto(Notification n) => new()
     {
         Id = n.Id,
@@ -96,6 +183,6 @@ public class NotificationService : INotificationService
         ReferenceId = n.ReferenceId,
         Content = n.Content,
         IsRead = n.IsRead,
-        CreatedAt = n.CreatedAt
+        CreatedAt = n.UpdatedAt  // Hiển thị UpdatedAt cho client, vì đây là timestamp gom nhóm mới nhất
     };
 }

@@ -1,0 +1,6 @@
+cd Backend/SocialNetwork.API
+dotnet run
+
+
+cd Frontend
+npm run dev

@@ -48,15 +48,24 @@ public class CommentService : ICommentService
         post.CommentCount++;
         await _postRepository.UpdateAsync(post);
 
-        // Gửi thông báo cho chủ post
-        await _notificationService.CreateAndPushAsync(new CreateNotificationDto
-        {
-            SenderId = userId,
-            ReceiverId = post.UserId,
-            Type = NotificationType.Comment,
-            ReferenceId = postId,
-            Content = "đã bình luận về bài viết của bạn."
-        });
+        // Đếm số người đã comment (không tính chủ bài viết)
+        var uniqueCommenterCount = await _commentRepository.Query()
+            .Where(c => c.PostId == postId && !c.IsDeleted && c.UserId != post.UserId)
+            .Select(c => c.UserId)
+            .Distinct()
+            .CountAsync();
+
+        // Gom nhóm thông báo: Upsert theo (ReceiverId=post.UserId, Type=Comment, ReferenceId=postId)
+        await _notificationService.CreateOrUpdateAndPushAsync(
+            new CreateNotificationDto
+            {
+                SenderId = userId,
+                ReceiverId = post.UserId,
+                Type = NotificationType.Comment,
+                ReferenceId = postId,
+                Content = "đã bình luận về bài viết của bạn."
+            },
+            actorCount: uniqueCommenterCount > 0 ? uniqueCommenterCount : 1);
 
         // Reload comment với thông tin user
         var created = await _commentRepository.Query()
@@ -87,6 +96,51 @@ public class CommentService : ICommentService
         {
             post.CommentCount = Math.Max(0, post.CommentCount - 1);
             await _postRepository.UpdateAsync(post);
+
+            if (post.CommentCount == 0)
+            {
+                // Không còn ai comment → xóa thông báo hẳn
+                await _notificationService.DeleteNotificationAsync(
+                    post.UserId, NotificationType.Comment, post.Id);
+            }
+            else
+            {
+                // Đếm số người đã comment (không tính chủ bài viết)
+                var uniqueCommenterCount = await _commentRepository.Query()
+                    .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)
+                    .Select(c => c.UserId)
+                    .Distinct()
+                    .CountAsync();
+
+                if (uniqueCommenterCount == 0)
+                {
+                    // Không còn ai (ngoài chủ bài viết) comment → xóa thông báo
+                    await _notificationService.DeleteNotificationAsync(
+                        post.UserId, NotificationType.Comment, post.Id);
+                }
+                else
+                {
+                    // Vẫn còn người khác đã comment → cập nhật lại thông báo với người comment gần nhất
+                    var latestComment = await _commentRepository.Query()
+                        .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)
+                        .OrderByDescending(c => c.CreatedAt)
+                        .FirstOrDefaultAsync();
+
+                    if (latestComment != null)
+                    {
+                        await _notificationService.CreateOrUpdateAndPushAsync(
+                            new CreateNotificationDto
+                            {
+                                SenderId = latestComment.UserId,
+                                ReceiverId = post.UserId,
+                                Type = NotificationType.Comment,
+                                ReferenceId = post.Id,
+                                Content = "đã bình luận về bài viết của bạn."
+                            },
+                            actorCount: uniqueCommenterCount);
+                    }
+                }
+            }
         }
     }
 

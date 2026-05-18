@@ -11,6 +11,7 @@ using SocialNetwork.Infrastructure.Data;
 using SocialNetwork.Infrastructure.Repositories;
 using SocialNetwork.API.Hubs;
 using SocialNetwork.API.Services;
+using SocialNetwork.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +43,7 @@ builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddScoped<INotificationService, NotificationService>();
 builder.Services.AddScoped<ILikeService, LikeService>();
 builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // ===== SignalR Real-time Services =====
 // ConnectionManager là Singleton vì nó lưu state kết nối trong bộ nhớ
@@ -101,7 +103,17 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 // ===== Controllers =====
-builder.Services.AddControllers();
+// Cấu hình JSON: đảm bảo DateTime luôn serialize với suffix 'Z' (UTC ISO 8601)
+// Khi DateTime.Kind = Utc (tức là dùng DateTime.UtcNow), System.Text.Json sẽ tự động thêm 'Z'
+// Vấn đề cũ: backend trả "2026-05-15T13:54:27" → frontend hiểu nhầm là local time → lệch 7h
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(
+            new System.Text.Json.Serialization.JsonStringEnumConverter());
+        // Khi Kind = Unspecified (vd: EF đọc từ DB), assume UTC và thêm 'Z'
+        options.JsonSerializerOptions.Converters.Add(new UtcDateTimeConverter());
+    });
 
 // ===== SignalR =====
 builder.Services.AddSignalR(options =>

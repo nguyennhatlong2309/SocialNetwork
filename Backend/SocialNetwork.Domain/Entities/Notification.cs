@@ -17,6 +17,12 @@ public class Notification
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+    /// <summary>
+    /// Cập nhật mỗi khi thông báo bị gom nhóm (like mới / unlike rồi like lại).
+    /// Dùng làm timestamp hiển thị trên UI.
+    /// </summary>
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
     // Navigation
     public User? Sender { get; set; }
     public User Receiver { get; set; } = null!;

@@ -36,6 +36,23 @@ public class PostService : IPostService
         return dtos;
     }
 
+    public async Task<IEnumerable<PostDto>> GetUserPostsAsync(long currentUserId, long authorId, int page, int pageSize)
+    {
+        var posts = await _postRepository.GetUserPostsAsync(authorId, page, pageSize);
+        var dtos = _mapper.Map<IEnumerable<PostDto>>(posts).ToList();
+
+        var postIds = dtos.Select(d => d.Id).ToList();
+        var likes = await _likeRepository.FindAsync(l => l.UserId == currentUserId && postIds.Contains(l.PostId));
+        var likedPostIds = likes.Select(l => l.PostId).ToHashSet();
+
+        foreach (var dto in dtos)
+        {
+            dto.IsLiked = likedPostIds.Contains(dto.Id);
+        }
+
+        return dtos;
+    }
+
     public async Task<PostDetailDto?> GetPostByIdAsync(long userId, long postId)
     {
         var post = await _postRepository.GetPostWithDetailsAsync(postId);

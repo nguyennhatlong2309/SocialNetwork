@@ -27,3 +27,6 @@ appsettings.Local.json
 .idea/
 .DS_Store
 Thumbs.db
+
+.rtk
+.CLAUDE.md

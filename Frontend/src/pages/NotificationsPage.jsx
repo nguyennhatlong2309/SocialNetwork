@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Heart, MessageSquare, UserPlus, AtSign, Bell, MessageCircle } from 'lucide-react';
 import { useNotifications, useMarkAsRead, useMarkAllAsRead } from '../hooks/useNotifications';
 import './NotificationsPage.css';
@@ -17,6 +18,8 @@ const TABS = ['All', 'Mentions', 'Follows'];
 
 export default function NotificationsPage() {
   const [activeTab, setActiveTab] = useState('All');
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // ─── Data từ API thật ──────────────────────────────────────────────────
   const { data: notifications = [], isLoading, isError } = useNotifications();
@@ -38,7 +41,15 @@ export default function NotificationsPage() {
     if (notif.unread) {
       markAsReadMutation.mutate(notif.id);
     }
-    // TODO: navigate đến post/profile tương ứng dựa vào notif.type + notif.referenceId
+
+    // Xử lý điều hướng dựa trên loại thông báo
+    if (['like', 'comment', 'mention'].includes(notif.type) && notif.referenceId) {
+      // Mở bài viết dưới dạng Dialog/Popup overlay
+      navigate(`/post/${notif.referenceId}`, { state: { background: location } });
+    } else if (notif.type === 'follow' && notif.senderId) {
+      // Điều hướng đến trang cá nhân của người follow
+      navigate(`/profile/${notif.senderId}`);
+    }
   };
 
   // ─── Loading / Error states ────────────────────────────────────────────

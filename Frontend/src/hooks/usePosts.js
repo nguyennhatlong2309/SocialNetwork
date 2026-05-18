@@ -13,6 +13,9 @@ import postApi from '../api/postApi';
 function formatPost(p) {
   return {
     id: p.id,
+    // Giữ lại object user gốc để PostCard có thể đọc post.user?.fullName, post.user?.id
+    user: p.user,
+    userId: p.userId,
     author: {
       name: p.user?.fullName || p.user?.username || 'Unknown',
       username: p.user?.username,
@@ -22,14 +25,15 @@ function formatPost(p) {
     },
     timeAgo: timeSince(p.createdAt),
     content: p.content,
-    image: p.media && p.media.length > 0
-      ? (p.media[0].mediaUrl?.startsWith('http')
-          ? p.media[0].mediaUrl
-          : `http://localhost:5231${p.media[0].mediaUrl}`)
-      : null,
+    images: p.media && p.media.length > 0
+      ? p.media.map(m =>
+          m.mediaUrl?.startsWith('http')
+            ? m.mediaUrl
+            : `http://localhost:5231${m.mediaUrl}`
+        )
+      : [],
     likes: p.likeCount,
     comments: p.commentCount,
-    likes: p.likeCount,
     liked: p.isLiked ?? false,
     saved: p.isSaved ?? false,
   };

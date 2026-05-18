@@ -196,10 +196,24 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: sticky;
+  top: 24px;
+  height: calc(100vh - 48px);
 }
 
 .sidebar-section {
   padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar for sidebar sections for a cleaner look */
+.sidebar-section::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-section {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .sidebar-section-title {
@@ -243,7 +257,12 @@
   transition: color var(--transition-fast);
 }
 
-.suggest-follow-btn:hover { color: var(--accent-secondary); }
+.suggest-follow-btn:hover:not(:disabled) { color: var(--accent-secondary); }
+
+.suggest-follow-btn.following {
+  color: var(--text-muted);
+  cursor: default;
+}
 
 .trending-item {
   margin-bottom: 16px;

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { X, Heart, MessageCircle, Send, Bookmark, Share2, Loader2 } from 'lucide-react';
 import postApi from '../api/postApi';
 import { useComments, useAddComment } from '../hooks/useComments';
+import UserAvatar from './ui/UserAvatar';
 import './PostDetailDialog.css';
 
 const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];
@@ -34,6 +35,7 @@ export default function PostDetailDialog() {
   const [comment, setComment] = useState('');
   const [loading, setLoading] = useState(true);
   const [visible, setVisible] = useState(false);
+  const [currentMedia, setCurrentMedia] = useState(0);
 
   // Fetch comments via TanStack Query
   const { data: comments = [], isLoading: commentsLoading } = useComments(postId);
@@ -137,16 +139,64 @@ export default function PostDetailDialog() {
 
         {!loading && post && (
           <>
-            {/* Left — image / content */}
+            {/* Left — image gallery / content */}
             <div className="pd-image-panel">
               {post.media && post.media.length > 0 ? (
-                <img
-                  src={post.media[0].mediaUrl?.startsWith('http')
-                    ? post.media[0].mediaUrl
-                    : `http://localhost:5231${post.media[0].mediaUrl}`}
-                  alt="post"
-                  className="pd-image"
-                />
+                <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000' }}>
+                  <img
+                    src={post.media[currentMedia]?.mediaUrl?.startsWith('http')
+                      ? post.media[currentMedia].mediaUrl
+                      : `http://localhost:5231${post.media[currentMedia]?.mediaUrl}`}
+                    alt="post"
+                    className="pd-image"
+                  />
+                  {post.media.length > 1 && (
+                    <>
+                      {/* Prev */}
+                      <button
+                        onClick={() => setCurrentMedia(i => (i - 1 + post.media.length) % post.media.length)}
+                        style={{
+                          position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)',
+                          background: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%',
+                          width: '32px', height: '32px', color: '#fff', cursor: 'pointer', fontSize: '18px',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        }}
+                      >‹</button>
+                      {/* Next */}
+                      <button
+                        onClick={() => setCurrentMedia(i => (i + 1) % post.media.length)}
+                        style={{
+                          position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)',
+                          background: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%',
+                          width: '32px', height: '32px', color: '#fff', cursor: 'pointer', fontSize: '18px',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        }}
+                      >›</button>
+                      {/* Dots */}
+                      <div style={{ position: 'absolute', bottom: '60px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '5px' }}>
+                        {post.media.map((_, i) => (
+                          <span
+                            key={i}
+                            onClick={() => setCurrentMedia(i)}
+                            style={{
+                              width: i === currentMedia ? '18px' : '7px', height: '7px',
+                              borderRadius: '4px', background: i === currentMedia ? '#fff' : 'rgba(255,255,255,0.5)',
+                              cursor: 'pointer', transition: 'width 0.25s ease',
+                            }}
+                          />
+                        ))}
+                      </div>
+                      {/* Counter */}
+                      <div style={{
+                        position: 'absolute', top: '10px', right: '10px',
+                        background: 'rgba(0,0,0,0.55)', color: '#fff',
+                        borderRadius: '12px', padding: '2px 8px', fontSize: '12px',
+                      }}>
+                        {currentMedia + 1}/{post.media.length}
+                      </div>
+                    </>
+                  )}
+                </div>
               ) : (
                 <div className="pd-text-content">
                   <p>{post.content}</p>
@@ -177,13 +227,18 @@ export default function PostDetailDialog() {
             <div className="pd-comments-panel">
               {/* Author header */}
               <div className="pd-header">
-                <div className="post-author">
-                  <div
-                    className="avatar-placeholder avatar-md"
-                    style={{ background: `linear-gradient(135deg, ${authorColor}, ${authorColor}88)` }}
-                  >
-                    {authorName[0].toUpperCase()}
-                  </div>
+                <div
+                  className="post-author"
+                  onClick={() => { if (post.user?.id) navigate(`/profile/${post.user.id}`); }}
+                  style={{ cursor: 'pointer' }}
+                  title={`View ${authorName}'s profile`}
+                >
+                  <UserAvatar
+                    avatarUrl={post.user?.avatarUrl}
+                    name={authorName}
+                    userId={post.userId}
+                    size="md"
+                  />
                   <div>
                     <p className="post-author-name">{authorName}</p>
                     <p className="post-time">@{post.user?.username}</p>
@@ -210,17 +265,29 @@ export default function PostDetailDialog() {
                 {comments.map((c, idx) => {
                   const cName = c.user?.fullName || c.user?.username || 'User';
                   const cColor = AVATAR_COLORS[idx % AVATAR_COLORS.length];
+                  const goToCommentAuthor = () => {
+                    if (c.user?.id) navigate(`/profile/${c.user.id}`);
+                  };
                   return (
                     <div key={c.id} className="comment-item">
-                      <div
-                        className="avatar-placeholder avatar-sm"
-                        style={{ background: `linear-gradient(135deg, ${cColor}, ${cColor}88)` }}
-                      >
-                        {cName[0].toUpperCase()}
-                      </div>
+                      <UserAvatar
+                        avatarUrl={c.user?.avatarUrl}
+                        name={cName}
+                        userId={c.user?.id}
+                        size="sm"
+                        style={{ cursor: 'pointer', flexShrink: 0 }}
+                        onClick={goToCommentAuthor}
+                        title={`View ${cName}'s profile`}
+                      />
                       <div className="comment-body">
                         <div className="comment-header">
-                          <span className="comment-author">@{c.user?.username || 'user'}</span>
+                          <span
+                            className="comment-author"
+                            style={{ cursor: 'pointer' }}
+                            onClick={goToCommentAuthor}
+                          >
+                            @{c.user?.username || 'user'}
+                          </span>
                           <span className="comment-time">{timeSince(c.createdAt)}</span>
                         </div>
                         <p className="comment-text">{c.content}</p>

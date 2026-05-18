@@ -70,6 +70,7 @@
   text-align: center;
   position: relative;
   margin: 8px 0;
+  margin-top: auto;
 }
 
 .date-divider span {

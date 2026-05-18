@@ -19,6 +19,15 @@ const messageApi = {
   },
 
   /**
+   * Get or create direct conversation with another user.
+   * @param {number|string} otherUserId
+   * @returns {Promise<ConversationDto>}
+   */
+  getOrCreateConversation(otherUserId) {
+    return axiosClient.post(`/Messages/conversation/with/${otherUserId}`);
+  },
+
+  /**
    * Lấy tin nhắn trong một conversation (phân trang, mới nhất cuối).
    * @param {number|string} conversationId
    * @param {number} page

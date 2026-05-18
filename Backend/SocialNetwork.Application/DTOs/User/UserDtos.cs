@@ -28,4 +28,9 @@ public class UserProfileDto
     public bool IsVerified { get; set; }
     public bool IsPrivate { get; set; }
     public DateTime CreatedAt { get; set; }
+
+    public int FollowersCount { get; set; }
+    public int FollowingCount { get; set; }
+    public int PostsCount { get; set; }
+    public bool IsFollowing { get; set; }
 }

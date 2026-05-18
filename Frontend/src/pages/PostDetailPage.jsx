@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import postApi from '../api/postApi';
 import { useToggleLike, postKeys } from '../hooks/usePosts';
 import { useComments, useAddComment } from '../hooks/useComments';
+import UserAvatar from '../components/ui/UserAvatar';
 import './PostDetailPage.css';
 
 const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];
@@ -28,6 +29,7 @@ export default function PostDetailPage() {
   const navigate = useNavigate();
   const [comment, setComment] = useState('');
   const [saved, setSaved] = useState(false);
+  const [currentMedia, setCurrentMedia] = useState(0);
   const commentInputRef = useRef(null);
 
   // ─── Fetch post detail ──────────────────────────────────────────────────
@@ -119,7 +121,57 @@ export default function PostDetailPage() {
           <ArrowLeft size={18} />
         </button>
         {post.media && post.media.length > 0 ? (
-          <img src={post.media[0].mediaUrl} alt="post" className="post-detail-image" />
+          <div style={{ position: 'relative', flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000', minHeight: 0 }}>
+            <img
+              src={post.media[currentMedia]?.mediaUrl?.startsWith('http')
+                ? post.media[currentMedia].mediaUrl
+                : `http://localhost:5231${post.media[currentMedia]?.mediaUrl}`}
+              alt="post"
+              className="post-detail-image"
+            />
+            {post.media.length > 1 && (
+              <>
+                <button
+                  onClick={() => setCurrentMedia(i => (i - 1 + post.media.length) % post.media.length)}
+                  style={{
+                    position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)',
+                    background: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%',
+                    width: '32px', height: '32px', color: '#fff', cursor: 'pointer', fontSize: '18px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  }}
+                >‹</button>
+                <button
+                  onClick={() => setCurrentMedia(i => (i + 1) % post.media.length)}
+                  style={{
+                    position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)',
+                    background: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%',
+                    width: '32px', height: '32px', color: '#fff', cursor: 'pointer', fontSize: '18px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  }}
+                >›</button>
+                <div style={{ position: 'absolute', bottom: '64px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '5px' }}>
+                  {post.media.map((_, i) => (
+                    <span
+                      key={i}
+                      onClick={() => setCurrentMedia(i)}
+                      style={{
+                        width: i === currentMedia ? '18px' : '7px', height: '7px',
+                        borderRadius: '4px', background: i === currentMedia ? '#fff' : 'rgba(255,255,255,0.5)',
+                        cursor: 'pointer', transition: 'width 0.25s ease',
+                      }}
+                    />
+                  ))}
+                </div>
+                <div style={{
+                  position: 'absolute', top: '52px', right: '10px',
+                  background: 'rgba(0,0,0,0.55)', color: '#fff',
+                  borderRadius: '12px', padding: '2px 8px', fontSize: '12px',
+                }}>
+                  {currentMedia + 1}/{post.media.length}
+                </div>
+              </>
+            )}
+          </div>
         ) : (
           <div style={{
             flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -153,11 +205,13 @@ export default function PostDetailPage() {
       <div className="post-detail-comments-panel">
         {/* Author */}
         <div className="post-detail-header">
-          <div className="post-author">
-            <div className="avatar-placeholder avatar-md"
-              style={{ background: `linear-gradient(135deg, ${authorColor}, ${authorColor}88)` }}>
-              {authorName[0].toUpperCase()}
-            </div>
+          <div className="post-author" onClick={() => navigate(`/profile/${post.user?.id}`)} style={{cursor: 'pointer'}}>
+            <UserAvatar
+              avatarUrl={post.user?.avatarUrl}
+              name={authorName}
+              userId={post.user?.id}
+              size="md"
+            />
             <div>
               <p className="post-author-name">{authorName}</p>
               <p className="post-time">@{post.user?.username}</p>
@@ -186,15 +240,29 @@ export default function PostDetailPage() {
           {comments.map((c, idx) => {
             const cName = c.user?.fullName || c.user?.username || 'User';
             const cColor = AVATAR_COLORS[idx % AVATAR_COLORS.length];
+            const goToCommentAuthor = () => {
+              if (c.user?.id) navigate(`/profile/${c.user.id}`);
+            };
             return (
               <div key={c.id} className="comment-item">
-                <div className="avatar-placeholder avatar-sm"
-                  style={{ background: `linear-gradient(135deg, ${cColor}, ${cColor}88)` }}>
-                  {cName[0].toUpperCase()}
-                </div>
+                <UserAvatar
+                  avatarUrl={c.user?.avatarUrl}
+                  name={cName}
+                  userId={c.user?.id}
+                  size="sm"
+                  style={{ cursor: 'pointer', flexShrink: 0 }}
+                  onClick={goToCommentAuthor}
+                  title={`View ${cName}'s profile`}
+                />
                 <div className="comment-body">
                   <div className="comment-header">
-                    <span className="comment-author">@{c.user?.username || 'user'}</span>
+                    <span
+                      className="comment-author"
+                      style={{ cursor: 'pointer' }}
+                      onClick={goToCommentAuthor}
+                    >
+                      @{c.user?.username || 'user'}
+                    </span>
                     <span className="comment-time">{timeSince(c.createdAt)}</span>
                   </div>
                   <p className="comment-text">{c.content}</p>

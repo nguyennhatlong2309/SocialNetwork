@@ -43,10 +43,9 @@ function buildConnection(hubPath, accessToken) {
     .withUrl(`${BASE_HUB_URL}${hubPath}`, {
       // Backend đọc token từ query string (WebSocket không hỗ trợ custom headers)
       accessTokenFactory: () => accessToken,
-      // Ưu tiên WebSocket, fallback xuống LongPolling nếu cần
-      transport:
-        signalR.HttpTransportType.WebSockets |
-        signalR.HttpTransportType.LongPolling,
+      // Bỏ qua negotiation để kết nối trực tiếp WebSocket, tránh lỗi CORS/Negotiate
+      skipNegotiation: true,
+      transport: signalR.HttpTransportType.WebSockets,
     })
     .withAutomaticReconnect([0, 2000, 5000, 10000, 30000]) // backoff schedule (ms)
     .configureLogging(signalR.LogLevel.Warning)
