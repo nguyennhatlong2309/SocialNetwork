@@ -28,6 +28,7 @@ public class User
     public bool IsPrivate { get; set; }
     public bool IsActive { get; set; } = true;
     public bool IsBanned { get; set; }
+    public UserRole Role { get; set; } = UserRole.Member;
 
     public DateTime? LastSeenAt { get; set; }
 

@@ -2,10 +2,10 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Heart, Send, Bookmark, MoreHorizontal } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
-import postApi from '../api/postApi';
-import { useToggleLike, postKeys } from '../hooks/usePosts';
-import { useComments, useAddComment } from '../hooks/useComments';
-import UserAvatar from '../components/ui/UserAvatar';
+import postApi from '../../api/postApi';
+import { useToggleLike, postKeys } from '../../hooks/usePosts';
+import { useComments, useAddComment } from '../../hooks/useComments';
+import UserAvatar from '../../components/ui/UserAvatar';
 import './PostDetailPage.css';
 
 const AVATAR_COLORS = ['#7c5cbf', '#e05c8e', '#5c9cbf', '#bf7c5c', '#4285f4'];

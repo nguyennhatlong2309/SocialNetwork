@@ -43,6 +43,7 @@ public class AuthResponseDto
     public long UserId { get; set; }
     public string Username { get; set; } = null!;
     public string Email { get; set; } = null!;
+    public string Role { get; set; } = "Member";
     public string AccessToken { get; set; } = null!;
     public string RefreshToken { get; set; } = null!;
     public DateTime ExpiresAt { get; set; }

@@ -434,3 +434,18 @@ input, textarea {
   align-items: center;
   justify-content: center;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   Accessibility Settings (Appearance)
+═══════════════════════════════════════════════════════════ */
+
+/* High Contrast */
+html[data-high-contrast="true"] body {
+  filter: contrast(1.25) saturate(1.1);
+}
+
+/* Color Blind Modes (Requires SVG filters in index.html) */
+html[data-color-blind="deuteranopia"] body { filter: url('#deuteranopia'); }
+html[data-color-blind="protanopia"] body { filter: url('#protanopia'); }
+html[data-color-blind="tritanopia"] body { filter: url('#tritanopia'); }
+html[data-color-blind="achromatopsia"] body { filter: url('#achromatopsia'); }

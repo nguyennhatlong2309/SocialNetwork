@@ -1,0 +1,467 @@
+/* ═══════════════════════════════════════════════════════════
+   AdminSettingsPage.css — Admin-specific overrides & extras
+═══════════════════════════════════════════════════════════ */
+
+/* Admin-only nav items */
+.st-nav-item.admin-only { border-top: none; }
+
+.st-nav-item.admin-only:first-of-type {
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.st-admin-tag {
+  margin-left: auto;
+  font-size: calc(9px * var(--font-scale, 1));
+  font-weight: 700;
+  background: rgba(124, 92, 191, 0.15);
+  color: var(--accent-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+/* Maintenance mode warning banner */
+.adm-sys-warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(240, 160, 90, 0.1);
+  border: 1px solid rgba(240, 160, 90, 0.3);
+  color: var(--warning);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 500;
+}
+
+/* Audit log */
+.st-audit-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.st-audit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: calc(12px * var(--density-scale, 1)) calc(20px * var(--density-scale, 1));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  flex-wrap: wrap;
+}
+
+.st-audit-row:last-child { border-bottom: none; }
+
+.st-audit-action {
+  font-size: calc(13px * var(--font-scale, 1));
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.st-audit-meta {
+  font-size: calc(11px * var(--font-scale, 1));
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Select override for dark theme */
+select.input-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6585' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+  cursor: pointer;
+}
+
+select.input-field option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Appearance Section — Theme Cards with Previews
+═══════════════════════════════════════════════════════════ */
+
+.ap-theme-card {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 14px 14px;
+  position: relative;
+}
+
+.ap-theme-preview {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 2px;
+  flex-shrink: 0;
+}
+
+/* Dark preview */
+.ap-prev-dark {
+  background: #1a1825;
+}
+.ap-prev-dark .ap-prev-sidebar {
+  width: 28%;
+  background: #12101e;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+.ap-prev-dark .ap-prev-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+.ap-prev-dark .ap-prev-bar {
+  height: 10px;
+  border-radius: 3px;
+  background: rgba(124,92,191,0.4);
+}
+.ap-prev-dark .ap-prev-card {
+  flex: 1;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.05);
+}
+
+/* Light preview */
+.ap-prev-light {
+  background: #f5f5f7;
+}
+.ap-prev-light .ap-prev-sidebar {
+  width: 28%;
+  background: #e8e8ec;
+  border-right: 1px solid #ddd;
+}
+.ap-prev-light .ap-prev-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+.ap-prev-light .ap-prev-bar {
+  height: 10px;
+  border-radius: 3px;
+  background: rgba(124,92,191,0.5);
+}
+.ap-prev-light .ap-prev-card {
+  flex: 1;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* System preview — split half */
+.ap-prev-system {
+  background: linear-gradient(90deg, #1a1825 50%, #f5f5f7 50%);
+}
+.ap-prev-system .ap-prev-sidebar {
+  width: 28%;
+  background: linear-gradient(90deg, #12101e 50%, #e8e8ec 50%);
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+.ap-prev-system .ap-prev-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+.ap-prev-system .ap-prev-bar {
+  height: 10px;
+  border-radius: 3px;
+  background: rgba(124,92,191,0.4);
+}
+.ap-prev-system .ap-prev-card {
+  flex: 1;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.07);
+}
+
+.ap-theme-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 600;
+}
+
+.ap-theme-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: calc(10px * var(--font-scale, 1));
+  font-weight: 700;
+  background: rgba(124,92,191,0.18);
+  color: var(--accent-light);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Accent Color Picker
+═══════════════════════════════════════════════════════════ */
+
+.ap-accent-section {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ap-accent-swatches {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ap-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--sw);
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.ap-swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.ap-swatch.active {
+  border-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px var(--sw), 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.ap-accent-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ap-accent-label {
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.ap-color-input {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  padding: 2px;
+  background: var(--bg-secondary);
+}
+
+.ap-accent-hex {
+  font-size: calc(12px * var(--font-scale, 1));
+  font-family: 'Courier New', monospace;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.ap-accent-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ap-accent-demo-btn {
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 600;
+  color: white;
+  padding: 7px 16px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.ap-accent-demo-btn:hover { opacity: 0.85; }
+
+.ap-accent-demo-badge {
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid;
+  background: transparent;
+  letter-spacing: 0.03em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Font Size Enhancements
+═══════════════════════════════════════════════════════════ */
+
+.ap-font-btn {
+  padding: 16px 10px !important;
+}
+
+.ap-font-label {
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ap-font-desc {
+  font-size: calc(10px * var(--font-scale, 1));
+  color: var(--text-muted);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Layout Density
+═══════════════════════════════════════════════════════════ */
+
+.ap-density-grid {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}
+
+.ap-density-card {
+  flex: 1;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 16px;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  text-align: center;
+}
+
+.ap-density-card:hover {
+  border-color: rgba(124,92,191,0.4);
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.ap-density-card.active {
+  border-color: var(--accent-primary);
+  background: rgba(124,92,191,0.1);
+  color: var(--accent-light);
+}
+
+.ap-density-icon {
+  color: inherit;
+  margin-bottom: 2px;
+}
+
+.ap-density-label {
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 700;
+}
+
+.ap-density-sub {
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.ap-density-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--accent-secondary);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Sidebar Style Options
+═══════════════════════════════════════════════════════════ */
+
+.ap-sidebar-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ap-sidebar-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  cursor: pointer;
+  transition: background 0.15s ease;
+  position: relative;
+}
+
+.ap-sidebar-option:last-child { border-bottom: none; }
+
+.ap-sidebar-option:hover { background: var(--bg-hover); }
+
+.ap-sidebar-option.active {
+  background: rgba(124,92,191,0.06);
+}
+
+.ap-sidebar-option input[type="radio"] {
+  display: none;
+}
+
+.ap-sidebar-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.ap-sidebar-option.active .ap-sidebar-icon {
+  color: var(--accent-light);
+}
+
+.ap-sidebar-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ap-sidebar-text > span:first-child {
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ap-sidebar-sub {
+  font-size: calc(12px * var(--font-scale, 1));
+  color: var(--text-muted);
+}
+
+.ap-sidebar-check {
+  color: var(--accent-secondary);
+  flex-shrink: 0;
+}

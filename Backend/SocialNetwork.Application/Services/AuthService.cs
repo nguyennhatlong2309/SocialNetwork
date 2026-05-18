@@ -121,6 +121,7 @@ public class AuthService : IAuthService
             UserId = user.Id,
             Username = user.Username,
             Email = user.Email,
+            Role = user.Role.ToString(),
             AccessToken = accessToken,
             RefreshToken = refreshToken,
             ExpiresAt = DateTime.UtcNow.AddMinutes(accessTokenExpirationMinutes)

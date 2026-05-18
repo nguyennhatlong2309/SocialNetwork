@@ -62,7 +62,7 @@ public static class DatabaseSeeder
                 {
                     Username = "alex_m",
                     Email = "alex@example.com",
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(" !"),
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword("Password123!"),
                     FirstName = "Alex",
                     LastName = "M.",
                     FullName = "Alex M.",
@@ -71,7 +71,8 @@ public static class DatabaseSeeder
                     Bio = "Digital artist & developer",
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,
-                    IsActive = true
+                    IsActive = true,
+                    Role = SocialNetwork.Domain.Enums.UserRole.Admin
                 },
                 new User
                 {

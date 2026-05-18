@@ -121,5 +121,65 @@ public class UserService : IUserService
             IsVerified = u.IsVerified
         });
     }
-}
+    public async Task<IEnumerable<AdminUserDto>> GetAllAdminUsersAsync()
+    {
+        var users = await _userRepository.Query()
+            .Select(u => new
+            {
+                u.Id,
+                u.Username,
+                u.Email,
+                u.IsBanned,
+                u.Role,
+                u.CreatedAt,
+                Posts = u.Posts.Count,
+                Followers = u.Followers.Count
+            })
+            .ToListAsync();
 
+        return users.Select(u => new AdminUserDto
+        {
+            Id = u.Id,
+            Username = u.Username,
+            Email = u.Email,
+            Role = u.Role.ToString(),
+            Status = u.IsBanned ? "banned" : "active",
+            Joined = u.CreatedAt.ToString("yyyy-MM-dd"),
+            Posts = u.Posts,
+            Followers = u.Followers
+        });
+    }
+
+    public async Task<bool> BanUserAsync(long userId)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null) return false;
+        
+        user.IsBanned = true;
+        user.IsActive = false;
+        await _userRepository.UpdateAsync(user);
+        return true;
+    }
+
+    public async Task<bool> UnbanUserAsync(long userId)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null) return false;
+        
+        user.IsBanned = false;
+        user.IsActive = true;
+        await _userRepository.UpdateAsync(user);
+        return true;
+    }
+
+    public async Task<bool> PromoteToAdminAsync(long userId)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null) return false;
+        
+        user.Role = SocialNetwork.Domain.Enums.UserRole.Admin;
+        await _userRepository.UpdateAsync(user);
+        
+        return true;
+    }
+}

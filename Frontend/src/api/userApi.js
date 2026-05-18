@@ -25,6 +25,22 @@ const userApi = {
   getUserProfile(userId) {
     return axiosClient.get(`/Users/${userId}/profile`);
   },
+
+  /**
+   * Cập nhật email của user hiện tại
+   * @param {string} email
+   */
+  updateEmail(email) {
+    return axiosClient.put('/Users/me/email', { email });
+  },
+
+  /**
+   * Thay đổi mật khẩu
+   * @param {{ currentPassword, newPassword }} data
+   */
+  changePassword(data) {
+    return axiosClient.put('/Users/me/password', data);
+  },
 };
 
 export default userApi;

@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search, Edit, MessageSquare, Phone, Video, MoreVertical, Plus, Smile, Send, ArrowLeft } from 'lucide-react';
-import { useInboxState } from '../contexts/PageStateContext';
-import { useConversations, useMessages, useSendMessage } from '../hooks/useMessages';
-import { useSignalR } from '../contexts/SignalRContext';
-import { useAuth } from '../contexts/AuthContext';
+import { useInboxState } from '../../contexts/PageStateContext';
+import { useConversations, useMessages, useSendMessage } from '../../hooks/useMessages';
+import { useSignalR } from '../../contexts/SignalRContext';
+import { useAuth } from '../../contexts/AuthContext';
 import './InboxPage.css';
 import './ChatViewPage.css';
 

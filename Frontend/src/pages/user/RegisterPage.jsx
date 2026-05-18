@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
-import authApi from '../api/authApi';
+import { useAuth } from '../../contexts/AuthContext';
+import authApi from '../../api/authApi';
 import './RegisterPage.css';
 
 export default function RegisterPage() {
@@ -48,6 +48,7 @@ export default function RegisterPage() {
         id: response.data.userId,
         username: response.data.username,
         email: response.data.email,
+        role: response.data.role,
         accessToken: response.data.accessToken
       });
       navigate('/feed');

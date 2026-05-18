@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Edit3, Grid, List, AtSign, Bookmark, UserPlus, UserMinus, Loader2, Heart, MessageCircle } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
-import { useInboxState } from '../contexts/PageStateContext';
-import { userService } from '../services/userService';
-import messageApi from '../api/messageApi';
-import UserAvatar from '../components/ui/UserAvatar';
+import { useAuth } from '../../contexts/AuthContext';
+import { useInboxState } from '../../contexts/PageStateContext';
+import { userService } from '../../services/userService';
+import messageApi from '../../api/messageApi';
+import UserAvatar from '../../components/ui/UserAvatar';
 import { useQueryClient } from '@tanstack/react-query';
-import { messageKeys, formatConversation } from '../hooks/useMessages';
+import { messageKeys, formatConversation } from '../../hooks/useMessages';
 import './UserProfilePage.css';
 
 const TABS = [

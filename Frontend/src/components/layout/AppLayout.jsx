@@ -1,11 +1,11 @@
 import { NavLink, Outlet, useNavigate, useLocation } from 'react-router-dom';
-import { Home, Compass, PlusSquare, Mail, User, Activity, Bell, LogOut } from 'lucide-react';
+import { Home, Compass, PlusSquare, Mail, User, Activity, Bell, LogOut, Settings, Shield } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 // ── Keep-Alive page imports ──────────────────────────────────────────────────
-import NewsFeedPage    from '../../pages/NewsFeedPage';
-import InboxPage       from '../../pages/InboxPage';
-import NotificationsPage from '../../pages/NotificationsPage';
+import NewsFeedPage    from '../../pages/user/NewsFeedPage';
+import InboxPage       from '../../pages/user/InboxPage';
+import NotificationsPage from '../../pages/user/NotificationsPage';
 
 import GlobalSearch from './GlobalSearch';
 import './AppLayout.css';
@@ -17,6 +17,7 @@ const navItems = [
   { path: '/inbox',         icon: Mail,       label: 'Inbox',         badge: true },
   { path: '/notifications', icon: Bell,       label: 'Notifications', badge: true },
   { path: '/profile',       icon: User,       label: 'Profile' },
+  { path: '/settings',      icon: Settings,   label: 'Settings' },
 ];
 
 /**
@@ -46,9 +47,10 @@ function isKeepAlivePath(pathname) {
  * Dynamic pages (/profile, /create, /post/:id) vẫn dùng <Outlet /> bình thường.
  */
 export default function AppLayout() {
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
   const navigate   = useNavigate();
   const { pathname } = useLocation();
+  const isAdmin = user?.role === 'Admin';
 
   const handleLogout = () => {
     logout();
@@ -93,6 +95,18 @@ export default function AppLayout() {
           <PlusSquare size={16} />
           New Post
         </button>
+
+        {/* Admin Dashboard link — chỉ hiện với Admin */}
+        {isAdmin && (
+          <NavLink
+            to="/admin/dashboard"
+            className="nav-item"
+            style={{ marginTop: '8px', color: 'var(--accent)' }}
+          >
+            <Shield size={18} />
+            Admin Panel
+          </NavLink>
+        )}
 
         <div
           className="nav-item"

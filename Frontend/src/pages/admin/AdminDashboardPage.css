@@ -1,0 +1,341 @@
+/* ═══════════════════════════════════════════════════════════
+   AdminDashboardPage.css
+═══════════════════════════════════════════════════════════ */
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ── Page Header ─────────────────────────────────────────── */
+.adm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.adm-title {
+  font-size: calc(24px * var(--font-scale, 1));
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.adm-subtitle {
+  font-size: calc(13px * var(--font-scale, 1));
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.adm-clock {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--accent-secondary);
+  background: rgba(124, 92, 191, 0.1);
+  border: 1px solid rgba(124, 92, 191, 0.2);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Stats Grid ─────────────────────────────────────────── */
+.adm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .adm-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.adm-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.adm-stat-card:hover {
+  border-color: rgba(124, 92, 191, 0.3);
+  transform: translateY(-2px);
+}
+
+.adm-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adm-stat-label {
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.adm-stat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adm-stat-value {
+  font-size: calc(28px * var(--font-scale, 1));
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.adm-stat-change {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 500;
+}
+
+.adm-stat-change.up   { color: var(--success); }
+.adm-stat-change.down { color: var(--danger);  }
+
+/* ── Bottom Grid ─────────────────────────────────────────── */
+.adm-bottom-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .adm-bottom-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Card Base ───────────────────────────────────────────── */
+.adm-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.adm-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adm-card-header h3 {
+  font-size: calc(15px * var(--font-scale, 1));
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.adm-card-subtitle {
+  font-size: calc(12px * var(--font-scale, 1));
+  color: var(--text-muted);
+}
+
+/* ── Bar Chart ───────────────────────────────────────────── */
+.adm-bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 160px;
+}
+
+.adm-bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 4px;
+  height: 100%;
+}
+
+.adm-bar-wrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.adm-bar {
+  width: 100%;
+  background: linear-gradient(180deg, var(--accent-secondary), var(--accent-primary));
+  border-radius: 4px 4px 0 0;
+  min-height: 4px;
+  transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.adm-bar:hover {
+  background: linear-gradient(180deg, var(--accent-light), var(--accent-secondary));
+}
+
+.adm-bar-label {
+  font-size: calc(11px * var(--font-scale, 1));
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.adm-bar-value {
+  font-size: calc(10px * var(--font-scale, 1));
+  color: var(--accent-secondary);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Activity List ───────────────────────────────────────── */
+.adm-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adm-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.adm-activity-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.adm-activity-content p {
+  font-size: calc(13px * var(--font-scale, 1));
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.adm-activity-content span {
+  font-size: calc(11px * var(--font-scale, 1));
+  color: var(--text-muted);
+}
+
+/* ── Table Card ─────────────────────────────────────────── */
+.adm-table-card { gap: 12px; }
+
+.adm-view-all-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(124, 92, 191, 0.1);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(124, 92, 191, 0.2);
+  border-radius: var(--radius-full);
+  padding: 5px 12px;
+  font-size: calc(12px * var(--font-scale, 1));
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.adm-view-all-btn:hover {
+  background: rgba(124, 92, 191, 0.2);
+}
+
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: calc(13px * var(--font-scale, 1));
+}
+
+.adm-table thead tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.adm-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.adm-table td {
+  padding: 12px 12px;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.adm-table tbody tr:hover td {
+  background: rgba(124, 92, 191, 0.04);
+}
+
+.adm-table-rank {
+  color: var(--text-muted) !important;
+  font-weight: 700;
+  width: 32px;
+}
+
+.adm-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adm-avatar-sm {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px * var(--font-scale, 1));
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Role badges */
+.adm-role-badge {
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.adm-role-creator { background: rgba(124, 92, 191, 0.15); color: var(--accent-secondary); }
+.adm-role-member  { background: rgba(160, 155, 191, 0.1);  color: var(--text-secondary);   }
+.adm-role-admin   { background: rgba(240, 160, 90, 0.15);  color: var(--warning);          }
+
+/* Status badges */
+.adm-status-badge {
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.adm-status-active { background: rgba(76, 175, 125, 0.15); color: var(--success); }
+.adm-status-banned { background: rgba(224, 92, 110, 0.15);  color: var(--danger);  }

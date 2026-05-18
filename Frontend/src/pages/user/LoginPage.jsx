@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, Activity } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
-import authApi from '../api/authApi';
+import { useAuth } from '../../contexts/AuthContext';
+import authApi from '../../api/authApi';
 import './LoginPage.css';
 
 export default function LoginPage() {
@@ -21,14 +21,16 @@ export default function LoginPage() {
     
     try {
       const response = await authApi.login({ usernameOrEmail, password });
-      // Store user and token
-      login({
+      const userData = {
         id: response.data.userId,
         username: response.data.username,
         email: response.data.email,
+        role: response.data.role,
         accessToken: response.data.accessToken
-      });
-      navigate('/feed');
+      };
+      login(userData);
+      // Redirect Admin to admin dashboard, regular users to feed
+      navigate(response.data.role === 'Admin' ? '/admin/dashboard' : '/feed');
     } catch (err) {
       setError(err.message || 'Login failed. Please check your credentials.');
     } finally {

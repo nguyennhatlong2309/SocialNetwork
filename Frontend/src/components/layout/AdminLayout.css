@@ -1,0 +1,246 @@
+/* ═══════════════════════════════════════════════════════════
+   AdminLayout.css  —  Layout riêng cho Admin Panel
+   Dùng lại CSS variables từ index.css (dark purple theme)
+═══════════════════════════════════════════════════════════ */
+
+/* ── Admin Shell ──────────────────────────────────────────── */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+/* ── Admin Sidebar ──────────────────────────────────────────── */
+.admin-sidebar {
+  width: 256px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+  gap: 4px;
+
+  /* Subtle left gradient accent */
+  box-shadow: inset -1px 0 0 0 rgba(124, 92, 191, 0.15),
+              4px 0 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Logo ──────────────────────────────────────────────────── */
+.admin-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+.admin-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-glow 3s infinite;
+  flex-shrink: 0;
+}
+
+.admin-logo-text h2 {
+  font-size: calc(15px * var(--font-scale, 1));
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.admin-badge-label {
+  font-size: calc(10px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--accent-secondary);
+  background: rgba(124, 92, 191, 0.15);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Nav ──────────────────────────────────────────────────── */
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: calc(13.5px * var(--font-scale, 1));
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.admin-nav-item:hover {
+  background: rgba(124, 92, 191, 0.1);
+  color: var(--text-primary);
+  border-color: rgba(124, 92, 191, 0.15);
+}
+
+.admin-nav-item.active {
+  background: rgba(124, 92, 191, 0.2);
+  color: var(--accent-light);
+  border-color: rgba(124, 92, 191, 0.3);
+}
+
+.admin-nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--accent-secondary);
+  border-radius: 0 3px 3px 0;
+}
+
+/* Badge (Moderation count) */
+.admin-nav-badge {
+  margin-left: auto;
+  background: var(--danger);
+  color: white;
+  font-size: calc(11px * var(--font-scale, 1));
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+  animation: pulse-glow 2s infinite;
+}
+
+/* ── Divider ──────────────────────────────────────────────── */
+.admin-sidebar-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 8px 12px;
+}
+
+/* ── Back / Logout ────────────────────────────────────────── */
+.back-btn:hover  { color: var(--accent-light); }
+.logout-btn:hover { color: var(--danger); }
+
+/* ── Admin Main ──────────────────────────────────────────── */
+.admin-main {
+  margin-left: 256px;
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Topbar ──────────────────────────────────────────────── */
+.admin-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.admin-topbar-label {
+  font-size: calc(13px * var(--font-scale, 1));
+  font-weight: 600;
+  color: var(--accent-secondary);
+  letter-spacing: 0.04em;
+}
+
+.admin-topbar-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: calc(12px * var(--font-scale, 1));
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 6px var(--success);
+}
+
+/* ── Page Content ────────────────────────────────────────── */
+.admin-page-content {
+  padding: calc(28px * var(--density-scale, 1));
+  flex: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Sidebar Styles
+   Controlled by data-sidebar on HTML root
+═══════════════════════════════════════════════════════════ */
+
+/* ── Collapsed (Icons Only) ── */
+html[data-sidebar="collapsed"] .admin-sidebar {
+  width: 72px;
+}
+
+html[data-sidebar="collapsed"] .admin-main {
+  margin-left: 72px;
+}
+
+html[data-sidebar="collapsed"] .admin-logo-text,
+html[data-sidebar="collapsed"] .admin-nav-item span:not(.admin-nav-badge),
+html[data-sidebar="collapsed"] .admin-nav-item span.admin-nav-badge {
+  display: none;
+}
+
+html[data-sidebar="collapsed"] .admin-sidebar-logo {
+  justify-content: center;
+  padding: 8px 0;
+}
+
+html[data-sidebar="collapsed"] .admin-nav-item {
+  justify-content: center;
+  padding: 14px 0;
+}
+
+/* ── Auto-Hide (Hidden) ── */
+html[data-sidebar="hidden"] .admin-sidebar {
+  transform: translateX(-100%);
+  transition: transform var(--transition-base);
+}
+
+html[data-sidebar="hidden"] .admin-sidebar:hover,
+html[data-sidebar="hidden"] .admin-sidebar:focus-within {
+  transform: translateX(0);
+}
+
+html[data-sidebar="hidden"] .admin-main {
+  margin-left: 0;
+}
+
+/* Ensure padding adjustments when sidebar is hovered in hidden mode so content doesn't jump */
+html[data-sidebar="hidden"] .admin-sidebar:hover {
+  box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Heart, MessageSquare, UserPlus, AtSign, Bell, MessageCircle } from 'lucide-react';
-import { useNotifications, useMarkAsRead, useMarkAllAsRead } from '../hooks/useNotifications';
+import { useNotifications, useMarkAsRead, useMarkAllAsRead } from '../../hooks/useNotifications';
 import './NotificationsPage.css';
 
 // ─── Icon component map ───────────────────────────────────────────────────────

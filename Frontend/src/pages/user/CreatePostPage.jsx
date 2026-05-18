@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Upload, Globe, MapPin, AtSign, Send, X, Loader2 } from 'lucide-react';
-import { useCreatePost } from '../hooks/usePosts';
+import { useCreatePost } from '../../hooks/usePosts';
 import './CreatePostPage.css';
 
 export default function CreatePostPage() {

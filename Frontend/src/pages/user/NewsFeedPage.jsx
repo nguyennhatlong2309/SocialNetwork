@@ -16,13 +16,13 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Plus, RefreshCw } from 'lucide-react';
 
 // ─── TanStack Query hooks ───────────────────────────────────────────────────
-import { usePosts, useToggleLike, useToggleSave } from '../hooks/usePosts';
-import { useSuggestedUsers, useToggleFollow } from '../hooks/useUsers';
+import { usePosts, useToggleLike, useToggleSave } from '../../hooks/usePosts';
+import { useSuggestedUsers, useToggleFollow } from '../../hooks/useUsers';
 
 // ─── Skeleton + Progressive Image ──────────────────────────────────────────
-import FeedSkeleton from '../components/skeleton/FeedSkeleton';
-import ProgressiveImage from '../components/ui/ProgressiveImage';
-import UserAvatar from '../components/ui/UserAvatar';
+import FeedSkeleton from '../../components/skeleton/FeedSkeleton';
+import ProgressiveImage from '../../components/ui/ProgressiveImage';
+import UserAvatar from '../../components/ui/UserAvatar';
 
 import './NewsFeedPage.css';
 
