@@ -1,0 +1,1734 @@
+{
+  "nodes": [
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "type": "file",
+      "name": "LikeService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "summary": "Application business logic service handling operations for Like.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/LikeService.cs:LikeService",
+      "type": "class",
+      "name": "LikeService",
+      "filePath": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "lineRange": [
+        9,
+        107
+      ],
+      "summary": "Class representation of LikeService defined inside LikeService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/LikeService.cs:LikeService",
+      "type": "function",
+      "name": "LikeService",
+      "filePath": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "Function LikeService implementing logic inside LikeService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/LikeService.cs:ToggleLikeAsync",
+      "type": "function",
+      "name": "ToggleLikeAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "lineRange": [
+        25,
+        106
+      ],
+      "summary": "Function ToggleLikeAsync implementing logic inside LikeService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "type": "file",
+      "name": "MessageService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "summary": "Application business logic service handling operations for Message.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/MessageService.cs:MessageService",
+      "type": "class",
+      "name": "MessageService",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        9,
+        139
+      ],
+      "summary": "Class representation of MessageService defined inside MessageService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:MessageService",
+      "type": "function",
+      "name": "MessageService",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        18,
+        30
+      ],
+      "summary": "Function MessageService implementing logic inside MessageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetOrCreateDirectConversationAsync",
+      "type": "function",
+      "name": "GetOrCreateDirectConversationAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        32,
+        79
+      ],
+      "summary": "Function GetOrCreateDirectConversationAsync implementing logic inside MessageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:SendMessageAsync",
+      "type": "function",
+      "name": "SendMessageAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        81,
+        114
+      ],
+      "summary": "Function SendMessageAsync implementing logic inside MessageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetConversationMessagesAsync",
+      "type": "function",
+      "name": "GetConversationMessagesAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        116,
+        132
+      ],
+      "summary": "Function GetConversationMessagesAsync implementing logic inside MessageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetUserConversationsAsync",
+      "type": "function",
+      "name": "GetUserConversationsAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "lineRange": [
+        134,
+        138
+      ],
+      "summary": "Function GetUserConversationsAsync implementing logic inside MessageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "type": "file",
+      "name": "NotificationService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "summary": "Application business logic service handling operations for Notification.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/NotificationService.cs:NotificationService",
+      "type": "class",
+      "name": "NotificationService",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        9,
+        188
+      ],
+      "summary": "Class representation of NotificationService defined inside NotificationService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:NotificationService",
+      "type": "function",
+      "name": "NotificationService",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "Function NotificationService implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:CreateAndPushAsync",
+      "type": "function",
+      "name": "CreateAndPushAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        28,
+        50
+      ],
+      "summary": "Function CreateAndPushAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:CreateOrUpdateAndPushAsync",
+      "type": "function",
+      "name": "CreateOrUpdateAndPushAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        55,
+        108
+      ],
+      "summary": "Function CreateOrUpdateAndPushAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:DeleteNotificationAsync",
+      "type": "function",
+      "name": "DeleteNotificationAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        113,
+        116
+      ],
+      "summary": "Function DeleteNotificationAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:GetNotificationsAsync",
+      "type": "function",
+      "name": "GetNotificationsAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        121,
+        125
+      ],
+      "summary": "Function GetNotificationsAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MarkAsReadAsync",
+      "type": "function",
+      "name": "MarkAsReadAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        127,
+        137
+      ],
+      "summary": "Function MarkAsReadAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MarkAllAsReadAsync",
+      "type": "function",
+      "name": "MarkAllAsReadAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        139,
+        149
+      ],
+      "summary": "Function MarkAllAsReadAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:GetUnreadCountAsync",
+      "type": "function",
+      "name": "GetUnreadCountAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        151,
+        154
+      ],
+      "summary": "Function GetUnreadCountAsync implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MapToDto",
+      "type": "function",
+      "name": "MapToDto",
+      "filePath": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "lineRange": [
+        175,
+        187
+      ],
+      "summary": "Function MapToDto implementing logic inside NotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "type": "file",
+      "name": "PostService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "summary": "Application business logic service handling operations for Post.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/PostService.cs:PostService",
+      "type": "class",
+      "name": "PostService",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        9,
+        112
+      ],
+      "summary": "Class representation of PostService defined inside PostService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:PostService",
+      "type": "function",
+      "name": "PostService",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        15,
+        20
+      ],
+      "summary": "Function PostService implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetPostsAsync",
+      "type": "function",
+      "name": "GetPostsAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        22,
+        37
+      ],
+      "summary": "Function GetPostsAsync implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetUserPostsAsync",
+      "type": "function",
+      "name": "GetUserPostsAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        39,
+        54
+      ],
+      "summary": "Function GetUserPostsAsync implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetPostByIdAsync",
+      "type": "function",
+      "name": "GetPostByIdAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        56,
+        66
+      ],
+      "summary": "Function GetPostByIdAsync implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:CreatePostAsync",
+      "type": "function",
+      "name": "CreatePostAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        69,
+        70
+      ],
+      "summary": "Function CreatePostAsync implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/PostService.cs:CreatePostAsync",
+      "type": "function",
+      "name": "CreatePostAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "lineRange": [
+        73,
+        111
+      ],
+      "summary": "Function CreatePostAsync implementing logic inside PostService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "type": "file",
+      "name": "TokenService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "summary": "Application business logic service handling operations for Token.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/TokenService.cs:TokenService",
+      "type": "class",
+      "name": "TokenService",
+      "filePath": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "lineRange": [
+        12,
+        56
+      ],
+      "summary": "Class representation of TokenService defined inside TokenService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:TokenService",
+      "type": "function",
+      "name": "TokenService",
+      "filePath": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "lineRange": [
+        16,
+        19
+      ],
+      "summary": "Function TokenService implementing logic inside TokenService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:GenerateAccessToken",
+      "type": "function",
+      "name": "GenerateAccessToken",
+      "filePath": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "lineRange": [
+        21,
+        47
+      ],
+      "summary": "Function GenerateAccessToken implementing logic inside TokenService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:GenerateRefreshToken",
+      "type": "function",
+      "name": "GenerateRefreshToken",
+      "filePath": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "lineRange": [
+        49,
+        55
+      ],
+      "summary": "Function GenerateRefreshToken implementing logic inside TokenService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "type": "file",
+      "name": "UserService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "summary": "Application business logic service handling operations for User.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/UserService.cs:UserService",
+      "type": "class",
+      "name": "UserService",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        8,
+        185
+      ],
+      "summary": "Class representation of UserService defined inside UserService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:UserService",
+      "type": "function",
+      "name": "UserService",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        14,
+        22
+      ],
+      "summary": "Function UserService implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetUserProfileAsync",
+      "type": "function",
+      "name": "GetUserProfileAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        24,
+        64
+      ],
+      "summary": "Function GetUserProfileAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:ToggleFollowAsync",
+      "type": "function",
+      "name": "ToggleFollowAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        66,
+        84
+      ],
+      "summary": "Function ToggleFollowAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetSuggestedUsersAsync",
+      "type": "function",
+      "name": "GetSuggestedUsersAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        86,
+        110
+      ],
+      "summary": "Function GetSuggestedUsersAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:SearchUsersAsync",
+      "type": "function",
+      "name": "SearchUsersAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        112,
+        123
+      ],
+      "summary": "Function SearchUsersAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetAllAdminUsersAsync",
+      "type": "function",
+      "name": "GetAllAdminUsersAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        124,
+        151
+      ],
+      "summary": "Function GetAllAdminUsersAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:BanUserAsync",
+      "type": "function",
+      "name": "BanUserAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        153,
+        162
+      ],
+      "summary": "Function BanUserAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:UnbanUserAsync",
+      "type": "function",
+      "name": "UnbanUserAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        164,
+        173
+      ],
+      "summary": "Function UnbanUserAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/UserService.cs:PromoteToAdminAsync",
+      "type": "function",
+      "name": "PromoteToAdminAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "lineRange": [
+        175,
+        184
+      ],
+      "summary": "Function PromoteToAdminAsync implementing logic inside UserService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.Application/SocialNetwork.Application.csproj",
+      "type": "config",
+      "name": "SocialNetwork.Application.csproj",
+      "filePath": "Backend/SocialNetwork.Application/SocialNetwork.Application.csproj",
+      "summary": "Application layer mapping profile or helper: SocialNetwork.Application.csproj.",
+      "tags": [
+        "csharp",
+        "mapping"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "type": "file",
+      "name": "Block.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "summary": "Domain entity model representing Block in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Block.cs:Block",
+      "type": "class",
+      "name": "Block",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of Block defined inside Block.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "type": "file",
+      "name": "Comment.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "summary": "Domain entity model representing Comment in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Comment.cs:Comment",
+      "type": "class",
+      "name": "Comment",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "lineRange": [
+        3,
+        25
+      ],
+      "summary": "Class representation of Comment defined inside Comment.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "type": "file",
+      "name": "Conversation.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "summary": "Domain entity model representing Conversation in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Conversation.cs:Conversation",
+      "type": "class",
+      "name": "Conversation",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "lineRange": [
+        5,
+        25
+      ],
+      "summary": "Class representation of Conversation defined inside Conversation.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "type": "file",
+      "name": "ConversationMember.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "summary": "Domain entity model representing ConversationMember in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/ConversationMember.cs:ConversationMember",
+      "type": "class",
+      "name": "ConversationMember",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "Class representation of ConversationMember defined inside ConversationMember.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "type": "file",
+      "name": "Follow.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "summary": "Domain entity model representing Follow in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Follow.cs:Follow",
+      "type": "class",
+      "name": "Follow",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of Follow defined inside Follow.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "type": "file",
+      "name": "FollowRequest.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "summary": "Domain entity model representing FollowRequest in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/FollowRequest.cs:FollowRequest",
+      "type": "class",
+      "name": "FollowRequest",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "lineRange": [
+        5,
+        18
+      ],
+      "summary": "Class representation of FollowRequest defined inside FollowRequest.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "type": "file",
+      "name": "Hashtag.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "summary": "Domain entity model representing Hashtag in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Hashtag.cs:Hashtag",
+      "type": "class",
+      "name": "Hashtag",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "lineRange": [
+        3,
+        12
+      ],
+      "summary": "Class representation of Hashtag defined inside Hashtag.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "type": "file",
+      "name": "Like.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "summary": "Domain entity model representing Like in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Like.cs:Like",
+      "type": "class",
+      "name": "Like",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of Like defined inside Like.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "type": "file",
+      "name": "Message.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "summary": "Domain entity model representing Message in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Message.cs:Message",
+      "type": "class",
+      "name": "Message",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "lineRange": [
+        5,
+        30
+      ],
+      "summary": "Class representation of Message defined inside Message.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "type": "file",
+      "name": "MessageAttachment.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "summary": "Domain entity model representing MessageAttachment in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs:MessageAttachment",
+      "type": "class",
+      "name": "MessageAttachment",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "lineRange": [
+        3,
+        18
+      ],
+      "summary": "Class representation of MessageAttachment defined inside MessageAttachment.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "type": "file",
+      "name": "MessageRead.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "summary": "Domain entity model representing MessageRead in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/MessageRead.cs:MessageRead",
+      "type": "class",
+      "name": "MessageRead",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of MessageRead defined inside MessageRead.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "type": "file",
+      "name": "Notification.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "summary": "Domain entity model representing Notification in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Notification.cs:Notification",
+      "type": "class",
+      "name": "Notification",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "lineRange": [
+        5,
+        29
+      ],
+      "summary": "Class representation of Notification defined inside Notification.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "type": "file",
+      "name": "Post.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "summary": "Domain entity model representing Post in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Post.cs:Post",
+      "type": "class",
+      "name": "Post",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "lineRange": [
+        5,
+        32
+      ],
+      "summary": "Class representation of Post defined inside Post.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "type": "file",
+      "name": "PostHashtag.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "summary": "Domain entity model representing PostHashtag in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/PostHashtag.cs:PostHashtag",
+      "type": "class",
+      "name": "PostHashtag",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "lineRange": [
+        3,
+        11
+      ],
+      "summary": "Class representation of PostHashtag defined inside PostHashtag.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "type": "file",
+      "name": "PostMedia.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "summary": "Domain entity model representing PostMedia in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/PostMedia.cs:PostMedia",
+      "type": "class",
+      "name": "PostMedia",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "lineRange": [
+        5,
+        17
+      ],
+      "summary": "Class representation of PostMedia defined inside PostMedia.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "type": "file",
+      "name": "RefreshToken.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "summary": "Domain entity model representing RefreshToken in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/RefreshToken.cs:RefreshToken",
+      "type": "class",
+      "name": "RefreshToken",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "lineRange": [
+        3,
+        16
+      ],
+      "summary": "Class representation of RefreshToken defined inside RefreshToken.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "type": "file",
+      "name": "Report.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "summary": "Domain entity model representing Report in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Report.cs:Report",
+      "type": "class",
+      "name": "Report",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "lineRange": [
+        5,
+        26
+      ],
+      "summary": "Class representation of Report defined inside Report.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "type": "file",
+      "name": "SavedPost.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "summary": "Domain entity model representing SavedPost in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/SavedPost.cs:SavedPost",
+      "type": "class",
+      "name": "SavedPost",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of SavedPost defined inside SavedPost.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/LikeService.cs:LikeService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/LikeService.cs:LikeService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/LikeService.cs:ToggleLikeAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/MessageService.cs:MessageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:MessageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetOrCreateDirectConversationAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:SendMessageAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetConversationMessagesAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/MessageService.cs:GetUserConversationsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/NotificationService.cs:NotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:NotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:CreateAndPushAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:CreateOrUpdateAndPushAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:DeleteNotificationAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:GetNotificationsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MarkAsReadAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MarkAllAsReadAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:GetUnreadCountAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/NotificationService.cs:MapToDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/PostService.cs:PostService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:PostService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetPostsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetUserPostsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:GetPostByIdAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:CreatePostAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/PostService.cs:CreatePostAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/PostService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/TokenService.cs:TokenService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:TokenService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:GenerateAccessToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/TokenService.cs:GenerateRefreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/UserService.cs:UserService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:UserService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetUserProfileAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:ToggleFollowAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetSuggestedUsersAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:SearchUsersAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:GetAllAdminUsersAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:BanUserAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:UnbanUserAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/UserService.cs:PromoteToAdminAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/UserService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Block.cs:Block",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Comment.cs:Comment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Conversation.cs:Conversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/ConversationMember.cs:ConversationMember",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Follow.cs:Follow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/FollowRequest.cs:FollowRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Hashtag.cs:Hashtag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Like.cs:Like",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Message.cs:Message",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs:MessageAttachment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/MessageRead.cs:MessageRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Notification.cs:Notification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Post.cs:Post",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/PostHashtag.cs:PostHashtag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/PostMedia.cs:PostMedia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/RefreshToken.cs:RefreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Report.cs:Report",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/SavedPost.cs:SavedPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

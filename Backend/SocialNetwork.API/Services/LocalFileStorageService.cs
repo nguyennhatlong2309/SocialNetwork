@@ -70,7 +70,14 @@ public class LocalFileStorageService : IFileStorageService
             ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
         var relativePath = fileUrl.TrimStart('/').Replace('/', Path.DirectorySeparatorChar);
-        var fullPath = Path.Combine(webRootPath, relativePath);
+        var fullPath = Path.GetFullPath(Path.Combine(webRootPath, relativePath));
+        var allowedRoot = Path.GetFullPath(Path.Combine(webRootPath, "uploads"));
+
+        // Anti-Path Traversal Check
+        if (!fullPath.StartsWith(allowedRoot, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new UnauthorizedAccessException("Cannot delete files outside of the uploads directory.");
+        }
 
         if (File.Exists(fullPath))
             File.Delete(fullPath);

@@ -1,0 +1,35 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Frontend/src/pages/admin/AdminDashboardPage.css",
+      "language": "css",
+      "sizeLines": 341,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminModerationPage.css",
+      "language": "css",
+      "sizeLines": 311,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminSettingsPage.css",
+      "language": "css",
+      "sizeLines": 467,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminUserManagementPage.css",
+      "language": "css",
+      "sizeLines": 432,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "Frontend/src/pages/admin/AdminDashboardPage.css": [],
+    "Frontend/src/pages/admin/AdminModerationPage.css": [],
+    "Frontend/src/pages/admin/AdminSettingsPage.css": [],
+    "Frontend/src/pages/admin/AdminUserManagementPage.css": []
+  }
+}

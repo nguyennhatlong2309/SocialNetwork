@@ -1,0 +1,28 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.css",
+      "language": "css",
+      "sizeLines": 246,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.css",
+      "language": "css",
+      "sizeLines": 38,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.css",
+      "language": "css",
+      "sizeLines": 112,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "Frontend/src/components/layout/AdminLayout.css": [],
+    "Frontend/src/components/layout/AppLayout.css": [],
+    "Frontend/src/components/layout/GlobalSearch.css": []
+  }
+}

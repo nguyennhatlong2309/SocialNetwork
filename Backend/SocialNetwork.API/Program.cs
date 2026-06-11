@@ -182,6 +182,8 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // ===== Middleware Pipeline =====
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

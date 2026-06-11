@@ -1,0 +1,1365 @@
+{
+  "nodes": [
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "type": "file",
+      "name": "Share.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "summary": "Domain entity model representing Share in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Share.cs:Share",
+      "type": "class",
+      "name": "Share",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "lineRange": [
+        3,
+        16
+      ],
+      "summary": "Class representation of Share defined inside Share.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "type": "file",
+      "name": "Story.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "summary": "Domain entity model representing Story in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/Story.cs:Story",
+      "type": "class",
+      "name": "Story",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "lineRange": [
+        5,
+        21
+      ],
+      "summary": "Class representation of Story defined inside Story.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "type": "file",
+      "name": "StoryView.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "summary": "Domain entity model representing StoryView in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/StoryView.cs:StoryView",
+      "type": "class",
+      "name": "StoryView",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of StoryView defined inside StoryView.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/User.cs",
+      "type": "file",
+      "name": "User.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/User.cs",
+      "summary": "Domain entity model representing User in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/User.cs:User",
+      "type": "class",
+      "name": "User",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/User.cs",
+      "lineRange": [
+        5,
+        64
+      ],
+      "summary": "Class representation of User defined inside User.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "type": "file",
+      "name": "UserSession.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "summary": "Domain entity model representing UserSession in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/UserSession.cs:UserSession",
+      "type": "class",
+      "name": "UserSession",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "lineRange": [
+        3,
+        17
+      ],
+      "summary": "Class representation of UserSession defined inside UserSession.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "type": "file",
+      "name": "UserSettings.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "summary": "Domain entity model representing UserSettings in database schema.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Domain/Entities/UserSettings.cs:UserSettings",
+      "type": "class",
+      "name": "UserSettings",
+      "filePath": "Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "lineRange": [
+        3,
+        23
+      ],
+      "summary": "Class representation of UserSettings defined inside UserSettings.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/ConversationType.cs",
+      "type": "file",
+      "name": "ConversationType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/ConversationType.cs",
+      "summary": "Domain enum defining states or types for ConversationType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs",
+      "type": "file",
+      "name": "FollowRequestStatus.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs",
+      "summary": "Domain enum defining states or types for FollowRequestStatus.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/GenderType.cs",
+      "type": "file",
+      "name": "GenderType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/GenderType.cs",
+      "summary": "Domain enum defining states or types for GenderType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/MediaType.cs",
+      "type": "file",
+      "name": "MediaType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/MediaType.cs",
+      "summary": "Domain enum defining states or types for MediaType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/MemberRole.cs",
+      "type": "file",
+      "name": "MemberRole.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/MemberRole.cs",
+      "summary": "Domain enum defining states or types for MemberRole.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/MessageType.cs",
+      "type": "file",
+      "name": "MessageType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/MessageType.cs",
+      "summary": "Domain enum defining states or types for MessageType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/NotificationType.cs",
+      "type": "file",
+      "name": "NotificationType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/NotificationType.cs",
+      "summary": "Domain enum defining states or types for NotificationType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/ReportReason.cs",
+      "type": "file",
+      "name": "ReportReason.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/ReportReason.cs",
+      "summary": "Domain enum defining states or types for ReportReason.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/ReportStatus.cs",
+      "type": "file",
+      "name": "ReportStatus.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/ReportStatus.cs",
+      "summary": "Domain enum defining states or types for ReportStatus.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/UserRole.cs",
+      "type": "file",
+      "name": "UserRole.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/UserRole.cs",
+      "summary": "Domain enum defining states or types for UserRole.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Domain/Enums/VisibilityType.cs",
+      "type": "file",
+      "name": "VisibilityType.cs",
+      "filePath": "Backend/SocialNetwork.Domain/Enums/VisibilityType.cs",
+      "summary": "Domain enum defining states or types for VisibilityType.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "enum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj",
+      "type": "config",
+      "name": "SocialNetwork.Domain.csproj",
+      "filePath": "Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj",
+      "summary": "Domain logic components: SocialNetwork.Domain.csproj.",
+      "tags": [
+        "csharp",
+        "domain-rules"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "file",
+      "name": "SocialNetworkDbContext.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "summary": "Entity Framework Core DB Context specifying database tables and mappings.",
+      "tags": [
+        "database",
+        "csharp",
+        "dbcontext"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:SocialNetworkDbContext",
+      "type": "class",
+      "name": "SocialNetworkDbContext",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "lineRange": [
+        6,
+        510
+      ],
+      "summary": "Class representation of SocialNetworkDbContext defined inside SocialNetworkDbContext.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:SocialNetworkDbContext",
+      "type": "function",
+      "name": "SocialNetworkDbContext",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "lineRange": [
+        8,
+        9
+      ],
+      "summary": "Function SocialNetworkDbContext implementing logic inside SocialNetworkDbContext.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:OnModelCreating",
+      "type": "function",
+      "name": "OnModelCreating",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "lineRange": [
+        49,
+        509
+      ],
+      "summary": "Function OnModelCreating implementing logic inside SocialNetworkDbContext.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "type": "file",
+      "name": "MessageRepository.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "summary": "Infrastructure repository managing data access and database operations for Message.",
+      "tags": [
+        "database",
+        "csharp",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:MessageRepository",
+      "type": "class",
+      "name": "MessageRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "lineRange": [
+        8,
+        41
+      ],
+      "summary": "Class representation of MessageRepository defined inside MessageRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:MessageRepository",
+      "type": "function",
+      "name": "MessageRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Function MessageRepository implementing logic inside MessageRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:GetConversationMessagesAsync",
+      "type": "function",
+      "name": "GetConversationMessagesAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "lineRange": [
+        12,
+        24
+      ],
+      "summary": "Function GetConversationMessagesAsync implementing logic inside MessageRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:GetUserConversationsAsync",
+      "type": "function",
+      "name": "GetUserConversationsAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "lineRange": [
+        26,
+        40
+      ],
+      "summary": "Function GetUserConversationsAsync implementing logic inside MessageRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "type": "file",
+      "name": "NotificationRepository.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "summary": "Infrastructure repository managing data access and database operations for Notification.",
+      "tags": [
+        "database",
+        "csharp",
+        "repository"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:NotificationRepository",
+      "type": "class",
+      "name": "NotificationRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        9,
+        63
+      ],
+      "summary": "Class representation of NotificationRepository defined inside NotificationRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:NotificationRepository",
+      "type": "function",
+      "name": "NotificationRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        11,
+        13
+      ],
+      "summary": "Function NotificationRepository implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:GetByReceiverIdAsync",
+      "type": "function",
+      "name": "GetByReceiverIdAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        15,
+        24
+      ],
+      "summary": "Function GetByReceiverIdAsync implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:CountUnreadAsync",
+      "type": "function",
+      "name": "CountUnreadAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        26,
+        30
+      ],
+      "summary": "Function CountUnreadAsync implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:GetWithSenderAsync",
+      "type": "function",
+      "name": "GetWithSenderAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        32,
+        37
+      ],
+      "summary": "Function GetWithSenderAsync implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:FindGroupedAsync",
+      "type": "function",
+      "name": "FindGroupedAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        39,
+        47
+      ],
+      "summary": "Function FindGroupedAsync implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:DeleteGroupedAsync",
+      "type": "function",
+      "name": "DeleteGroupedAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "lineRange": [
+        49,
+        62
+      ],
+      "summary": "Function DeleteGroupedAsync implementing logic inside NotificationRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "type": "file",
+      "name": "PostRepository.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "summary": "Infrastructure repository managing data access and database operations for Post.",
+      "tags": [
+        "database",
+        "csharp",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:PostRepository",
+      "type": "class",
+      "name": "PostRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "lineRange": [
+        8,
+        48
+      ],
+      "summary": "Class representation of PostRepository defined inside PostRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:PostRepository",
+      "type": "function",
+      "name": "PostRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Function PostRepository implementing logic inside PostRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetPostsWithDetailsAsync",
+      "type": "function",
+      "name": "GetPostsWithDetailsAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "lineRange": [
+        12,
+        23
+      ],
+      "summary": "Function GetPostsWithDetailsAsync implementing logic inside PostRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetUserPostsAsync",
+      "type": "function",
+      "name": "GetUserPostsAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "lineRange": [
+        25,
+        36
+      ],
+      "summary": "Function GetUserPostsAsync implementing logic inside PostRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetPostWithDetailsAsync",
+      "type": "function",
+      "name": "GetPostWithDetailsAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "lineRange": [
+        38,
+        47
+      ],
+      "summary": "Function GetPostWithDetailsAsync implementing logic inside PostRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "type": "file",
+      "name": "Repository.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "summary": "Infrastructure repository managing data access and database operations for .",
+      "tags": [
+        "database",
+        "csharp",
+        "repository"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Repository",
+      "type": "class",
+      "name": "Repository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        8,
+        52
+      ],
+      "summary": "Class representation of Repository defined inside Repository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Repository",
+      "type": "function",
+      "name": "Repository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        13,
+        17
+      ],
+      "summary": "Function Repository implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:GetByIdAsync",
+      "type": "function",
+      "name": "GetByIdAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        19,
+        20
+      ],
+      "summary": "Function GetByIdAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:GetAllAsync",
+      "type": "function",
+      "name": "GetAllAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        22,
+        23
+      ],
+      "summary": "Function GetAllAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:FindAsync",
+      "type": "function",
+      "name": "FindAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        25,
+        26
+      ],
+      "summary": "Function FindAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:AddAsync",
+      "type": "function",
+      "name": "AddAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "Function AddAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:UpdateAsync",
+      "type": "function",
+      "name": "UpdateAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        35,
+        39
+      ],
+      "summary": "Function UpdateAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:DeleteAsync",
+      "type": "function",
+      "name": "DeleteAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        41,
+        45
+      ],
+      "summary": "Function DeleteAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:SaveChangesAsync",
+      "type": "function",
+      "name": "SaveChangesAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        47,
+        48
+      ],
+      "summary": "Function SaveChangesAsync implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Query",
+      "type": "function",
+      "name": "Query",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "lineRange": [
+        50,
+        51
+      ],
+      "summary": "Function Query implementing logic inside Repository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "type": "file",
+      "name": "UserRepository.cs",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "summary": "Infrastructure repository managing data access and database operations for User.",
+      "tags": [
+        "database",
+        "csharp",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:UserRepository",
+      "type": "class",
+      "name": "UserRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        8,
+        35
+      ],
+      "summary": "Class representation of UserRepository defined inside UserRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:UserRepository",
+      "type": "function",
+      "name": "UserRepository",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Function UserRepository implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:GetByUsernameAsync",
+      "type": "function",
+      "name": "GetByUsernameAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        12,
+        13
+      ],
+      "summary": "Function GetByUsernameAsync implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:GetByEmailAsync",
+      "type": "function",
+      "name": "GetByEmailAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        15,
+        16
+      ],
+      "summary": "Function GetByEmailAsync implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:ExistsByUsernameAsync",
+      "type": "function",
+      "name": "ExistsByUsernameAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        18,
+        19
+      ],
+      "summary": "Function ExistsByUsernameAsync implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:ExistsByEmailAsync",
+      "type": "function",
+      "name": "ExistsByEmailAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        21,
+        22
+      ],
+      "summary": "Function ExistsByEmailAsync implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:SearchUsersAsync",
+      "type": "function",
+      "name": "SearchUsersAsync",
+      "filePath": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "lineRange": [
+        24,
+        34
+      ],
+      "summary": "Function SearchUsersAsync implementing logic inside UserRepository.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj",
+      "type": "config",
+      "name": "SocialNetwork.Infrastructure.csproj",
+      "filePath": "Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj",
+      "summary": "Infrastructure helper class: SocialNetwork.Infrastructure.csproj.",
+      "tags": [
+        "csharp",
+        "infrastructure"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Share.cs:Share",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/Story.cs:Story",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/StoryView.cs:StoryView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/User.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/User.cs:User",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/UserSession.cs:UserSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "target": "class:Backend/SocialNetwork.Domain/Entities/UserSettings.cs:UserSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:SocialNetworkDbContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:SocialNetworkDbContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs:OnModelCreating",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:MessageRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:MessageRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:GetConversationMessagesAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs:GetUserConversationsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:NotificationRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:NotificationRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:GetByReceiverIdAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:CountUnreadAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:GetWithSenderAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:FindGroupedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs:DeleteGroupedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:PostRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:PostRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetPostsWithDetailsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetUserPostsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs:GetPostWithDetailsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Repository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Repository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:GetByIdAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:GetAllAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:FindAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:AddAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:UpdateAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:DeleteAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:SaveChangesAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs:Query",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "class:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:UserRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:UserRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:GetByUsernameAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:GetByEmailAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:ExistsByUsernameAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:ExistsByEmailAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "function:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs:SearchUsersAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "target": "file:Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

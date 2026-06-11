@@ -1,0 +1,1106 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": ".aiignore",
+      "language": "unknown",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".cursorignore",
+      "language": "unknown",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/appsettings.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "language": "csharp",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "language": "csharp",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "language": "csharp",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "language": "csharp",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "language": "csharp",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "language": "csharp",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "language": "csharp",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "language": "csharp",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "language": "csharp",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Program.cs",
+      "language": "csharp",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Properties/launchSettings.json",
+      "language": "json",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "language": "csharp",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "language": "csharp",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "language": "csharp",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.csproj",
+      "language": "csproj",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.http",
+      "language": "http",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "language": "csharp",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "language": "csharp",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "language": "csharp",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "language": "csharp",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "language": "csharp",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "language": "csharp",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "language": "csharp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "language": "csharp",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "language": "csharp",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "language": "csharp",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "language": "csharp",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "language": "csharp",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "language": "csharp",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "language": "csharp",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "language": "csharp",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "language": "csharp",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "language": "csharp",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "language": "csharp",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "language": "csharp",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "language": "csharp",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "language": "csharp",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/SocialNetwork.Application.csproj",
+      "language": "csproj",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "language": "csharp",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "language": "csharp",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "language": "csharp",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "language": "csharp",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "language": "csharp",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "language": "csharp",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "language": "csharp",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "language": "csharp",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "language": "csharp",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "language": "csharp",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "language": "csharp",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "language": "csharp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/User.cs",
+      "language": "csharp",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "language": "csharp",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "language": "csharp",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ConversationType.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/GenderType.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MediaType.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MemberRole.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MessageType.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/NotificationType.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportReason.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportStatus.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/UserRole.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/VisibilityType.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj",
+      "language": "csproj",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "language": "csharp",
+      "sizeLines": 510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "language": "csharp",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "language": "csharp",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "language": "csharp",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "language": "csharp",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "language": "csharp",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj",
+      "language": "csproj",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.slnx",
+      "language": "slnx",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/index.html",
+      "language": "html",
+      "sizeLines": 27,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/lint_output.txt",
+      "language": "txt",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Frontend/package.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Frontend/src/api/adminApi.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/authApi.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/axiosClient.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/messageApi.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/mockData.js",
+      "language": "javascript",
+      "sizeLines": 464,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/notificationApi.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/postApi.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/userApi.js",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/App.css",
+      "language": "css",
+      "sizeLines": 184,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.css",
+      "language": "css",
+      "sizeLines": 246,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.jsx",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.css",
+      "language": "css",
+      "sizeLines": 38,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.jsx",
+      "language": "javascript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.css",
+      "language": "css",
+      "sizeLines": 112,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.jsx",
+      "language": "javascript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.css",
+      "language": "css",
+      "sizeLines": 269,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.jsx",
+      "language": "javascript",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.css",
+      "language": "css",
+      "sizeLines": 62,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.css",
+      "language": "css",
+      "sizeLines": 48,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.jsx",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/ui/UserAvatar.jsx",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/contexts/AuthContext.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/contexts/PageStateContext.jsx",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/contexts/SignalRContext.jsx",
+      "language": "javascript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useAppearance.js",
+      "language": "javascript",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useComments.js",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useMessages.js",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useNotifications.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/usePost.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/usePosts.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useUsers.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/index.css",
+      "language": "css",
+      "sizeLines": 451,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminDashboardPage.css",
+      "language": "css",
+      "sizeLines": 341,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "language": "javascript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminModerationPage.css",
+      "language": "css",
+      "sizeLines": 311,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "language": "javascript",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminSettingsPage.css",
+      "language": "css",
+      "sizeLines": 467,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 737,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminUserManagementPage.css",
+      "language": "css",
+      "sizeLines": 432,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "language": "javascript",
+      "sizeLines": 343,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/ChatViewPage.css",
+      "language": "css",
+      "sizeLines": 246,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/ChatViewPage.jsx",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/CreatePostPage.css",
+      "language": "css",
+      "sizeLines": 194,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/CreatePostPage.jsx",
+      "language": "javascript",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/InboxPage.css",
+      "language": "css",
+      "sizeLines": 183,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/InboxPage.jsx",
+      "language": "javascript",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/LoginPage.css",
+      "language": "css",
+      "sizeLines": 209,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/LoginPage.jsx",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/NewsFeedPage.css",
+      "language": "css",
+      "sizeLines": 288,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "language": "javascript",
+      "sizeLines": 424,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/NotificationsPage.css",
+      "language": "css",
+      "sizeLines": 160,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/NotificationsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/OnboardingPage.css",
+      "language": "css",
+      "sizeLines": 129,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/OnboardingPage.jsx",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/PostDetailPage.css",
+      "language": "css",
+      "sizeLines": 194,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/PostDetailPage.jsx",
+      "language": "javascript",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/RegisterPage.css",
+      "language": "css",
+      "sizeLines": 135,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/RegisterPage.jsx",
+      "language": "javascript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/SettingsPage.css",
+      "language": "css",
+      "sizeLines": 614,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/SettingsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 653,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/UserProfilePage.css",
+      "language": "css",
+      "sizeLines": 239,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/UserProfilePage.jsx",
+      "language": "javascript",
+      "sizeLines": 392,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/services/userService.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/update_fonts.cjs",
+      "language": "javascript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 383,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "test_api.ps1",
+      "language": "powershell",
+      "sizeLines": 15,
+      "fileCategory": "script"
+    },
+    {
+      "path": "zCommand",
+      "language": "unknown",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 179,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "stats": {
+    "filesScanned": 179,
+    "byCategory": {
+      "code": 144,
+      "config": 7,
+      "markup": 24,
+      "docs": 3,
+      "script": 1
+    },
+    "byLanguage": {
+      "unknown": 4,
+      "json": 3,
+      "csharp": 90,
+      "csproj": 4,
+      "http": 1,
+      "slnx": 1,
+      "javascript": 48,
+      "html": 1,
+      "txt": 1,
+      "markdown": 2,
+      "css": 23,
+      "powershell": 1
+    }
+  }
+}

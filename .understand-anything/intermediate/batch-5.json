@@ -1,0 +1,2263 @@
+{
+  "nodes": [
+    {
+      "id": "file:.aiignore",
+      "type": "file",
+      "name": ".aiignore",
+      "filePath": ".aiignore",
+      "summary": "Workspace configuration file: .aiignore.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.cursorignore",
+      "type": "file",
+      "name": ".cursorignore",
+      "filePath": ".cursorignore",
+      "summary": "Workspace configuration file: .cursorignore.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Workspace configuration file: .understandignore.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.API/appsettings.json",
+      "type": "config",
+      "name": "appsettings.json",
+      "filePath": "Backend/SocialNetwork.API/appsettings.json",
+      "summary": "Backend helper configuration or extension file appsettings.json.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "type": "file",
+      "name": "AdminController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Admin.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/AdminController.cs:AdminController",
+      "type": "class",
+      "name": "AdminController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        8,
+        50
+      ],
+      "summary": "Class representation of AdminController defined inside AdminController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:AdminController",
+      "type": "function",
+      "name": "AdminController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        15,
+        18
+      ],
+      "summary": "Function AdminController implementing logic inside AdminController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:GetAllUsers",
+      "type": "function",
+      "name": "GetAllUsers",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        20,
+        25
+      ],
+      "summary": "Function GetAllUsers implementing logic inside AdminController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:BanUser",
+      "type": "function",
+      "name": "BanUser",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        27,
+        33
+      ],
+      "summary": "Function BanUser implementing logic inside AdminController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:UnbanUser",
+      "type": "function",
+      "name": "UnbanUser",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "Function UnbanUser implementing logic inside AdminController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:PromoteToAdmin",
+      "type": "function",
+      "name": "PromoteToAdmin",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "lineRange": [
+        43,
+        49
+      ],
+      "summary": "Function PromoteToAdmin implementing logic inside AdminController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "type": "file",
+      "name": "AuthController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Auth.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/AuthController.cs:AuthController",
+      "type": "class",
+      "name": "AuthController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "lineRange": [
+        8,
+        69
+      ],
+      "summary": "Class representation of AuthController defined inside AuthController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:AuthController",
+      "type": "function",
+      "name": "AuthController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "lineRange": [
+        14,
+        17
+      ],
+      "summary": "Function AuthController implementing logic inside AuthController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:Register",
+      "type": "function",
+      "name": "Register",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "lineRange": [
+        22,
+        34
+      ],
+      "summary": "Function Register implementing logic inside AuthController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:Login",
+      "type": "function",
+      "name": "Login",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "lineRange": [
+        39,
+        51
+      ],
+      "summary": "Function Login implementing logic inside AuthController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:RefreshToken",
+      "type": "function",
+      "name": "RefreshToken",
+      "filePath": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "lineRange": [
+        56,
+        68
+      ],
+      "summary": "Function RefreshToken implementing logic inside AuthController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "type": "file",
+      "name": "MessagesController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Messages.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/MessagesController.cs:MessagesController",
+      "type": "class",
+      "name": "MessagesController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        10,
+        93
+      ],
+      "summary": "Class representation of MessagesController defined inside MessagesController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:MessagesController",
+      "type": "function",
+      "name": "MessagesController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        17,
+        20
+      ],
+      "summary": "Function MessagesController implementing logic inside MessagesController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetConversations",
+      "type": "function",
+      "name": "GetConversations",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        28,
+        34
+      ],
+      "summary": "Function GetConversations implementing logic inside MessagesController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetOrCreateDirectConversation",
+      "type": "function",
+      "name": "GetOrCreateDirectConversation",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        39,
+        52
+      ],
+      "summary": "Function GetOrCreateDirectConversation implementing logic inside MessagesController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetMessages",
+      "type": "function",
+      "name": "GetMessages",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        57,
+        74
+      ],
+      "summary": "Function GetMessages implementing logic inside MessagesController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:SendMessage",
+      "type": "function",
+      "name": "SendMessage",
+      "filePath": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "lineRange": [
+        79,
+        92
+      ],
+      "summary": "Function SendMessage implementing logic inside MessagesController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "type": "file",
+      "name": "NotificationsController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Notifications.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:NotificationsController",
+      "type": "class",
+      "name": "NotificationsController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        10,
+        68
+      ],
+      "summary": "Class representation of NotificationsController defined inside NotificationsController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:NotificationsController",
+      "type": "function",
+      "name": "NotificationsController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        17,
+        20
+      ],
+      "summary": "Function NotificationsController implementing logic inside NotificationsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:GetNotifications",
+      "type": "function",
+      "name": "GetNotifications",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        28,
+        37
+      ],
+      "summary": "Function GetNotifications implementing logic inside NotificationsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:GetUnreadCount",
+      "type": "function",
+      "name": "GetUnreadCount",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        42,
+        47
+      ],
+      "summary": "Function GetUnreadCount implementing logic inside NotificationsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:MarkAsRead",
+      "type": "function",
+      "name": "MarkAsRead",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        52,
+        57
+      ],
+      "summary": "Function MarkAsRead implementing logic inside NotificationsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:MarkAllAsRead",
+      "type": "function",
+      "name": "MarkAllAsRead",
+      "filePath": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "lineRange": [
+        62,
+        67
+      ],
+      "summary": "Function MarkAllAsRead implementing logic inside NotificationsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "type": "file",
+      "name": "PostsController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Posts.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/PostsController.cs:PostsController",
+      "type": "class",
+      "name": "PostsController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        10,
+        142
+      ],
+      "summary": "Class representation of PostsController defined inside PostsController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:PostsController",
+      "type": "function",
+      "name": "PostsController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": "Function PostsController implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetPosts",
+      "type": "function",
+      "name": "GetPosts",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        38,
+        43
+      ],
+      "summary": "Function GetPosts implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetPost",
+      "type": "function",
+      "name": "GetPost",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        48,
+        56
+      ],
+      "summary": "Function GetPost implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:CreatePost",
+      "type": "function",
+      "name": "CreatePost",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        62,
+        98
+      ],
+      "summary": "Function CreatePost implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:ToggleLike",
+      "type": "function",
+      "name": "ToggleLike",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        103,
+        108
+      ],
+      "summary": "Function ToggleLike implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetComments",
+      "type": "function",
+      "name": "GetComments",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        113,
+        121
+      ],
+      "summary": "Function GetComments implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:AddComment",
+      "type": "function",
+      "name": "AddComment",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        126,
+        131
+      ],
+      "summary": "Function AddComment implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:DeleteComment",
+      "type": "function",
+      "name": "DeleteComment",
+      "filePath": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "lineRange": [
+        136,
+        141
+      ],
+      "summary": "Function DeleteComment implementing logic inside PostsController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "type": "file",
+      "name": "UsersController.cs",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "summary": "C# API Controller handling actions and endpoints for Users.",
+      "tags": [
+        "api-handler",
+        "csharp",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Controllers/UsersController.cs:UsersController",
+      "type": "class",
+      "name": "UsersController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        10,
+        91
+      ],
+      "summary": "Class representation of UsersController defined inside UsersController.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:UsersController",
+      "type": "function",
+      "name": "UsersController",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        18,
+        22
+      ],
+      "summary": "Function UsersController implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetProfile",
+      "type": "function",
+      "name": "GetProfile",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        30,
+        40
+      ],
+      "summary": "Function GetProfile implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetSuggested",
+      "type": "function",
+      "name": "GetSuggested",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        42,
+        50
+      ],
+      "summary": "Function GetSuggested implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:ToggleFollow",
+      "type": "function",
+      "name": "ToggleFollow",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        52,
+        67
+      ],
+      "summary": "Function ToggleFollow implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetUserPosts",
+      "type": "function",
+      "name": "GetUserPosts",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        69,
+        77
+      ],
+      "summary": "Function GetUserPosts implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:SearchUsers",
+      "type": "function",
+      "name": "SearchUsers",
+      "filePath": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "lineRange": [
+        79,
+        90
+      ],
+      "summary": "Function SearchUsers implementing logic inside UsersController.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "type": "file",
+      "name": "DatabaseSeeder.cs",
+      "filePath": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "summary": "Backend helper configuration or extension file DatabaseSeeder.cs.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs:DatabaseSeeder",
+      "type": "class",
+      "name": "DatabaseSeeder",
+      "filePath": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "lineRange": [
+        15,
+        199
+      ],
+      "summary": "Class representation of DatabaseSeeder defined inside DatabaseSeeder.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs:SeedAsync",
+      "type": "function",
+      "name": "SeedAsync",
+      "filePath": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "lineRange": [
+        17,
+        198
+      ],
+      "summary": "Function SeedAsync implementing logic inside DatabaseSeeder.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "type": "file",
+      "name": "UtcDateTimeConverter.cs",
+      "filePath": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "summary": "Backend helper configuration or extension file UtcDateTimeConverter.cs.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:UtcDateTimeConverter",
+      "type": "class",
+      "name": "UtcDateTimeConverter",
+      "filePath": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "lineRange": [
+        17,
+        38
+      ],
+      "summary": "Class representation of UtcDateTimeConverter defined inside UtcDateTimeConverter.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "lineRange": [
+        19,
+        26
+      ],
+      "summary": "Function Read implementing logic inside UtcDateTimeConverter.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "lineRange": [
+        28,
+        37
+      ],
+      "summary": "Function Write implementing logic inside UtcDateTimeConverter.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "type": "file",
+      "name": "ChatHub.cs",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "summary": "SignalR Hub establishing real-time WebSockets connections for ChatHub.",
+      "tags": [
+        "entry-point",
+        "csharp",
+        "signalr",
+        "hub"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Hubs/ChatHub.cs:ChatHub",
+      "type": "class",
+      "name": "ChatHub",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        12,
+        68
+      ],
+      "summary": "Class representation of ChatHub defined inside ChatHub.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:ChatHub",
+      "type": "function",
+      "name": "ChatHub",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        17,
+        20
+      ],
+      "summary": "Function ChatHub implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:OnConnectedAsync",
+      "type": "function",
+      "name": "OnConnectedAsync",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        22,
+        29
+      ],
+      "summary": "Function OnConnectedAsync implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:OnDisconnectedAsync",
+      "type": "function",
+      "name": "OnDisconnectedAsync",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        31,
+        38
+      ],
+      "summary": "Function OnDisconnectedAsync implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:JoinConversation",
+      "type": "function",
+      "name": "JoinConversation",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        44,
+        50
+      ],
+      "summary": "Function JoinConversation implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:LeaveConversation",
+      "type": "function",
+      "name": "LeaveConversation",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        55,
+        59
+      ],
+      "summary": "Function LeaveConversation implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:GetGroupName",
+      "type": "function",
+      "name": "GetGroupName",
+      "filePath": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "lineRange": [
+        67,
+        67
+      ],
+      "summary": "Function GetGroupName implementing logic inside ChatHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "type": "file",
+      "name": "NotificationHub.cs",
+      "filePath": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "summary": "SignalR Hub establishing real-time WebSockets connections for NotificationHub.",
+      "tags": [
+        "entry-point",
+        "csharp",
+        "signalr",
+        "hub"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:NotificationHub",
+      "type": "class",
+      "name": "NotificationHub",
+      "filePath": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "lineRange": [
+        12,
+        57
+      ],
+      "summary": "Class representation of NotificationHub defined inside NotificationHub.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:NotificationHub",
+      "type": "function",
+      "name": "NotificationHub",
+      "filePath": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "lineRange": [
+        18,
+        22
+      ],
+      "summary": "Function NotificationHub implementing logic inside NotificationHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:OnConnectedAsync",
+      "type": "function",
+      "name": "OnConnectedAsync",
+      "filePath": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "lineRange": [
+        24,
+        36
+      ],
+      "summary": "Function OnConnectedAsync implementing logic inside NotificationHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:OnDisconnectedAsync",
+      "type": "function",
+      "name": "OnDisconnectedAsync",
+      "filePath": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "lineRange": [
+        38,
+        50
+      ],
+      "summary": "Function OnDisconnectedAsync implementing logic inside NotificationHub.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Program.cs",
+      "type": "file",
+      "name": "Program.cs",
+      "filePath": "Backend/SocialNetwork.API/Program.cs",
+      "summary": "Application startup and configuration, bootstrapping services, DbContext, and SignalR.",
+      "tags": [
+        "entry-point",
+        "csharp",
+        "configuration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.API/Properties/launchSettings.json",
+      "type": "config",
+      "name": "launchSettings.json",
+      "filePath": "Backend/SocialNetwork.API/Properties/launchSettings.json",
+      "summary": "Backend helper configuration or extension file launchSettings.json.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "type": "file",
+      "name": "ConnectionManager.cs",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "summary": "Backend service supporting API operations for ConnectionManager.",
+      "tags": [
+        "service",
+        "csharp",
+        "api-support"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Services/ConnectionManager.cs:IConnectionManager",
+      "type": "class",
+      "name": "IConnectionManager",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        9,
+        15
+      ],
+      "summary": "Class representation of IConnectionManager defined inside ConnectionManager.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Services/ConnectionManager.cs:ConnectionManager",
+      "type": "class",
+      "name": "ConnectionManager",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        17,
+        64
+      ],
+      "summary": "Class representation of ConnectionManager defined inside ConnectionManager.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:Add",
+      "type": "function",
+      "name": "Add",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        23,
+        34
+      ],
+      "summary": "Function Add implementing logic inside ConnectionManager.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:Remove",
+      "type": "function",
+      "name": "Remove",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        36,
+        47
+      ],
+      "summary": "Function Remove implementing logic inside ConnectionManager.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:GetConnections",
+      "type": "function",
+      "name": "GetConnections",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        49,
+        57
+      ],
+      "summary": "Function GetConnections implementing logic inside ConnectionManager.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:HasConnections",
+      "type": "function",
+      "name": "HasConnections",
+      "filePath": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "lineRange": [
+        59,
+        63
+      ],
+      "summary": "Function HasConnections implementing logic inside ConnectionManager.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "type": "file",
+      "name": "HubChatService.cs",
+      "filePath": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "summary": "Backend service supporting API operations for HubChatService.",
+      "tags": [
+        "service",
+        "csharp",
+        "api-support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Services/HubChatService.cs:HubChatService",
+      "type": "class",
+      "name": "HubChatService",
+      "filePath": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "lineRange": [
+        12,
+        34
+      ],
+      "summary": "Class representation of HubChatService defined inside HubChatService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/HubChatService.cs:HubChatService",
+      "type": "function",
+      "name": "HubChatService",
+      "filePath": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "lineRange": [
+        17,
+        21
+      ],
+      "summary": "Function HubChatService implementing logic inside HubChatService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/HubChatService.cs:PushNewMessageAsync",
+      "type": "function",
+      "name": "PushNewMessageAsync",
+      "filePath": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "lineRange": [
+        23,
+        33
+      ],
+      "summary": "Function PushNewMessageAsync implementing logic inside HubChatService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "type": "file",
+      "name": "HubNotificationService.cs",
+      "filePath": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "summary": "Backend service supporting API operations for HubNotificationService.",
+      "tags": [
+        "service",
+        "csharp",
+        "api-support"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Services/HubNotificationService.cs:HubNotificationService",
+      "type": "class",
+      "name": "HubNotificationService",
+      "filePath": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "lineRange": [
+        13,
+        50
+      ],
+      "summary": "Class representation of HubNotificationService defined inside HubNotificationService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/HubNotificationService.cs:HubNotificationService",
+      "type": "function",
+      "name": "HubNotificationService",
+      "filePath": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "lineRange": [
+        19,
+        27
+      ],
+      "summary": "Function HubNotificationService implementing logic inside HubNotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/HubNotificationService.cs:PushAsync",
+      "type": "function",
+      "name": "PushAsync",
+      "filePath": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "lineRange": [
+        29,
+        49
+      ],
+      "summary": "Function PushAsync implementing logic inside HubNotificationService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "type": "file",
+      "name": "LocalFileStorageService.cs",
+      "filePath": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "summary": "Backend service supporting API operations for LocalFileStorageService.",
+      "tags": [
+        "service",
+        "csharp",
+        "api-support"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:LocalFileStorageService",
+      "type": "class",
+      "name": "LocalFileStorageService",
+      "filePath": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "lineRange": [
+        10,
+        80
+      ],
+      "summary": "Class representation of LocalFileStorageService defined inside LocalFileStorageService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:LocalFileStorageService",
+      "type": "function",
+      "name": "LocalFileStorageService",
+      "filePath": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "lineRange": [
+        24,
+        27
+      ],
+      "summary": "Function LocalFileStorageService implementing logic inside LocalFileStorageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:SaveFileAsync",
+      "type": "function",
+      "name": "SaveFileAsync",
+      "filePath": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "lineRange": [
+        29,
+        63
+      ],
+      "summary": "Function SaveFileAsync implementing logic inside LocalFileStorageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:DeleteFileAsync",
+      "type": "function",
+      "name": "DeleteFileAsync",
+      "filePath": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "lineRange": [
+        65,
+        79
+      ],
+      "summary": "Function DeleteFileAsync implementing logic inside LocalFileStorageService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:Backend/SocialNetwork.API/SocialNetwork.API.csproj",
+      "type": "config",
+      "name": "SocialNetwork.API.csproj",
+      "filePath": "Backend/SocialNetwork.API/SocialNetwork.API.csproj",
+      "summary": "Backend helper configuration or extension file SocialNetwork.API.csproj.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.API/SocialNetwork.API.http",
+      "type": "file",
+      "name": "SocialNetwork.API.http",
+      "filePath": "Backend/SocialNetwork.API/SocialNetwork.API.http",
+      "summary": "Backend helper configuration or extension file SocialNetwork.API.http.",
+      "tags": [
+        "csharp",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "type": "file",
+      "name": "AuthDtos.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in AuthDtos.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:RegisterDto",
+      "type": "class",
+      "name": "RegisterDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "lineRange": [
+        5,
+        24
+      ],
+      "summary": "Class representation of RegisterDto defined inside AuthDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:LoginDto",
+      "type": "class",
+      "name": "LoginDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "lineRange": [
+        26,
+        33
+      ],
+      "summary": "Class representation of LoginDto defined inside AuthDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:RefreshTokenDto",
+      "type": "class",
+      "name": "RefreshTokenDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "lineRange": [
+        35,
+        39
+      ],
+      "summary": "Class representation of RefreshTokenDto defined inside AuthDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:AuthResponseDto",
+      "type": "class",
+      "name": "AuthResponseDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "lineRange": [
+        41,
+        50
+      ],
+      "summary": "Class representation of AuthResponseDto defined inside AuthDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "type": "file",
+      "name": "ApiResponse.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in ApiResponse.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:ApiResponse",
+      "type": "class",
+      "name": "ApiResponse",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "lineRange": [
+        3,
+        14
+      ],
+      "summary": "Class representation of ApiResponse defined inside ApiResponse.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:PagedResponse",
+      "type": "class",
+      "name": "PagedResponse",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "lineRange": [
+        16,
+        23
+      ],
+      "summary": "Class representation of PagedResponse defined inside ApiResponse.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:SuccessResponse",
+      "type": "function",
+      "name": "SuccessResponse",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "lineRange": [
+        9,
+        10
+      ],
+      "summary": "Function SuccessResponse implementing logic inside ApiResponse.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:ErrorResponse",
+      "type": "function",
+      "name": "ErrorResponse",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "lineRange": [
+        12,
+        13
+      ],
+      "summary": "Function ErrorResponse implementing logic inside ApiResponse.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "type": "file",
+      "name": "MessageDtos.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in MessageDtos.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:MessageDto",
+      "type": "class",
+      "name": "MessageDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "lineRange": [
+        6,
+        18
+      ],
+      "summary": "Class representation of MessageDto defined inside MessageDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:MessageAttachmentDto",
+      "type": "class",
+      "name": "MessageAttachmentDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "lineRange": [
+        20,
+        27
+      ],
+      "summary": "Class representation of MessageAttachmentDto defined inside MessageDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:SendMessageDto",
+      "type": "class",
+      "name": "SendMessageDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "lineRange": [
+        29,
+        39
+      ],
+      "summary": "Class representation of SendMessageDto defined inside MessageDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:ConversationDto",
+      "type": "class",
+      "name": "ConversationDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "lineRange": [
+        41,
+        51
+      ],
+      "summary": "Class representation of ConversationDto defined inside MessageDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:ConversationMemberDto",
+      "type": "class",
+      "name": "ConversationMemberDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "lineRange": [
+        53,
+        60
+      ],
+      "summary": "Class representation of ConversationMemberDto defined inside MessageDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/AdminController.cs:AdminController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:AdminController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:GetAllUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:BanUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:UnbanUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AdminController.cs:PromoteToAdmin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/AuthController.cs:AuthController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:AuthController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:Register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:Login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/AuthController.cs:RefreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "target": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/MessagesController.cs:MessagesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:MessagesController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetConversations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetOrCreateDirectConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:GetMessages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/MessagesController.cs:SendMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:NotificationsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:NotificationsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:GetNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:GetUnreadCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:MarkAsRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/NotificationsController.cs:MarkAllAsRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/PostsController.cs:PostsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:PostsController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:CreatePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:ToggleLike",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:GetComments",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:AddComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/PostsController.cs:DeleteComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "class:Backend/SocialNetwork.API/Controllers/UsersController.cs:UsersController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:UsersController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetProfile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetSuggested",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:ToggleFollow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:GetUserPosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "target": "function:Backend/SocialNetwork.API/Controllers/UsersController.cs:SearchUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "target": "class:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs:DatabaseSeeder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "target": "function:Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs:SeedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "target": "class:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:UtcDateTimeConverter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "target": "function:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "target": "function:Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "class:Backend/SocialNetwork.API/Hubs/ChatHub.cs:ChatHub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:ChatHub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:OnConnectedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:OnDisconnectedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:JoinConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:LeaveConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/ChatHub.cs:GetGroupName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "target": "class:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:NotificationHub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:NotificationHub",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:OnConnectedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "target": "function:Backend/SocialNetwork.API/Hubs/NotificationHub.cs:OnDisconnectedAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "class:Backend/SocialNetwork.API/Services/ConnectionManager.cs:IConnectionManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "class:Backend/SocialNetwork.API/Services/ConnectionManager.cs:ConnectionManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:Add",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:Remove",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:GetConnections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/ConnectionManager.cs:HasConnections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "target": "class:Backend/SocialNetwork.API/Services/HubChatService.cs:HubChatService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/HubChatService.cs:HubChatService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/HubChatService.cs:PushNewMessageAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "target": "class:Backend/SocialNetwork.API/Services/HubNotificationService.cs:HubNotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/HubNotificationService.cs:HubNotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/HubNotificationService.cs:PushAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "target": "class:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:LocalFileStorageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:LocalFileStorageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:SaveFileAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "target": "function:Backend/SocialNetwork.API/Services/LocalFileStorageService.cs:DeleteFileAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:RegisterDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:LoginDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:RefreshTokenDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs:AuthResponseDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:ApiResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:PagedResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "target": "function:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:SuccessResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "target": "function:Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs:ErrorResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:MessageDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:MessageAttachmentDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:SendMessageDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:ConversationDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs:ConversationMemberDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

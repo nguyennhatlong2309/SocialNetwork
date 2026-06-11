@@ -1,0 +1,715 @@
+{
+  "nodes": [
+    {
+      "id": "file:Backend/SocialNetwork.slnx",
+      "type": "file",
+      "name": "SocialNetwork.slnx",
+      "filePath": "Backend/SocialNetwork.slnx",
+      "summary": "Workspace configuration file: SocialNetwork.slnx.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/eslint.config.js",
+      "type": "file",
+      "name": "eslint.config.js",
+      "filePath": "Frontend/eslint.config.js",
+      "summary": "Frontend configuration or resource: eslint.config.js.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/api/adminApi.js",
+      "type": "file",
+      "name": "adminApi.js",
+      "filePath": "Frontend/src/api/adminApi.js",
+      "summary": "Frontend API communication service for adminApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/api/authApi.js",
+      "type": "file",
+      "name": "authApi.js",
+      "filePath": "Frontend/src/api/authApi.js",
+      "summary": "Frontend API communication service for authApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/api/axiosClient.js",
+      "type": "file",
+      "name": "axiosClient.js",
+      "filePath": "Frontend/src/api/axiosClient.js",
+      "summary": "Frontend API communication service for axiosClient.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/api/messageApi.js",
+      "type": "file",
+      "name": "messageApi.js",
+      "filePath": "Frontend/src/api/messageApi.js",
+      "summary": "Frontend API communication service for messageApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/api/mockData.js",
+      "type": "file",
+      "name": "mockData.js",
+      "filePath": "Frontend/src/api/mockData.js",
+      "summary": "Frontend API communication service for mockData.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/api/mockData.js:simulateDelay",
+      "type": "function",
+      "name": "simulateDelay",
+      "filePath": "Frontend/src/api/mockData.js",
+      "lineRange": [
+        462,
+        464
+      ],
+      "summary": "Function simulateDelay implementing logic inside mockData.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/api/notificationApi.js",
+      "type": "file",
+      "name": "notificationApi.js",
+      "filePath": "Frontend/src/api/notificationApi.js",
+      "summary": "Frontend API communication service for notificationApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/api/postApi.js",
+      "type": "file",
+      "name": "postApi.js",
+      "filePath": "Frontend/src/api/postApi.js",
+      "summary": "Frontend API communication service for postApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/api/userApi.js",
+      "type": "file",
+      "name": "userApi.js",
+      "filePath": "Frontend/src/api/userApi.js",
+      "summary": "Frontend API communication service for userApi.",
+      "tags": [
+        "api-handler",
+        "javascript",
+        "client"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "Frontend/src/App.css",
+      "summary": "Frontend configuration or resource: App.css.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "Frontend/src/App.jsx",
+      "summary": "Frontend configuration or resource: App.jsx.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/App.jsx:AppRoutes",
+      "type": "function",
+      "name": "AppRoutes",
+      "filePath": "Frontend/src/App.jsx",
+      "lineRange": [
+        52,
+        96
+      ],
+      "summary": "Function AppRoutes implementing logic inside App.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "Frontend/src/App.jsx",
+      "lineRange": [
+        98,
+        114
+      ],
+      "summary": "Function App implementing logic inside App.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/components/layout/AdminLayout.jsx",
+      "type": "file",
+      "name": "AdminLayout.jsx",
+      "filePath": "Frontend/src/components/layout/AdminLayout.jsx",
+      "summary": "React UI component rendering AdminLayout.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/layout/AdminLayout.jsx:AdminLayout",
+      "type": "function",
+      "name": "AdminLayout",
+      "filePath": "Frontend/src/components/layout/AdminLayout.jsx",
+      "lineRange": [
+        13,
+        95
+      ],
+      "summary": "Function AdminLayout implementing logic inside AdminLayout.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/layout/AppLayout.jsx",
+      "type": "file",
+      "name": "AppLayout.jsx",
+      "filePath": "Frontend/src/components/layout/AppLayout.jsx",
+      "summary": "React UI component rendering AppLayout.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/layout/AppLayout.jsx:AppLayout",
+      "type": "function",
+      "name": "AppLayout",
+      "filePath": "Frontend/src/components/layout/AppLayout.jsx",
+      "lineRange": [
+        49,
+        179
+      ],
+      "summary": "Function AppLayout implementing logic inside AppLayout.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/layout/GlobalSearch.jsx",
+      "type": "file",
+      "name": "GlobalSearch.jsx",
+      "filePath": "Frontend/src/components/layout/GlobalSearch.jsx",
+      "summary": "React UI component rendering GlobalSearch.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/layout/GlobalSearch.jsx:GlobalSearch",
+      "type": "function",
+      "name": "GlobalSearch",
+      "filePath": "Frontend/src/components/layout/GlobalSearch.jsx",
+      "lineRange": [
+        8,
+        110
+      ],
+      "summary": "Function GlobalSearch implementing logic inside GlobalSearch.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/PostDetailDialog.css",
+      "type": "file",
+      "name": "PostDetailDialog.css",
+      "filePath": "Frontend/src/components/PostDetailDialog.css",
+      "summary": "React UI component rendering PostDetailDialog.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/components/PostDetailDialog.jsx",
+      "type": "file",
+      "name": "PostDetailDialog.jsx",
+      "filePath": "Frontend/src/components/PostDetailDialog.jsx",
+      "summary": "React UI component rendering PostDetailDialog.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/components/PostDetailDialog.jsx:PostDetailDialog",
+      "type": "function",
+      "name": "PostDetailDialog",
+      "filePath": "Frontend/src/components/PostDetailDialog.jsx",
+      "lineRange": [
+        25,
+        334
+      ],
+      "summary": "Function PostDetailDialog implementing logic inside PostDetailDialog.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "type": "file",
+      "name": "FeedSkeleton.jsx",
+      "filePath": "Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "summary": "React UI component rendering FeedSkeleton.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/FeedSkeleton.jsx:FeedSkeleton",
+      "type": "function",
+      "name": "FeedSkeleton",
+      "filePath": "Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "lineRange": [
+        10,
+        18
+      ],
+      "summary": "Function FeedSkeleton implementing logic inside FeedSkeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "type": "file",
+      "name": "PostCardSkeleton.jsx",
+      "filePath": "Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "summary": "React UI component rendering PostCardSkeleton.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/PostCardSkeleton.jsx:PostCardSkeleton",
+      "type": "function",
+      "name": "PostCardSkeleton",
+      "filePath": "Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "lineRange": [
+        8,
+        42
+      ],
+      "summary": "Function PostCardSkeleton implementing logic inside PostCardSkeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/skeleton/Skeleton.css",
+      "type": "file",
+      "name": "Skeleton.css",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.css",
+      "summary": "React UI component rendering Skeleton.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/skeleton/Skeleton.jsx",
+      "type": "file",
+      "name": "Skeleton.jsx",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "summary": "React UI component rendering Skeleton.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonAvatar",
+      "type": "function",
+      "name": "SkeletonAvatar",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "lineRange": [
+        14,
+        21
+      ],
+      "summary": "Function SkeletonAvatar implementing logic inside Skeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonText",
+      "type": "function",
+      "name": "SkeletonText",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "lineRange": [
+        24,
+        32
+      ],
+      "summary": "Function SkeletonText implementing logic inside Skeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonImage",
+      "type": "function",
+      "name": "SkeletonImage",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "lineRange": [
+        35,
+        43
+      ],
+      "summary": "Function SkeletonImage implementing logic inside Skeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonBlock",
+      "type": "function",
+      "name": "SkeletonBlock",
+      "filePath": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "lineRange": [
+        46,
+        54
+      ],
+      "summary": "Function SkeletonBlock implementing logic inside Skeleton.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/components/ui/ProgressiveImage.css",
+      "type": "file",
+      "name": "ProgressiveImage.css",
+      "filePath": "Frontend/src/components/ui/ProgressiveImage.css",
+      "summary": "React UI component rendering ProgressiveImage.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/components/ui/ProgressiveImage.jsx",
+      "type": "file",
+      "name": "ProgressiveImage.jsx",
+      "filePath": "Frontend/src/components/ui/ProgressiveImage.jsx",
+      "summary": "React UI component rendering ProgressiveImage.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/ui/ProgressiveImage.jsx:ProgressiveImage",
+      "type": "function",
+      "name": "ProgressiveImage",
+      "filePath": "Frontend/src/components/ui/ProgressiveImage.jsx",
+      "lineRange": [
+        17,
+        72
+      ],
+      "summary": "Function ProgressiveImage implementing logic inside ProgressiveImage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/components/ui/UserAvatar.jsx",
+      "type": "file",
+      "name": "UserAvatar.jsx",
+      "filePath": "Frontend/src/components/ui/UserAvatar.jsx",
+      "summary": "React UI component rendering UserAvatar.",
+      "tags": [
+        "component",
+        "react",
+        "ui"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/components/ui/UserAvatar.jsx:UserAvatar",
+      "type": "function",
+      "name": "UserAvatar",
+      "filePath": "Frontend/src/components/ui/UserAvatar.jsx",
+      "lineRange": [
+        21,
+        85
+      ],
+      "summary": "Function UserAvatar implementing logic inside UserAvatar.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/contexts/AuthContext.jsx",
+      "type": "file",
+      "name": "AuthContext.jsx",
+      "filePath": "Frontend/src/contexts/AuthContext.jsx",
+      "summary": "React context provider managing global state for AuthContext.",
+      "tags": [
+        "context",
+        "react",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/AuthContext.jsx:AuthProvider",
+      "type": "function",
+      "name": "AuthProvider",
+      "filePath": "Frontend/src/contexts/AuthContext.jsx",
+      "lineRange": [
+        16,
+        43
+      ],
+      "summary": "Function AuthProvider implementing logic inside AuthContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/AuthContext.jsx:useAuth",
+      "type": "function",
+      "name": "useAuth",
+      "filePath": "Frontend/src/contexts/AuthContext.jsx",
+      "lineRange": [
+        45,
+        47
+      ],
+      "summary": "Function useAuth implementing logic inside AuthContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Frontend/src/api/mockData.js",
+      "target": "function:Frontend/src/api/mockData.js:simulateDelay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/App.jsx",
+      "target": "function:Frontend/src/App.jsx:AppRoutes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/App.jsx",
+      "target": "function:Frontend/src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/layout/AdminLayout.jsx",
+      "target": "function:Frontend/src/components/layout/AdminLayout.jsx:AdminLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/layout/AppLayout.jsx",
+      "target": "function:Frontend/src/components/layout/AppLayout.jsx:AppLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/layout/GlobalSearch.jsx",
+      "target": "function:Frontend/src/components/layout/GlobalSearch.jsx:GlobalSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/PostDetailDialog.jsx",
+      "target": "function:Frontend/src/components/PostDetailDialog.jsx:PostDetailDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/FeedSkeleton.jsx:FeedSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/PostCardSkeleton.jsx:PostCardSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/Skeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonAvatar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/Skeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/Skeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/skeleton/Skeleton.jsx",
+      "target": "function:Frontend/src/components/skeleton/Skeleton.jsx:SkeletonBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/ui/ProgressiveImage.jsx",
+      "target": "function:Frontend/src/components/ui/ProgressiveImage.jsx:ProgressiveImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/components/ui/UserAvatar.jsx",
+      "target": "function:Frontend/src/components/ui/UserAvatar.jsx:UserAvatar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/AuthContext.jsx",
+      "target": "function:Frontend/src/contexts/AuthContext.jsx:AuthProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/AuthContext.jsx",
+      "target": "function:Frontend/src/contexts/AuthContext.jsx:useAuth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

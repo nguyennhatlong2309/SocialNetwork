@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "file:Frontend/src/components/layout/AdminLayout.css",
+      "type": "file",
+      "name": "AdminLayout.css",
+      "filePath": "Frontend/src/components/layout/AdminLayout.css",
+      "summary": "React UI component rendering AdminLayout.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/components/layout/AppLayout.css",
+      "type": "file",
+      "name": "AppLayout.css",
+      "filePath": "Frontend/src/components/layout/AppLayout.css",
+      "summary": "React UI component rendering AppLayout.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/components/layout/GlobalSearch.css",
+      "type": "file",
+      "name": "GlobalSearch.css",
+      "filePath": "Frontend/src/components/layout/GlobalSearch.css",
+      "summary": "React UI component rendering GlobalSearch.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.Application.DTOs.Common;
 using SocialNetwork.Application.DTOs.Post;
 using SocialNetwork.Application.Interfaces;
+using SocialNetwork.API.Extensions;
 
 namespace SocialNetwork.API.Controllers;
 
@@ -29,8 +30,7 @@ public class PostsController : ControllerBase
         _fileStorageService = fileStorageService;
     }
 
-    private long CurrentUserId =>
-        long.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+    private long CurrentUserId => User.GetUserId();
 
     /// <summary>
     /// Get paginated list of posts with user info and like/comment counts

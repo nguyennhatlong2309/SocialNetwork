@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "language": "csharp",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "language": "csharp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/User.cs",
+      "language": "csharp",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "language": "csharp",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "language": "csharp",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ConversationType.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/GenderType.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MediaType.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MemberRole.cs",
+      "language": "csharp",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MessageType.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/NotificationType.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportReason.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportStatus.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/UserRole.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/VisibilityType.cs",
+      "language": "csharp",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj",
+      "language": "csproj",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "language": "csharp",
+      "sizeLines": 510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "language": "csharp",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "language": "csharp",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "language": "csharp",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "language": "csharp",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "language": "csharp",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj",
+      "language": "csproj",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "Backend/SocialNetwork.Domain/Entities/Share.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Story.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/StoryView.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/User.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/UserSession.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/UserSettings.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/ConversationType.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/GenderType.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/MediaType.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/MemberRole.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/MessageType.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/NotificationType.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/ReportReason.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/ReportStatus.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/UserRole.cs": [],
+    "Backend/SocialNetwork.Domain/Enums/VisibilityType.cs": [],
+    "Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj": [],
+    "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs": [],
+    "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs": [],
+    "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs": [],
+    "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs": [],
+    "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs": [],
+    "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs": [],
+    "Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj": []
+  }
+}

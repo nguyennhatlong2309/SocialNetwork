@@ -1,0 +1,1609 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Backend/SocialNetwork.slnx",
+      "language": "slnx",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/eslint.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/adminApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 31,
+      "callGraph": [
+        {
+          "caller": "getAllUsers",
+          "callee": "axiosClient.get",
+          "lineNumber": 8
+        },
+        {
+          "caller": "banUser",
+          "callee": "axiosClient.post",
+          "lineNumber": 16
+        },
+        {
+          "caller": "unbanUser",
+          "callee": "axiosClient.post",
+          "lineNumber": 24
+        },
+        {
+          "caller": "promoteToAdmin",
+          "callee": "axiosClient.post",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/authApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 61,
+      "callGraph": [
+        {
+          "caller": "login",
+          "callee": "axiosClient.post",
+          "lineNumber": 9
+        },
+        {
+          "caller": "register",
+          "callee": "axiosClient.post",
+          "lineNumber": 10
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "axiosClient.post",
+          "lineNumber": 11
+        },
+        {
+          "caller": "login",
+          "callee": "simulateDelay",
+          "lineNumber": 16
+        },
+        {
+          "caller": "login",
+          "callee": "MOCK_USERS.find",
+          "lineNumber": 17
+        },
+        {
+          "caller": "login",
+          "callee": "Promise.reject",
+          "lineNumber": 22
+        },
+        {
+          "caller": "register",
+          "callee": "simulateDelay",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "MOCK_USERS.find",
+          "lineNumber": 36
+        },
+        {
+          "caller": "register",
+          "callee": "Promise.reject",
+          "lineNumber": 38
+        },
+        {
+          "caller": "register",
+          "callee": "`${firstName} ${lastName}`.trim",
+          "lineNumber": 46
+        },
+        {
+          "caller": "register",
+          "callee": "Date.now",
+          "lineNumber": 47
+        },
+        {
+          "caller": "register",
+          "callee": "MOCK_USERS.push",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshToken",
+          "callee": "simulateDelay",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/axiosClient.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 41,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/messageApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 52,
+      "callGraph": [
+        {
+          "caller": "getConversations",
+          "callee": "axiosClient.get",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getOrCreateConversation",
+          "callee": "axiosClient.post",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getMessages",
+          "callee": "axiosClient.get",
+          "lineNumber": 38
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "axiosClient.post",
+          "lineNumber": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/mockData.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 464,
+      "nonEmptyLines": 458,
+      "functions": [
+        {
+          "name": "simulateDelay",
+          "startLine": 462,
+          "endLine": 464,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MOCK_USERS",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "MOCK_POSTS",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "MOCK_CONVERSATIONS",
+          "line": 417,
+          "isDefault": false
+        },
+        {
+          "name": "MOCK_MESSAGES",
+          "line": 438,
+          "isDefault": false
+        },
+        {
+          "name": "MOCK_NOTIFICATIONS",
+          "line": 453,
+          "isDefault": false
+        },
+        {
+          "name": "simulateDelay",
+          "line": 462,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "simulateDelay",
+          "callee": "setTimeout",
+          "lineNumber": 463
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/notificationApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 42,
+      "callGraph": [
+        {
+          "caller": "getNotifications",
+          "callee": "axiosClient.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getUnreadCount",
+          "callee": "axiosClient.get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "markAsRead",
+          "callee": "axiosClient.patch",
+          "lineNumber": 37
+        },
+        {
+          "caller": "markAllAsRead",
+          "callee": "axiosClient.patch",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/postApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 71,
+      "callGraph": [
+        {
+          "caller": "getPosts",
+          "callee": "axiosClient.get",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPostById",
+          "callee": "axiosClient.get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "createPost",
+          "callee": "formData.append",
+          "lineNumber": 29
+        },
+        {
+          "caller": "createPost",
+          "callee": "formData.append",
+          "lineNumber": 30
+        },
+        {
+          "caller": "createPost",
+          "callee": "mediaFiles.forEach",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createPost",
+          "callee": "formData.append",
+          "lineNumber": 33
+        },
+        {
+          "caller": "createPost",
+          "callee": "axiosClient.post",
+          "lineNumber": 38
+        },
+        {
+          "caller": "toggleLike",
+          "callee": "axiosClient.post",
+          "lineNumber": 46
+        },
+        {
+          "caller": "toggleSave",
+          "callee": "axiosClient.post",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getComments",
+          "callee": "axiosClient.get",
+          "lineNumber": 61
+        },
+        {
+          "caller": "addComment",
+          "callee": "axiosClient.post",
+          "lineNumber": 68
+        },
+        {
+          "caller": "deleteComment",
+          "callee": "axiosClient.delete",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/api/userApi.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 40,
+      "callGraph": [
+        {
+          "caller": "getSuggestedUsers",
+          "callee": "axiosClient.get",
+          "lineNumber": 9
+        },
+        {
+          "caller": "toggleFollow",
+          "callee": "axiosClient.post",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getUserProfile",
+          "callee": "axiosClient.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "updateEmail",
+          "callee": "axiosClient.put",
+          "lineNumber": 34
+        },
+        {
+          "caller": "changePassword",
+          "callee": "axiosClient.put",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/App.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 184,
+      "nonEmptyLines": 158,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/App.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "PrivateRoute",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "PublicRoute",
+          "startLine": 35,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "AdminRoute",
+          "startLine": 44,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "AppRoutes",
+          "startLine": 52,
+          "endLine": 96,
+          "params": []
+        },
+        {
+          "name": "App",
+          "startLine": 98,
+          "endLine": 114,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "App",
+          "line": 98,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PrivateRoute",
+          "callee": "useAuth",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PublicRoute",
+          "callee": "useAuth",
+          "lineNumber": 36
+        },
+        {
+          "caller": "AdminRoute",
+          "callee": "useAuth",
+          "lineNumber": 45
+        },
+        {
+          "caller": "AppRoutes",
+          "callee": "useLocation",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 20,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 95,
+      "nonEmptyLines": 84,
+      "functions": [
+        {
+          "name": "AdminLayout",
+          "startLine": 13,
+          "endLine": 95,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminLayout",
+          "line": 13,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminLayout",
+          "callee": "useAuth",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AdminLayout",
+          "callee": "useNavigate",
+          "lineNumber": 15
+        },
+        {
+          "caller": "handleLogout",
+          "callee": "logout",
+          "lineNumber": 18
+        },
+        {
+          "caller": "handleLogout",
+          "callee": "navigate",
+          "lineNumber": 19
+        },
+        {
+          "caller": "AdminLayout",
+          "callee": "adminNavItems.map",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AdminLayout",
+          "callee": "navigate",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 179,
+      "nonEmptyLines": 158,
+      "functions": [
+        {
+          "name": "isKeepAlivePath",
+          "startLine": 30,
+          "endLine": 32,
+          "params": [
+            "pathname"
+          ]
+        },
+        {
+          "name": "AppLayout",
+          "startLine": 49,
+          "endLine": 179,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AppLayout",
+          "line": 49,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isKeepAlivePath",
+          "callee": "KEEP_ALIVE_PATHS.includes",
+          "lineNumber": 31
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "useAuth",
+          "lineNumber": 50
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "useNavigate",
+          "lineNumber": 51
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "useLocation",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handleLogout",
+          "callee": "logout",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleLogout",
+          "callee": "navigate",
+          "lineNumber": 57
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "navigate",
+          "lineNumber": 66
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "navItems.map",
+          "lineNumber": 81
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "navigate",
+          "lineNumber": 94
+        },
+        {
+          "caller": "AppLayout",
+          "callee": "isKeepAlivePath",
+          "lineNumber": 170
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "GlobalSearch",
+          "startLine": 8,
+          "endLine": 110,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GlobalSearch",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GlobalSearch",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useRef",
+          "lineNumber": 13
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useNavigate",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useEffect",
+          "lineNumber": 17
+        },
+        {
+          "caller": "handleClickOutside",
+          "callee": "wrapperRef.current.contains",
+          "lineNumber": 19
+        },
+        {
+          "caller": "handleClickOutside",
+          "callee": "setIsOpen",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "document.addEventListener",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "document.removeEventListener",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "useEffect",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "query.trim",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setResults",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsOpen",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setTimeout",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsLoading",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "userService.searchUsers",
+          "lineNumber": 38
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setResults",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsOpen",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "console.error",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsLoading",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "clearTimeout",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSelectUser",
+          "callee": "setIsOpen",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handleSelectUser",
+          "callee": "setQuery",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleSelectUser",
+          "callee": "navigate",
+          "lineNumber": 54
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setQuery",
+          "lineNumber": 67
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "e.target.value.trim",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsOpen",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "query.trim",
+          "lineNumber": 71
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "setIsOpen",
+          "lineNumber": 71
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "query.trim",
+          "lineNumber": 77
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "results.map",
+          "lineNumber": 82
+        },
+        {
+          "caller": "GlobalSearch",
+          "callee": "handleSelectUser",
+          "lineNumber": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 269,
+      "nonEmptyLines": 236,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 334,
+      "nonEmptyLines": 308,
+      "functions": [
+        {
+          "name": "timeSince",
+          "startLine": 11,
+          "endLine": 18,
+          "params": [
+            "date"
+          ]
+        },
+        {
+          "name": "formatCount",
+          "startLine": 20,
+          "endLine": 23,
+          "params": [
+            "n"
+          ]
+        },
+        {
+          "name": "PostDetailDialog",
+          "startLine": 25,
+          "endLine": 334,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostDetailDialog",
+          "line": 25,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "timeSince",
+          "callee": "Math.floor",
+          "lineNumber": 12
+        },
+        {
+          "caller": "timeSince",
+          "callee": "Math.floor",
+          "lineNumber": 14
+        },
+        {
+          "caller": "timeSince",
+          "callee": "Math.floor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "timeSince",
+          "callee": "Math.floor",
+          "lineNumber": 17
+        },
+        {
+          "caller": "formatCount",
+          "callee": "(n / 1000).toFixed",
+          "lineNumber": 21
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useParams",
+          "lineNumber": 26
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useNavigate",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useRef",
+          "lineNumber": 28
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useRef",
+          "lineNumber": 29
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 37
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useComments",
+          "lineNumber": 41
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useAddComment",
+          "lineNumber": 42
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useEffect",
+          "lineNumber": 45
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 46
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setVisible",
+          "lineNumber": 46
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useEffect",
+          "lineNumber": 50
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "postApi.getPostById(postId).then(res => {\n      setPost(res.data);\n      setLikes(res.data.likeCount);\n    }).catch(err => {\n      console.error('Failed to load post', err);\n    }).finally",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "postApi.getPostById(postId).then(res => {\n      setPost(res.data);\n      setLikes(res.data.likeCount);\n    }).catch",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "postApi.getPostById(postId).then",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "postApi.getPostById",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setPost",
+          "lineNumber": 52
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setLikes",
+          "lineNumber": 53
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "console.error",
+          "lineNumber": 55
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setLoading",
+          "lineNumber": 56
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useEffect",
+          "lineNumber": 60
+        },
+        {
+          "caller": "onKey",
+          "callee": "closeDialog",
+          "lineNumber": 61
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "window.addEventListener",
+          "lineNumber": 62
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "window.removeEventListener",
+          "lineNumber": 63
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "useEffect",
+          "lineNumber": 67
+        },
+        {
+          "caller": "closeDialog",
+          "callee": "setVisible",
+          "lineNumber": 73
+        },
+        {
+          "caller": "closeDialog",
+          "callee": "setTimeout",
+          "lineNumber": 74
+        },
+        {
+          "caller": "closeDialog",
+          "callee": "navigate",
+          "lineNumber": 74
+        },
+        {
+          "caller": "handleBackdropClick",
+          "callee": "closeDialog",
+          "lineNumber": 78
+        },
+        {
+          "caller": "toggleLike",
+          "callee": "setLiked",
+          "lineNumber": 82
+        },
+        {
+          "caller": "toggleLike",
+          "callee": "setLikes",
+          "lineNumber": 83
+        },
+        {
+          "caller": "handleSendComment",
+          "callee": "comment.trim",
+          "lineNumber": 87
+        },
+        {
+          "caller": "handleSendComment",
+          "callee": "addCommentMutation.mutateAsync",
+          "lineNumber": 91
+        },
+        {
+          "caller": "handleSendComment",
+          "callee": "setComment",
+          "lineNumber": 92
+        },
+        {
+          "caller": "handleSendComment",
+          "callee": "commentInputRef.current?.focus",
+          "lineNumber": 93
+        },
+        {
+          "caller": "handleSendComment",
+          "callee": "console.error",
+          "lineNumber": 95
+        },
+        {
+          "caller": "handleCommentKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 101
+        },
+        {
+          "caller": "handleCommentKeyDown",
+          "callee": "handleSendComment",
+          "lineNumber": 102
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "post.media[currentMedia]?.mediaUrl?.startsWith",
+          "lineNumber": 147
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setCurrentMedia",
+          "lineNumber": 157
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setCurrentMedia",
+          "lineNumber": 167
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "post.media.map",
+          "lineNumber": 177
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setCurrentMedia",
+          "lineNumber": 180
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "formatCount",
+          "lineNumber": 214
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setSaved",
+          "lineNumber": 218
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "navigate",
+          "lineNumber": 232
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "(post.content || '').match(/#\\w+/g)?.map",
+          "lineNumber": 254
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "(post.content || '').match",
+          "lineNumber": 254
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "comments.map",
+          "lineNumber": 265
+        },
+        {
+          "caller": "goToCommentAuthor",
+          "callee": "navigate",
+          "lineNumber": 269
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "timeSince",
+          "lineNumber": 291
+        },
+        {
+          "caller": "PostDetailDialog",
+          "callee": "setComment",
+          "lineNumber": 315
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "FeedSkeleton",
+          "startLine": 10,
+          "endLine": 18,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FeedSkeleton",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FeedSkeleton",
+          "callee": "Array.from",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "PostCardSkeleton",
+          "startLine": 8,
+          "endLine": 42,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostCardSkeleton",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "SkeletonAvatar",
+          "startLine": 14,
+          "endLine": 21,
+          "params": []
+        },
+        {
+          "name": "SkeletonText",
+          "startLine": 24,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "SkeletonImage",
+          "startLine": 35,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "SkeletonBlock",
+          "startLine": 46,
+          "endLine": 54,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SkeletonAvatar",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "SkeletonText",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "SkeletonImage",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "SkeletonBlock",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SkeletonText",
+          "callee": "Array.from",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 48,
+      "nonEmptyLines": 43,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "ProgressiveImage",
+          "startLine": 17,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProgressiveImage",
+          "line": 17,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ProgressiveImage",
+          "callee": "useState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ProgressiveImage",
+          "callee": "useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ProgressiveImage",
+          "callee": "setLoaded",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ProgressiveImage",
+          "callee": "setLoaded",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ProgressiveImage",
+          "callee": "setError",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/components/ui/UserAvatar.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 78,
+      "functions": [
+        {
+          "name": "UserAvatar",
+          "startLine": 21,
+          "endLine": 85,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserAvatar",
+          "line": 21,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "UserAvatar",
+          "callee": "(name || 'U')[0].toUpperCase",
+          "lineNumber": 31
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "Math.abs",
+          "lineNumber": 32
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "Number",
+          "lineNumber": 32
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "avatarUrl.startsWith",
+          "lineNumber": 38
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "`${sizeClass} ${className}`.trim",
+          "lineNumber": 42
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "`avatar ${sizeClass} ${className}`.trim",
+          "lineNumber": 53
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "document.createElement",
+          "lineNumber": 62
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "`avatar-placeholder ${sizeClass} ${className}`.trim",
+          "lineNumber": 63
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "parent.appendChild",
+          "lineNumber": 66
+        },
+        {
+          "caller": "UserAvatar",
+          "callee": "`avatar-placeholder ${sizeClass} ${className}`.trim",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Frontend/src/contexts/AuthContext.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 47,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "loadStoredUser",
+          "startLine": 7,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "AuthProvider",
+          "startLine": 16,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "useAuth",
+          "startLine": 45,
+          "endLine": 47,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthProvider",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "useAuth",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "loadStoredUser",
+          "callee": "localStorage.getItem",
+          "lineNumber": 9
+        },
+        {
+          "caller": "loadStoredUser",
+          "callee": "JSON.parse",
+          "lineNumber": 10
+        },
+        {
+          "caller": "AuthProvider",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "AuthProvider",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "AuthProvider",
+          "callee": "loadStoredUser",
+          "lineNumber": 18
+        },
+        {
+          "caller": "login",
+          "callee": "setUser",
+          "lineNumber": 21
+        },
+        {
+          "caller": "login",
+          "callee": "setIsAuthenticated",
+          "lineNumber": 22
+        },
+        {
+          "caller": "login",
+          "callee": "localStorage.setItem",
+          "lineNumber": 23
+        },
+        {
+          "caller": "login",
+          "callee": "JSON.stringify",
+          "lineNumber": 23
+        },
+        {
+          "caller": "updateUser",
+          "callee": "setUser",
+          "lineNumber": 28
+        },
+        {
+          "caller": "updateUser",
+          "callee": "localStorage.setItem",
+          "lineNumber": 29
+        },
+        {
+          "caller": "updateUser",
+          "callee": "JSON.stringify",
+          "lineNumber": 29
+        },
+        {
+          "caller": "logout",
+          "callee": "setUser",
+          "lineNumber": 33
+        },
+        {
+          "caller": "logout",
+          "callee": "setIsAuthenticated",
+          "lineNumber": 34
+        },
+        {
+          "caller": "logout",
+          "callee": "localStorage.removeItem",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useAuth",
+          "callee": "useContext",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

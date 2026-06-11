@@ -1,0 +1,2190 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "CreateNotificationDto",
+          "startLine": 5,
+          "endLine": 12,
+          "methods": [],
+          "properties": [
+            "SenderId",
+            "ReceiverId",
+            "Type",
+            "ReferenceId",
+            "Content"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SenderId",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "ReceiverId",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Type",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ReferenceId",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "CreateNotificationDto",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "classes": [
+        {
+          "name": "NotificationDto",
+          "startLine": 3,
+          "endLine": 15,
+          "methods": [],
+          "properties": [
+            "Id",
+            "SenderId",
+            "SenderName",
+            "SenderAvatar",
+            "ReceiverId",
+            "Type",
+            "ReferenceId",
+            "Content",
+            "IsRead",
+            "CreatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SenderId",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "SenderName",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SenderAvatar",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ReceiverId",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Type",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "ReferenceId",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "IsRead",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationDto",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "LikeResultDto",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "PostId",
+            "IsLiked",
+            "TotalLikes"
+          ]
+        },
+        {
+          "name": "CreateCommentDto",
+          "startLine": 12,
+          "endLine": 19,
+          "methods": [],
+          "properties": [
+            "Content",
+            "ParentCommentId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostId",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "IsLiked",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "TotalLikes",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "LikeResultDto",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "ParentCommentId",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "CreateCommentDto",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 42,
+      "classes": [
+        {
+          "name": "PostDto",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Content",
+            "Visibility",
+            "LikeCount",
+            "CommentCount",
+            "ShareCount",
+            "IsEdited",
+            "CreatedAt",
+            "UpdatedAt",
+            "IsLiked",
+            "User",
+            "Media"
+          ]
+        },
+        {
+          "name": "PostMediaDto",
+          "startLine": 22,
+          "endLine": 27,
+          "methods": [],
+          "properties": [
+            "Id",
+            "MediaUrl",
+            "MediaType"
+          ]
+        },
+        {
+          "name": "CreatePostDto",
+          "startLine": 29,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "Content",
+            "Visibility"
+          ]
+        },
+        {
+          "name": "CommentDto",
+          "startLine": 35,
+          "endLine": 44,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Content",
+            "LikeCount",
+            "IsEdited",
+            "CreatedAt",
+            "User",
+            "ParentCommentId"
+          ]
+        },
+        {
+          "name": "PostDetailDto",
+          "startLine": 46,
+          "endLine": 49,
+          "methods": [],
+          "properties": [
+            "Comments"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Visibility",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "LikeCount",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "CommentCount",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ShareCount",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "IsEdited",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "UpdatedAt",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "IsLiked",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Media",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "PostDto",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Id",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "MediaUrl",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "MediaType",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "PostMediaDto",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "Visibility",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "CreatePostDto",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "Id",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "LikeCount",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "IsEdited",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "ParentCommentId",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "CommentDto",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "Comments",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "PostDetailDto",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 30,
+        "functionCount": 0,
+        "classCount": 5
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "AdminUserDto",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Username",
+            "Email",
+            "Role",
+            "Status",
+            "Joined",
+            "Posts",
+            "Followers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "Email",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Role",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Status",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Joined",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Posts",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Followers",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "AdminUserDto",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 33,
+      "classes": [
+        {
+          "name": "UserDto",
+          "startLine": 3,
+          "endLine": 10,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Username",
+            "FullName",
+            "AvatarUrl",
+            "IsVerified"
+          ]
+        },
+        {
+          "name": "UserProfileDto",
+          "startLine": 12,
+          "endLine": 36,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Username",
+            "Email",
+            "FirstName",
+            "LastName",
+            "FullName",
+            "AvatarUrl",
+            "CoverUrl",
+            "Bio",
+            "Gender",
+            "BirthDate",
+            "Phone",
+            "Website",
+            "Location",
+            "IsVerified",
+            "IsPrivate",
+            "CreatedAt",
+            "FollowersCount",
+            "FollowingCount",
+            "PostsCount",
+            "IsFollowing"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "FullName",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "AvatarUrl",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "IsVerified",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "UserDto",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "Id",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Email",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "FirstName",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "LastName",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "FullName",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "AvatarUrl",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "CoverUrl",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "Bio",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Gender",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "BirthDate",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Phone",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "Website",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "Location",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "IsVerified",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "IsPrivate",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "FollowersCount",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "FollowingCount",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "PostsCount",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "IsFollowing",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "UserProfileDto",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 28,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "IAuthService",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [
+            "RegisterAsync",
+            "LoginAsync",
+            "RefreshTokenAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IAuthService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "ICommentService",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [
+            "AddCommentAsync",
+            "DeleteCommentAsync",
+            "GetCommentsAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ICommentService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 22,
+      "classes": [
+        {
+          "name": "IFileStorageService",
+          "startLine": 8,
+          "endLine": 24,
+          "methods": [
+            "SaveFileAsync",
+            "DeleteFileAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IFileStorageService",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "ILikeService",
+          "startLine": 5,
+          "endLine": 12,
+          "methods": [
+            "ToggleLikeAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ILikeService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "IMessageRepository",
+          "startLine": 5,
+          "endLine": 9,
+          "methods": [
+            "GetConversationMessagesAsync",
+            "GetUserConversationsAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IMessageRepository",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "classes": [
+        {
+          "name": "IMessageService",
+          "startLine": 5,
+          "endLine": 11,
+          "methods": [
+            "SendMessageAsync",
+            "GetConversationMessagesAsync",
+            "GetUserConversationsAsync",
+            "GetOrCreateDirectConversationAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IMessageService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "classes": [
+        {
+          "name": "INotificationRepository",
+          "startLine": 6,
+          "endLine": 34,
+          "methods": [
+            "GetByReceiverIdAsync",
+            "CountUnreadAsync",
+            "GetWithSenderAsync",
+            "FindGroupedAsync",
+            "DeleteGroupedAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "INotificationRepository",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 42,
+      "classes": [
+        {
+          "name": "INotificationService",
+          "startLine": 6,
+          "endLine": 50,
+          "methods": [
+            "CreateAndPushAsync",
+            "CreateOrUpdateAndPushAsync",
+            "DeleteNotificationAsync",
+            "GetNotificationsAsync",
+            "MarkAsReadAsync",
+            "MarkAllAsReadAsync",
+            "GetUnreadCountAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "INotificationService",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "IPostRepository",
+          "startLine": 5,
+          "endLine": 10,
+          "methods": [
+            "GetPostsWithDetailsAsync",
+            "GetUserPostsAsync",
+            "GetPostWithDetailsAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IPostRepository",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "classes": [
+        {
+          "name": "IPostService",
+          "startLine": 5,
+          "endLine": 20,
+          "methods": [
+            "GetPostsAsync",
+            "GetUserPostsAsync",
+            "GetPostByIdAsync",
+            "CreatePostAsync",
+            "CreatePostAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IPostService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "IRealtimeChatService",
+          "startLine": 8,
+          "endLine": 14,
+          "methods": [
+            "PushNewMessageAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IRealtimeChatService",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "IRealtimeNotificationService",
+          "startLine": 9,
+          "endLine": 15,
+          "methods": [
+            "PushAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IRealtimeNotificationService",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "IRepository",
+          "startLine": 5,
+          "endLine": 15,
+          "methods": [
+            "GetByIdAsync",
+            "GetAllAsync",
+            "FindAsync",
+            "AddAsync",
+            "UpdateAsync",
+            "DeleteAsync",
+            "SaveChangesAsync",
+            "Query"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IRepository",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "ITokenService",
+          "startLine": 5,
+          "endLine": 9,
+          "methods": [
+            "GenerateAccessToken",
+            "GenerateRefreshToken"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ITokenService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "IUserRepository",
+          "startLine": 5,
+          "endLine": 12,
+          "methods": [
+            "GetByUsernameAsync",
+            "GetByEmailAsync",
+            "ExistsByUsernameAsync",
+            "ExistsByEmailAsync",
+            "SearchUsersAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IUserRepository",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "IUserService",
+          "startLine": 5,
+          "endLine": 15,
+          "methods": [
+            "GetUserProfileAsync",
+            "ToggleFollowAsync",
+            "GetSuggestedUsersAsync",
+            "SearchUsersAsync",
+            "GetAllAdminUsersAsync",
+            "BanUserAsync",
+            "UnbanUserAsync",
+            "PromoteToAdminAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "IUserService",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "MappingProfile",
+          "startLine": 12,
+          "endLine": 67,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MappingProfile",
+          "startLine": 10,
+          "endLine": 68,
+          "methods": [
+            "MappingProfile"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MappingProfile",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "MappingProfile",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<User, UserDto>",
+          "lineNumber": 15
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<User, UserProfileDto>()\n            .ForMember",
+          "lineNumber": 16
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<User, UserProfileDto>",
+          "lineNumber": 16
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 18
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Gender.ToString().ToLower",
+          "lineNumber": 18
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Gender.ToString",
+          "lineNumber": 18
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Post, PostDto>()\n            .ForMember",
+          "lineNumber": 21
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Post, PostDto>",
+          "lineNumber": 21
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 23
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Visibility.ToString().ToLower",
+          "lineNumber": 23
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Visibility.ToString",
+          "lineNumber": 23
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Post, PostDetailDto>()\n            .ForMember",
+          "lineNumber": 25
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Post, PostDetailDto>",
+          "lineNumber": 25
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 27
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Visibility.ToString().ToLower",
+          "lineNumber": 27
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Visibility.ToString",
+          "lineNumber": 27
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<PostMedia, PostMediaDto>()\n            .ForMember",
+          "lineNumber": 29
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<PostMedia, PostMediaDto>",
+          "lineNumber": 29
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 31
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.MediaType.ToString().ToLower",
+          "lineNumber": 31
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.MediaType.ToString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Comment, CommentDto>",
+          "lineNumber": 33
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Notification, NotificationDto>()\n            .ForMember(dest => dest.Type,\n                opt => opt.MapFrom(src => src.Type.ToString().ToLower()))\n            .ForMember(dest => dest.SenderName,\n                opt => opt.MapFrom(src => src.Sender != null\n                    ? src.Sender.FullName ?? src.Sender.Username\n                    : null))\n            .ForMember",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Notification, NotificationDto>()\n            .ForMember(dest => dest.Type,\n                opt => opt.MapFrom(src => src.Type.ToString().ToLower()))\n            .ForMember",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Notification, NotificationDto>()\n            .ForMember",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Notification, NotificationDto>",
+          "lineNumber": 36
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 38
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Type.ToString().ToLower",
+          "lineNumber": 38
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Type.ToString",
+          "lineNumber": 38
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 40
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 44
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Message, MessageDto>()\n            .ForMember",
+          "lineNumber": 47
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Message, MessageDto>",
+          "lineNumber": 47
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 49
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.MessageType.ToString().ToLower",
+          "lineNumber": 49
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.MessageType.ToString",
+          "lineNumber": 49
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<MessageAttachment, MessageAttachmentDto>",
+          "lineNumber": 51
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Conversation, ConversationDto>()\n            .ForMember",
+          "lineNumber": 54
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<Conversation, ConversationDto>",
+          "lineNumber": 54
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Type.ToString().ToLower",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Type.ToString",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<ConversationMember, ConversationMemberDto>()\n            .ForMember(dest => dest.Username,\n                opt => opt.MapFrom(src => src.User.Username))\n            .ForMember(dest => dest.FullName,\n                opt => opt.MapFrom(src => src.User.FullName))\n            .ForMember(dest => dest.AvatarUrl,\n                opt => opt.MapFrom(src => src.User.AvatarUrl))\n            .ForMember",
+          "lineNumber": 58
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<ConversationMember, ConversationMemberDto>()\n            .ForMember(dest => dest.Username,\n                opt => opt.MapFrom(src => src.User.Username))\n            .ForMember(dest => dest.FullName,\n                opt => opt.MapFrom(src => src.User.FullName))\n            .ForMember",
+          "lineNumber": 58
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<ConversationMember, ConversationMemberDto>()\n            .ForMember(dest => dest.Username,\n                opt => opt.MapFrom(src => src.User.Username))\n            .ForMember",
+          "lineNumber": 58
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<ConversationMember, ConversationMemberDto>()\n            .ForMember",
+          "lineNumber": 58
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "CreateMap<ConversationMember, ConversationMemberDto>",
+          "lineNumber": 58
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 60
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 62
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 64
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "opt.MapFrom",
+          "lineNumber": 66
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Role.ToString().ToLower",
+          "lineNumber": 66
+        },
+        {
+          "caller": "MappingProfile",
+          "callee": "src.Role.ToString",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 106,
+      "functions": [
+        {
+          "name": "AuthService",
+          "startLine": 15,
+          "endLine": 25,
+          "params": [
+            "userRepository",
+            "refreshTokenRepository",
+            "tokenService",
+            "configuration"
+          ]
+        },
+        {
+          "name": "RegisterAsync",
+          "startLine": 27,
+          "endLine": 53,
+          "params": [
+            "dto"
+          ]
+        },
+        {
+          "name": "LoginAsync",
+          "startLine": 55,
+          "endLine": 76,
+          "params": [
+            "dto"
+          ]
+        },
+        {
+          "name": "RefreshTokenAsync",
+          "startLine": 78,
+          "endLine": 97,
+          "params": [
+            "refreshToken"
+          ]
+        },
+        {
+          "name": "GenerateAuthResponse",
+          "startLine": 99,
+          "endLine": 129,
+          "params": [
+            "user"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthService",
+          "startLine": 8,
+          "endLine": 130,
+          "methods": [
+            "AuthService",
+            "RegisterAsync",
+            "LoginAsync",
+            "RefreshTokenAsync",
+            "GenerateAuthResponse"
+          ],
+          "properties": [
+            "_userRepository",
+            "_refreshTokenRepository",
+            "_tokenService",
+            "_configuration"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthService",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "RegisterAsync",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "LoginAsync",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshTokenAsync",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "AuthService",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RegisterAsync",
+          "callee": "_userRepository.ExistsByUsernameAsync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "new InvalidOperationException",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "_userRepository.ExistsByEmailAsync",
+          "lineNumber": 33
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "new InvalidOperationException",
+          "lineNumber": 34
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "new User",
+          "lineNumber": 37
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 41
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "$\"{dto.FirstName} {dto.LastName}\".Trim",
+          "lineNumber": 44
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "_userRepository.AddAsync",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RegisterAsync",
+          "callee": "GenerateAuthResponse",
+          "lineNumber": 52
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "_userRepository.GetByUsernameAsync",
+          "lineNumber": 58
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "_userRepository.GetByEmailAsync",
+          "lineNumber": 59
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 62
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 65
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "BCrypt.Net.BCrypt.Verify",
+          "lineNumber": 68
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 69
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "_userRepository.UpdateAsync",
+          "lineNumber": 73
+        },
+        {
+          "caller": "LoginAsync",
+          "callee": "GenerateAuthResponse",
+          "lineNumber": 75
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "_refreshTokenRepository\n            .FindAsync",
+          "lineNumber": 80
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "tokens.FirstOrDefault",
+          "lineNumber": 83
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 86
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "_refreshTokenRepository.UpdateAsync",
+          "lineNumber": 90
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "_userRepository.GetByIdAsync",
+          "lineNumber": 93
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 94
+        },
+        {
+          "caller": "RefreshTokenAsync",
+          "callee": "GenerateAuthResponse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "_tokenService.GenerateAccessToken",
+          "lineNumber": 101
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "_tokenService.GenerateRefreshToken",
+          "lineNumber": 102
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "int.Parse",
+          "lineNumber": 103
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "new RefreshToken",
+          "lineNumber": 107
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "DateTime.UtcNow.AddDays",
+          "lineNumber": 111
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "_refreshTokenRepository.AddAsync",
+          "lineNumber": 114
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "int.Parse",
+          "lineNumber": 116
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "new AuthResponseDto",
+          "lineNumber": 119
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "user.Role.ToString",
+          "lineNumber": 124
+        },
+        {
+          "caller": "GenerateAuthResponse",
+          "callee": "DateTime.UtcNow.AddMinutes",
+          "lineNumber": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 137,
+      "functions": [
+        {
+          "name": "CommentService",
+          "startLine": 18,
+          "endLine": 28,
+          "params": [
+            "commentRepository",
+            "postRepository",
+            "notificationService",
+            "mapper"
+          ]
+        },
+        {
+          "name": "AddCommentAsync",
+          "startLine": 30,
+          "endLine": 76,
+          "params": [
+            "userId",
+            "postId",
+            "dto"
+          ]
+        },
+        {
+          "name": "DeleteCommentAsync",
+          "startLine": 78,
+          "endLine": 145,
+          "params": [
+            "userId",
+            "commentId"
+          ]
+        },
+        {
+          "name": "GetCommentsAsync",
+          "startLine": 147,
+          "endLine": 158,
+          "params": [
+            "postId",
+            "page",
+            "pageSize"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CommentService",
+          "startLine": 11,
+          "endLine": 159,
+          "methods": [
+            "CommentService",
+            "AddCommentAsync",
+            "DeleteCommentAsync",
+            "GetCommentsAsync"
+          ],
+          "properties": [
+            "_commentRepository",
+            "_postRepository",
+            "_notificationService",
+            "_mapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CommentService",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "AddCommentAsync",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "DeleteCommentAsync",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "GetCommentsAsync",
+          "line": 147,
+          "isDefault": false
+        },
+        {
+          "name": "CommentService",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_postRepository.GetByIdAsync",
+          "lineNumber": 32
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "new KeyNotFoundException",
+          "lineNumber": 33
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "new Comment",
+          "lineNumber": 35
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.AddAsync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_postRepository.UpdateAsync",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Where(c => c.PostId == postId && !c.IsDeleted && c.UserId != post.UserId)\n            .Select(c => c.UserId)\n            .Distinct()\n            .CountAsync",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Where(c => c.PostId == postId && !c.IsDeleted && c.UserId != post.UserId)\n            .Select(c => c.UserId)\n            .Distinct",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Where(c => c.PostId == postId && !c.IsDeleted && c.UserId != post.UserId)\n            .Select",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Where",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query",
+          "lineNumber": 52
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_notificationService.CreateOrUpdateAndPushAsync",
+          "lineNumber": 59
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "new CreateNotificationDto",
+          "lineNumber": 60
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .FirstOrDefaultAsync",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query()\n            .Include",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_commentRepository.Query",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AddCommentAsync",
+          "callee": "_mapper.Map<CommentDto>",
+          "lineNumber": 75
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.GetByIdAsync",
+          "lineNumber": 80
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "new KeyNotFoundException",
+          "lineNumber": 81
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_postRepository.GetByIdAsync",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "new UnauthorizedAccessException",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.UpdateAsync",
+          "lineNumber": 93
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "Math.Max",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_postRepository.UpdateAsync",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_notificationService.DeleteNotificationAsync",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                    .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)\n                    .Select(c => c.UserId)\n                    .Distinct()\n                    .CountAsync",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                    .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)\n                    .Select(c => c.UserId)\n                    .Distinct",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                    .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)\n                    .Select",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                    .Where",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_notificationService.DeleteNotificationAsync",
+          "lineNumber": 118
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                        .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)\n                        .OrderByDescending(c => c.CreatedAt)\n                        .FirstOrDefaultAsync",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                        .Where(c => c.PostId == post.Id && !c.IsDeleted && c.UserId != post.UserId)\n                        .OrderByDescending",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query()\n                        .Where",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_commentRepository.Query",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "_notificationService.CreateOrUpdateAndPushAsync",
+          "lineNumber": 131
+        },
+        {
+          "caller": "DeleteCommentAsync",
+          "callee": "new CreateNotificationDto",
+          "lineNumber": 132
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .Where(c => c.PostId == postId && !c.IsDeleted)\n            .OrderBy(c => c.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .ToListAsync",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .Where(c => c.PostId == postId && !c.IsDeleted)\n            .OrderBy(c => c.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .Where(c => c.PostId == postId && !c.IsDeleted)\n            .OrderBy(c => c.CreatedAt)\n            .Skip",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .Where(c => c.PostId == postId && !c.IsDeleted)\n            .OrderBy",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include(c => c.User)\n            .Where",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query()\n            .Include",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_commentRepository.Query",
+          "lineNumber": 149
+        },
+        {
+          "caller": "GetCommentsAsync",
+          "callee": "_mapper.Map<IEnumerable<CommentDto>>",
+          "lineNumber": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    }
+  ]
+}

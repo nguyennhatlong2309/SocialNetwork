@@ -1,0 +1,31 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 246,
+      "nonEmptyLines": 215,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 38,
+      "nonEmptyLines": 32,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 112,
+      "nonEmptyLines": 99,
+      "metrics": {}
+    }
+  ]
+}

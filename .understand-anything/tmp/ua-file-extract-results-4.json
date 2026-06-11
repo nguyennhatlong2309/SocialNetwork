@@ -1,0 +1,95 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Frontend/src/pages/user/ChatViewPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 246,
+      "nonEmptyLines": 213,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/CreatePostPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 194,
+      "nonEmptyLines": 171,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/InboxPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 183,
+      "nonEmptyLines": 158,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/LoginPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 209,
+      "nonEmptyLines": 181,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/NewsFeedPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 288,
+      "nonEmptyLines": 242,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/NotificationsPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 160,
+      "nonEmptyLines": 138,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/OnboardingPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 129,
+      "nonEmptyLines": 114,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/PostDetailPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 194,
+      "nonEmptyLines": 167,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/RegisterPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 135,
+      "nonEmptyLines": 117,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/SettingsPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 614,
+      "nonEmptyLines": 525,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/user/UserProfilePage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 239,
+      "nonEmptyLines": 205,
+      "metrics": {}
+    }
+  ]
+}

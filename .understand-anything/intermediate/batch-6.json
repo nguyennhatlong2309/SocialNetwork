@@ -1,0 +1,1287 @@
+{
+  "nodes": [
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "type": "file",
+      "name": "CreateNotificationDto.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in CreateNotificationDto.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs:CreateNotificationDto",
+      "type": "class",
+      "name": "CreateNotificationDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "lineRange": [
+        5,
+        12
+      ],
+      "summary": "Class representation of CreateNotificationDto defined inside CreateNotificationDto.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "type": "file",
+      "name": "NotificationDto.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in NotificationDto.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs:NotificationDto",
+      "type": "class",
+      "name": "NotificationDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "lineRange": [
+        3,
+        15
+      ],
+      "summary": "Class representation of NotificationDto defined inside NotificationDto.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "type": "file",
+      "name": "LikeCommentDtos.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in LikeCommentDtos.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs:LikeResultDto",
+      "type": "class",
+      "name": "LikeResultDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "Class representation of LikeResultDto defined inside LikeCommentDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs:CreateCommentDto",
+      "type": "class",
+      "name": "CreateCommentDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "lineRange": [
+        12,
+        19
+      ],
+      "summary": "Class representation of CreateCommentDto defined inside LikeCommentDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "type": "file",
+      "name": "PostDtos.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in PostDtos.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostDto",
+      "type": "class",
+      "name": "PostDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "Class representation of PostDto defined inside PostDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostMediaDto",
+      "type": "class",
+      "name": "PostMediaDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "lineRange": [
+        22,
+        27
+      ],
+      "summary": "Class representation of PostMediaDto defined inside PostDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:CreatePostDto",
+      "type": "class",
+      "name": "CreatePostDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "lineRange": [
+        29,
+        33
+      ],
+      "summary": "Class representation of CreatePostDto defined inside PostDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:CommentDto",
+      "type": "class",
+      "name": "CommentDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "lineRange": [
+        35,
+        44
+      ],
+      "summary": "Class representation of CommentDto defined inside PostDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostDetailDto",
+      "type": "class",
+      "name": "PostDetailDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "lineRange": [
+        46,
+        49
+      ],
+      "summary": "Class representation of PostDetailDto defined inside PostDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "type": "file",
+      "name": "AdminUserDto.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in AdminUserDto.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs:AdminUserDto",
+      "type": "class",
+      "name": "AdminUserDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "Class representation of AdminUserDto defined inside AdminUserDto.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "type": "file",
+      "name": "UserDtos.cs",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "summary": "Data Transfer Objects (DTOs) for structured data mapping in UserDtos.",
+      "tags": [
+        "data-model",
+        "csharp",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs:UserDto",
+      "type": "class",
+      "name": "UserDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "lineRange": [
+        3,
+        10
+      ],
+      "summary": "Class representation of UserDto defined inside UserDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs:UserProfileDto",
+      "type": "class",
+      "name": "UserProfileDto",
+      "filePath": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "lineRange": [
+        12,
+        36
+      ],
+      "summary": "Class representation of UserProfileDto defined inside UserDtos.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "type": "file",
+      "name": "IAuthService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "summary": "Interface definition declaring contracts for IAuthService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IAuthService.cs:IAuthService",
+      "type": "class",
+      "name": "IAuthService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "Class representation of IAuthService defined inside IAuthService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "type": "file",
+      "name": "ICommentService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "summary": "Interface definition declaring contracts for ICommentService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/ICommentService.cs:ICommentService",
+      "type": "class",
+      "name": "ICommentService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "lineRange": [
+        5,
+        21
+      ],
+      "summary": "Class representation of ICommentService defined inside ICommentService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "type": "file",
+      "name": "IFileStorageService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "summary": "Interface definition declaring contracts for IFileStorageService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs:IFileStorageService",
+      "type": "class",
+      "name": "IFileStorageService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "lineRange": [
+        8,
+        24
+      ],
+      "summary": "Class representation of IFileStorageService defined inside IFileStorageService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "type": "file",
+      "name": "ILikeService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "summary": "Interface definition declaring contracts for ILikeService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/ILikeService.cs:ILikeService",
+      "type": "class",
+      "name": "ILikeService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "lineRange": [
+        5,
+        12
+      ],
+      "summary": "Class representation of ILikeService defined inside ILikeService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "type": "file",
+      "name": "IMessageRepository.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "summary": "Interface definition declaring contracts for IMessageRepository.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs:IMessageRepository",
+      "type": "class",
+      "name": "IMessageRepository",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "lineRange": [
+        5,
+        9
+      ],
+      "summary": "Class representation of IMessageRepository defined inside IMessageRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "type": "file",
+      "name": "IMessageService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "summary": "Interface definition declaring contracts for IMessageService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IMessageService.cs:IMessageService",
+      "type": "class",
+      "name": "IMessageService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "lineRange": [
+        5,
+        11
+      ],
+      "summary": "Class representation of IMessageService defined inside IMessageService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "type": "file",
+      "name": "INotificationRepository.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "summary": "Interface definition declaring contracts for INotificationRepository.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs:INotificationRepository",
+      "type": "class",
+      "name": "INotificationRepository",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "lineRange": [
+        6,
+        34
+      ],
+      "summary": "Class representation of INotificationRepository defined inside INotificationRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "type": "file",
+      "name": "INotificationService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "summary": "Interface definition declaring contracts for INotificationService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/INotificationService.cs:INotificationService",
+      "type": "class",
+      "name": "INotificationService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "lineRange": [
+        6,
+        50
+      ],
+      "summary": "Class representation of INotificationService defined inside INotificationService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "type": "file",
+      "name": "IPostRepository.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "summary": "Interface definition declaring contracts for IPostRepository.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs:IPostRepository",
+      "type": "class",
+      "name": "IPostRepository",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "Class representation of IPostRepository defined inside IPostRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "type": "file",
+      "name": "IPostService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "summary": "Interface definition declaring contracts for IPostService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IPostService.cs:IPostService",
+      "type": "class",
+      "name": "IPostService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "Class representation of IPostService defined inside IPostService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "type": "file",
+      "name": "IRealtimeChatService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "summary": "Interface definition declaring contracts for IRealtimeChatService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs:IRealtimeChatService",
+      "type": "class",
+      "name": "IRealtimeChatService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "lineRange": [
+        8,
+        14
+      ],
+      "summary": "Class representation of IRealtimeChatService defined inside IRealtimeChatService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "type": "file",
+      "name": "IRealtimeNotificationService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "summary": "Interface definition declaring contracts for IRealtimeNotificationService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs:IRealtimeNotificationService",
+      "type": "class",
+      "name": "IRealtimeNotificationService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "lineRange": [
+        9,
+        15
+      ],
+      "summary": "Class representation of IRealtimeNotificationService defined inside IRealtimeNotificationService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "type": "file",
+      "name": "IRepository.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "summary": "Interface definition declaring contracts for IRepository.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IRepository.cs:IRepository",
+      "type": "class",
+      "name": "IRepository",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "lineRange": [
+        5,
+        15
+      ],
+      "summary": "Class representation of IRepository defined inside IRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "type": "file",
+      "name": "ITokenService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "summary": "Interface definition declaring contracts for ITokenService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/ITokenService.cs:ITokenService",
+      "type": "class",
+      "name": "ITokenService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "lineRange": [
+        5,
+        9
+      ],
+      "summary": "Class representation of ITokenService defined inside ITokenService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "type": "file",
+      "name": "IUserRepository.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "summary": "Interface definition declaring contracts for IUserRepository.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs:IUserRepository",
+      "type": "class",
+      "name": "IUserRepository",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "lineRange": [
+        5,
+        12
+      ],
+      "summary": "Class representation of IUserRepository defined inside IUserRepository.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "type": "file",
+      "name": "IUserService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "summary": "Interface definition declaring contracts for IUserService.",
+      "tags": [
+        "type-definition",
+        "csharp",
+        "interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Interfaces/IUserService.cs:IUserService",
+      "type": "class",
+      "name": "IUserService",
+      "filePath": "Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "lineRange": [
+        5,
+        15
+      ],
+      "summary": "Class representation of IUserService defined inside IUserService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "type": "file",
+      "name": "MappingProfile.cs",
+      "filePath": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "summary": "Application layer mapping profile or helper: MappingProfile.cs.",
+      "tags": [
+        "csharp",
+        "mapping"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs:MappingProfile",
+      "type": "class",
+      "name": "MappingProfile",
+      "filePath": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "lineRange": [
+        10,
+        68
+      ],
+      "summary": "Class representation of MappingProfile defined inside MappingProfile.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs:MappingProfile",
+      "type": "function",
+      "name": "MappingProfile",
+      "filePath": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "lineRange": [
+        12,
+        67
+      ],
+      "summary": "Function MappingProfile implementing logic inside MappingProfile.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "type": "file",
+      "name": "AuthService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "summary": "Application business logic service handling operations for Auth.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/AuthService.cs:AuthService",
+      "type": "class",
+      "name": "AuthService",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        8,
+        130
+      ],
+      "summary": "Class representation of AuthService defined inside AuthService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:AuthService",
+      "type": "function",
+      "name": "AuthService",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        15,
+        25
+      ],
+      "summary": "Function AuthService implementing logic inside AuthService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:RegisterAsync",
+      "type": "function",
+      "name": "RegisterAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        27,
+        53
+      ],
+      "summary": "Function RegisterAsync implementing logic inside AuthService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:LoginAsync",
+      "type": "function",
+      "name": "LoginAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        55,
+        76
+      ],
+      "summary": "Function LoginAsync implementing logic inside AuthService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:RefreshTokenAsync",
+      "type": "function",
+      "name": "RefreshTokenAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        78,
+        97
+      ],
+      "summary": "Function RefreshTokenAsync implementing logic inside AuthService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:GenerateAuthResponse",
+      "type": "function",
+      "name": "GenerateAuthResponse",
+      "filePath": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "lineRange": [
+        99,
+        129
+      ],
+      "summary": "Function GenerateAuthResponse implementing logic inside AuthService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "type": "file",
+      "name": "CommentService.cs",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "summary": "Application business logic service handling operations for Comment.",
+      "tags": [
+        "service",
+        "csharp",
+        "business-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:Backend/SocialNetwork.Application/Services/CommentService.cs:CommentService",
+      "type": "class",
+      "name": "CommentService",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "lineRange": [
+        11,
+        159
+      ],
+      "summary": "Class representation of CommentService defined inside CommentService.cs.",
+      "tags": [
+        "class",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:CommentService",
+      "type": "function",
+      "name": "CommentService",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "lineRange": [
+        18,
+        28
+      ],
+      "summary": "Function CommentService implementing logic inside CommentService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:AddCommentAsync",
+      "type": "function",
+      "name": "AddCommentAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "lineRange": [
+        30,
+        76
+      ],
+      "summary": "Function AddCommentAsync implementing logic inside CommentService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:DeleteCommentAsync",
+      "type": "function",
+      "name": "DeleteCommentAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "lineRange": [
+        78,
+        145
+      ],
+      "summary": "Function DeleteCommentAsync implementing logic inside CommentService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:GetCommentsAsync",
+      "type": "function",
+      "name": "GetCommentsAsync",
+      "filePath": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "lineRange": [
+        147,
+        158
+      ],
+      "summary": "Function GetCommentsAsync implementing logic inside CommentService.cs.",
+      "tags": [
+        "function",
+        "csharp"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs:CreateNotificationDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs:NotificationDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs:LikeResultDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs:CreateCommentDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostMediaDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:CreatePostDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:CommentDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs:PostDetailDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs:AdminUserDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs:UserDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "target": "class:Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs:UserProfileDto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IAuthService.cs:IAuthService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/ICommentService.cs:ICommentService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs:IFileStorageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/ILikeService.cs:ILikeService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs:IMessageRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IMessageService.cs:IMessageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs:INotificationRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/INotificationService.cs:INotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs:IPostRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IPostService.cs:IPostService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs:IRealtimeChatService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs:IRealtimeNotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IRepository.cs:IRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/ITokenService.cs:ITokenService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs:IUserRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Interfaces/IUserService.cs:IUserService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "target": "class:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs:MappingProfile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "target": "function:Backend/SocialNetwork.Application/Mappings/MappingProfile.cs:MappingProfile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/AuthService.cs:AuthService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:AuthService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:RegisterAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:LoginAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:RefreshTokenAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/AuthService.cs:GenerateAuthResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "class:Backend/SocialNetwork.Application/Services/CommentService.cs:CommentService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:CommentService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:AddCommentAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:DeleteCommentAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "function:Backend/SocialNetwork.Application/Services/CommentService.cs:GetCommentsAsync",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "target": "file:Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "type": "implements",
+      "direction": "forward",
+      "weight": 0.9
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "file:Frontend/src/pages/user/ChatViewPage.css",
+      "type": "file",
+      "name": "ChatViewPage.css",
+      "filePath": "Frontend/src/pages/user/ChatViewPage.css",
+      "summary": "React page layout representing the ChatViewPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/CreatePostPage.css",
+      "type": "file",
+      "name": "CreatePostPage.css",
+      "filePath": "Frontend/src/pages/user/CreatePostPage.css",
+      "summary": "React page layout representing the CreatePostPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/InboxPage.css",
+      "type": "file",
+      "name": "InboxPage.css",
+      "filePath": "Frontend/src/pages/user/InboxPage.css",
+      "summary": "React page layout representing the InboxPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/LoginPage.css",
+      "type": "file",
+      "name": "LoginPage.css",
+      "filePath": "Frontend/src/pages/user/LoginPage.css",
+      "summary": "React page layout representing the LoginPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/NewsFeedPage.css",
+      "type": "file",
+      "name": "NewsFeedPage.css",
+      "filePath": "Frontend/src/pages/user/NewsFeedPage.css",
+      "summary": "React page layout representing the NewsFeedPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/NotificationsPage.css",
+      "type": "file",
+      "name": "NotificationsPage.css",
+      "filePath": "Frontend/src/pages/user/NotificationsPage.css",
+      "summary": "React page layout representing the NotificationsPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/OnboardingPage.css",
+      "type": "file",
+      "name": "OnboardingPage.css",
+      "filePath": "Frontend/src/pages/user/OnboardingPage.css",
+      "summary": "React page layout representing the OnboardingPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/PostDetailPage.css",
+      "type": "file",
+      "name": "PostDetailPage.css",
+      "filePath": "Frontend/src/pages/user/PostDetailPage.css",
+      "summary": "React page layout representing the PostDetailPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/RegisterPage.css",
+      "type": "file",
+      "name": "RegisterPage.css",
+      "filePath": "Frontend/src/pages/user/RegisterPage.css",
+      "summary": "React page layout representing the RegisterPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/SettingsPage.css",
+      "type": "file",
+      "name": "SettingsPage.css",
+      "filePath": "Frontend/src/pages/user/SettingsPage.css",
+      "summary": "React page layout representing the SettingsPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/UserProfilePage.css",
+      "type": "file",
+      "name": "UserProfilePage.css",
+      "filePath": "Frontend/src/pages/user/UserProfilePage.css",
+      "summary": "React page layout representing the UserProfilePage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

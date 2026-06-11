@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Frontend/src/contexts/PageStateContext.jsx",
+      "language": "javascript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/contexts/SignalRContext.jsx",
+      "language": "javascript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useAppearance.js",
+      "language": "javascript",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useComments.js",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useMessages.js",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useNotifications.js",
+      "language": "javascript",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/usePost.js",
+      "language": "javascript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/usePosts.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/hooks/useUsers.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/index.css",
+      "language": "css",
+      "sizeLines": 451,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "language": "javascript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "language": "javascript",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 737,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "language": "javascript",
+      "sizeLines": 343,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/ChatViewPage.jsx",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/CreatePostPage.jsx",
+      "language": "javascript",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/InboxPage.jsx",
+      "language": "javascript",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/LoginPage.jsx",
+      "language": "javascript",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "language": "javascript",
+      "sizeLines": 424,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/NotificationsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/OnboardingPage.jsx",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/PostDetailPage.jsx",
+      "language": "javascript",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/RegisterPage.jsx",
+      "language": "javascript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/pages/user/SettingsPage.jsx",
+      "language": "javascript",
+      "sizeLines": 653,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "Frontend/src/contexts/PageStateContext.jsx": [],
+    "Frontend/src/contexts/SignalRContext.jsx": [],
+    "Frontend/src/hooks/useAppearance.js": [],
+    "Frontend/src/hooks/useComments.js": [],
+    "Frontend/src/hooks/useMessages.js": [],
+    "Frontend/src/hooks/useNotifications.js": [],
+    "Frontend/src/hooks/usePost.js": [],
+    "Frontend/src/hooks/usePosts.js": [],
+    "Frontend/src/hooks/useUsers.js": [],
+    "Frontend/src/index.css": [],
+    "Frontend/src/main.jsx": [],
+    "Frontend/src/pages/admin/AdminDashboardPage.jsx": [],
+    "Frontend/src/pages/admin/AdminModerationPage.jsx": [],
+    "Frontend/src/pages/admin/AdminSettingsPage.jsx": [],
+    "Frontend/src/pages/admin/AdminUserManagementPage.jsx": [],
+    "Frontend/src/pages/user/ChatViewPage.jsx": [],
+    "Frontend/src/pages/user/CreatePostPage.jsx": [],
+    "Frontend/src/pages/user/InboxPage.jsx": [],
+    "Frontend/src/pages/user/LoginPage.jsx": [],
+    "Frontend/src/pages/user/NewsFeedPage.jsx": [],
+    "Frontend/src/pages/user/NotificationsPage.jsx": [],
+    "Frontend/src/pages/user/OnboardingPage.jsx": [],
+    "Frontend/src/pages/user/PostDetailPage.jsx": [],
+    "Frontend/src/pages/user/RegisterPage.jsx": [],
+    "Frontend/src/pages/user/SettingsPage.jsx": []
+  }
+}

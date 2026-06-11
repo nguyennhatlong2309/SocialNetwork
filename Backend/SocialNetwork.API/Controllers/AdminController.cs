@@ -7,7 +7,7 @@ namespace SocialNetwork.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize] // Should ideally be [Authorize(Roles = "Admin")] if Role existed
+[Authorize(Roles = "Admin")]
 public class AdminController : ControllerBase
 {
     private readonly IUserService _userService;

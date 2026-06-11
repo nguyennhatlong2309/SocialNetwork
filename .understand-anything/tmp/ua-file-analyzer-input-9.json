@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Backend/SocialNetwork.slnx",
+      "language": "slnx",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/adminApi.js",
+      "language": "javascript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/authApi.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/axiosClient.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/messageApi.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/mockData.js",
+      "language": "javascript",
+      "sizeLines": 464,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/notificationApi.js",
+      "language": "javascript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/postApi.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/api/userApi.js",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/App.css",
+      "language": "css",
+      "sizeLines": 184,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/AdminLayout.jsx",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/AppLayout.jsx",
+      "language": "javascript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/layout/GlobalSearch.jsx",
+      "language": "javascript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.css",
+      "language": "css",
+      "sizeLines": 269,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/PostDetailDialog.jsx",
+      "language": "javascript",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/FeedSkeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/PostCardSkeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.css",
+      "language": "css",
+      "sizeLines": 62,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/skeleton/Skeleton.jsx",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.css",
+      "language": "css",
+      "sizeLines": 48,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/components/ui/ProgressiveImage.jsx",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/components/ui/UserAvatar.jsx",
+      "language": "javascript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Frontend/src/contexts/AuthContext.jsx",
+      "language": "javascript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "Backend/SocialNetwork.slnx": [],
+    "Frontend/eslint.config.js": [],
+    "Frontend/src/api/adminApi.js": [],
+    "Frontend/src/api/authApi.js": [],
+    "Frontend/src/api/axiosClient.js": [],
+    "Frontend/src/api/messageApi.js": [],
+    "Frontend/src/api/mockData.js": [],
+    "Frontend/src/api/notificationApi.js": [],
+    "Frontend/src/api/postApi.js": [],
+    "Frontend/src/api/userApi.js": [],
+    "Frontend/src/App.css": [],
+    "Frontend/src/App.jsx": [],
+    "Frontend/src/components/layout/AdminLayout.jsx": [],
+    "Frontend/src/components/layout/AppLayout.jsx": [],
+    "Frontend/src/components/layout/GlobalSearch.jsx": [],
+    "Frontend/src/components/PostDetailDialog.css": [],
+    "Frontend/src/components/PostDetailDialog.jsx": [],
+    "Frontend/src/components/skeleton/FeedSkeleton.jsx": [],
+    "Frontend/src/components/skeleton/PostCardSkeleton.jsx": [],
+    "Frontend/src/components/skeleton/Skeleton.css": [],
+    "Frontend/src/components/skeleton/Skeleton.jsx": [],
+    "Frontend/src/components/ui/ProgressiveImage.css": [],
+    "Frontend/src/components/ui/ProgressiveImage.jsx": [],
+    "Frontend/src/components/ui/UserAvatar.jsx": [],
+    "Frontend/src/contexts/AuthContext.jsx": []
+  }
+}

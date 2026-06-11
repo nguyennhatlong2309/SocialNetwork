@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs",
+      "language": "csharp",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs",
+      "language": "csharp",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs",
+      "language": "csharp",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs",
+      "language": "csharp",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs",
+      "language": "csharp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs",
+      "language": "csharp",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs",
+      "language": "csharp",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs",
+      "language": "csharp",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs",
+      "language": "csharp",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IPostService.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs",
+      "language": "csharp",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IRepository.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs",
+      "language": "csharp",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Interfaces/IUserService.cs",
+      "language": "csharp",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs",
+      "language": "csharp",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/AuthService.cs",
+      "language": "csharp",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/CommentService.cs",
+      "language": "csharp",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "Backend/SocialNetwork.Application/DTOs/Notification/CreateNotificationDto.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/Notification/NotificationDto.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/Post/LikeCommentDtos.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/Post/PostDtos.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/User/AdminUserDto.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/User/UserDtos.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IAuthService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/ICommentService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IFileStorageService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/ILikeService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IMessageRepository.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IMessageService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/INotificationRepository.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/INotificationService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IPostRepository.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IPostService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IRealtimeChatService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IRealtimeNotificationService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IRepository.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/ITokenService.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IUserRepository.cs": [],
+    "Backend/SocialNetwork.Application/Interfaces/IUserService.cs": [],
+    "Backend/SocialNetwork.Application/Mappings/MappingProfile.cs": [],
+    "Backend/SocialNetwork.Application/Services/AuthService.cs": [],
+    "Backend/SocialNetwork.Application/Services/CommentService.cs": []
+  }
+}

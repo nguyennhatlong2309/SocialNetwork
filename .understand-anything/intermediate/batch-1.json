@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "document:Frontend/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "Frontend/README.md",
+      "summary": "Frontend configuration or resource: README.md.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "Frontend/index.html",
+      "summary": "Frontend configuration or resource: index.html.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:Frontend/lint_output.txt",
+      "type": "document",
+      "name": "lint_output.txt",
+      "filePath": "Frontend/lint_output.txt",
+      "summary": "Frontend configuration or resource: lint_output.txt.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:Frontend/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "Frontend/package.json",
+      "summary": "Frontend configuration or resource: package.json.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

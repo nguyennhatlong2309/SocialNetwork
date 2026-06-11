@@ -4,6 +4,7 @@ using SocialNetwork.Application.Interfaces;
 using SocialNetwork.Application.DTOs.Post;
 using SocialNetwork.Application.DTOs.User;
 using System.Security.Claims;
+using SocialNetwork.API.Extensions;
 
 namespace SocialNetwork.API.Controllers;
 
@@ -21,11 +22,7 @@ public class UsersController : ControllerBase
         _postService = postService;
     }
 
-    private long GetCurrentUserId()
-    {
-        var idClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        return long.TryParse(idClaim, out var id) ? id : 0;
-    }
+    private long GetCurrentUserId() => User.GetUserId();
 
     [HttpGet("{id}/profile")]
     public async Task<ActionResult<UserProfileDto>> GetProfile(long id)

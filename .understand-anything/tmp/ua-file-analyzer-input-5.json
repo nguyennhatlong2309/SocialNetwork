@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": ".aiignore",
+      "language": "unknown",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".cursorignore",
+      "language": "unknown",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/appsettings.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "language": "csharp",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "language": "csharp",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "language": "csharp",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "language": "csharp",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "language": "csharp",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "language": "csharp",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "language": "csharp",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "language": "csharp",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "language": "csharp",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Program.cs",
+      "language": "csharp",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Properties/launchSettings.json",
+      "language": "json",
+      "sizeLines": 23,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "language": "csharp",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "language": "csharp",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "language": "csharp",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.csproj",
+      "language": "csproj",
+      "sizeLines": 25,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.http",
+      "language": "http",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "language": "csharp",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "language": "csharp",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "language": "csharp",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".aiignore": [],
+    ".cursorignore": [],
+    ".understand-anything/.understandignore": [],
+    "Backend/SocialNetwork.API/appsettings.json": [],
+    "Backend/SocialNetwork.API/Controllers/AdminController.cs": [],
+    "Backend/SocialNetwork.API/Controllers/AuthController.cs": [],
+    "Backend/SocialNetwork.API/Controllers/MessagesController.cs": [],
+    "Backend/SocialNetwork.API/Controllers/NotificationsController.cs": [],
+    "Backend/SocialNetwork.API/Controllers/PostsController.cs": [],
+    "Backend/SocialNetwork.API/Controllers/UsersController.cs": [],
+    "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs": [],
+    "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs": [],
+    "Backend/SocialNetwork.API/Hubs/ChatHub.cs": [],
+    "Backend/SocialNetwork.API/Hubs/NotificationHub.cs": [],
+    "Backend/SocialNetwork.API/Program.cs": [],
+    "Backend/SocialNetwork.API/Properties/launchSettings.json": [],
+    "Backend/SocialNetwork.API/Services/ConnectionManager.cs": [],
+    "Backend/SocialNetwork.API/Services/HubChatService.cs": [],
+    "Backend/SocialNetwork.API/Services/HubNotificationService.cs": [],
+    "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs": [],
+    "Backend/SocialNetwork.API/SocialNetwork.API.csproj": [],
+    "Backend/SocialNetwork.API/SocialNetwork.API.http": [],
+    "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs": [],
+    "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs": []
+  }
+}

@@ -1,0 +1,5266 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Share.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "Share",
+          "startLine": 3,
+          "endLine": 16,
+          "methods": [],
+          "properties": [
+            "Id",
+            "UserId",
+            "PostId",
+            "SharedText",
+            "CreatedAt",
+            "User",
+            "Post"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "PostId",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SharedText",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Post",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Share",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 8,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Story.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "Story",
+          "startLine": 5,
+          "endLine": 21,
+          "methods": [],
+          "properties": [
+            "Id",
+            "UserId",
+            "MediaUrl",
+            "MediaType",
+            "Caption",
+            "ExpiresAt",
+            "CreatedAt",
+            "User",
+            "Views"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "MediaUrl",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "MediaType",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Caption",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ExpiresAt",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "Views",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "Story",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/StoryView.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "StoryView",
+          "startLine": 3,
+          "endLine": 13,
+          "methods": [],
+          "properties": [
+            "StoryId",
+            "ViewerId",
+            "ViewedAt",
+            "Story",
+            "Viewer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StoryId",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "ViewerId",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ViewedAt",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Story",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "Viewer",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "StoryView",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/User.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 53,
+      "classes": [
+        {
+          "name": "User",
+          "startLine": 5,
+          "endLine": 64,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Username",
+            "Email",
+            "PasswordHash",
+            "FirstName",
+            "LastName",
+            "FullName",
+            "AvatarUrl",
+            "CoverUrl",
+            "Bio",
+            "Gender",
+            "BirthDate",
+            "Phone",
+            "Website",
+            "Location",
+            "IsVerified",
+            "IsPrivate",
+            "IsActive",
+            "IsBanned",
+            "Role",
+            "LastSeenAt",
+            "CreatedAt",
+            "UpdatedAt",
+            "UserSettings",
+            "RefreshTokens",
+            "UserSessions",
+            "Posts",
+            "Comments",
+            "Stories",
+            "Shares",
+            "SentNotifications",
+            "ReceivedNotifications",
+            "CreatedConversations",
+            "ConversationMemberships",
+            "Messages",
+            "FiledReports",
+            "Likes",
+            "SavedPosts",
+            "Followers",
+            "Following",
+            "BlockedUsers",
+            "BlockedByUsers",
+            "SentFollowRequests",
+            "ReceivedFollowRequests",
+            "StoryViews",
+            "MessageReads"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Email",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "PasswordHash",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "FirstName",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "LastName",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "FullName",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "AvatarUrl",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "CoverUrl",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "Bio",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Gender",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "BirthDate",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Phone",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "Website",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Location",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "IsVerified",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "IsPrivate",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "IsActive",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "IsBanned",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "Role",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "LastSeenAt",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "UpdatedAt",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "UserSettings",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshTokens",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "UserSessions",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "Posts",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "Comments",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "Stories",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Shares",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "SentNotifications",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "ReceivedNotifications",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedConversations",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationMemberships",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "Messages",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "FiledReports",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "Likes",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "SavedPosts",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "Followers",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "Following",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "BlockedUsers",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "BlockedByUsers",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "SentFollowRequests",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "ReceivedFollowRequests",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "StoryViews",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "MessageReads",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 47,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSession.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "UserSession",
+          "startLine": 3,
+          "endLine": 17,
+          "methods": [],
+          "properties": [
+            "Id",
+            "UserId",
+            "IpAddress",
+            "UserAgent",
+            "DeviceName",
+            "LoginAt",
+            "LogoutAt",
+            "User"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "IpAddress",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "UserAgent",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "DeviceName",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "LoginAt",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "LogoutAt",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "UserSession",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/UserSettings.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "UserSettings",
+          "startLine": 3,
+          "endLine": 23,
+          "methods": [],
+          "properties": [
+            "Id",
+            "UserId",
+            "EmailNotifications",
+            "PushNotifications",
+            "MessageNotifications",
+            "DarkMode",
+            "Language",
+            "ShowOnlineStatus",
+            "AllowTagging",
+            "CreatedAt",
+            "UpdatedAt",
+            "User"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "EmailNotifications",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "PushNotifications",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "MessageNotifications",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "DarkMode",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "Language",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ShowOnlineStatus",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "AllowTagging",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "CreatedAt",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "UpdatedAt",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "User",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "UserSettings",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 13,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ConversationType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/FollowRequestStatus.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/GenderType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MediaType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MemberRole.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/MessageType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/NotificationType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportReason.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/ReportStatus.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/UserRole.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Enums/VisibilityType.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/SocialNetwork.Domain.csproj",
+      "language": "csproj",
+      "fileCategory": "config",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Data/SocialNetworkDbContext.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 510,
+      "nonEmptyLines": 446,
+      "functions": [
+        {
+          "name": "SocialNetworkDbContext",
+          "startLine": 8,
+          "endLine": 9,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "OnModelCreating",
+          "startLine": 49,
+          "endLine": 509,
+          "params": [
+            "modelBuilder"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SocialNetworkDbContext",
+          "startLine": 6,
+          "endLine": 510,
+          "methods": [
+            "SocialNetworkDbContext",
+            "OnModelCreating"
+          ],
+          "properties": [
+            "Users",
+            "UserSettings",
+            "RefreshTokens",
+            "UserSessions",
+            "Follows",
+            "FollowRequests",
+            "Blocks",
+            "Posts",
+            "PostMedia",
+            "Likes",
+            "Comments",
+            "Shares",
+            "SavedPosts",
+            "Stories",
+            "StoryViews",
+            "Hashtags",
+            "PostHashtags",
+            "Reports",
+            "Notifications",
+            "Conversations",
+            "ConversationMembers",
+            "Messages",
+            "MessageAttachments",
+            "MessageReads"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SocialNetworkDbContext",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "Users",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "UserSettings",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshTokens",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "UserSessions",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "Follows",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "FollowRequests",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "Blocks",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "Posts",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "PostMedia",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Likes",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "Comments",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "Shares",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "SavedPosts",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "Stories",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "StoryViews",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "Hashtags",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "PostHashtags",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "Reports",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "Notifications",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "Conversations",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationMembers",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Messages",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "MessageAttachments",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "MessageReads",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "SocialNetworkDbContext",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnModelCreating",
+          "callee": "base.OnModelCreating",
+          "lineNumber": 51
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<User>",
+          "lineNumber": 54
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 56
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 57
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Id).HasColumnName",
+          "lineNumber": 58
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 58
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Username).HasColumnName(\"username\").HasMaxLength(50).IsRequired",
+          "lineNumber": 59
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Username).HasColumnName(\"username\").HasMaxLength",
+          "lineNumber": 59
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Username).HasColumnName",
+          "lineNumber": 59
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 59
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Email).HasColumnName(\"email\").HasMaxLength(150).IsRequired",
+          "lineNumber": 60
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Email).HasColumnName(\"email\").HasMaxLength",
+          "lineNumber": 60
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Email).HasColumnName",
+          "lineNumber": 60
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 60
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.PasswordHash).HasColumnName(\"password_hash\").HasMaxLength(255).IsRequired",
+          "lineNumber": 61
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.PasswordHash).HasColumnName(\"password_hash\").HasMaxLength",
+          "lineNumber": 61
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.PasswordHash).HasColumnName",
+          "lineNumber": 61
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 61
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.FirstName).HasColumnName(\"first_name\").HasMaxLength",
+          "lineNumber": 62
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.FirstName).HasColumnName",
+          "lineNumber": 62
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 62
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.LastName).HasColumnName(\"last_name\").HasMaxLength",
+          "lineNumber": 63
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.LastName).HasColumnName",
+          "lineNumber": 63
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 63
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.FullName).HasColumnName(\"full_name\").HasMaxLength",
+          "lineNumber": 64
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.FullName).HasColumnName",
+          "lineNumber": 64
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 64
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.AvatarUrl).HasColumnName(\"avatar_url\").HasColumnType",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.AvatarUrl).HasColumnName",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 65
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.CoverUrl).HasColumnName(\"cover_url\").HasColumnType",
+          "lineNumber": 66
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.CoverUrl).HasColumnName",
+          "lineNumber": 66
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 66
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Bio).HasColumnName(\"bio\").HasColumnType",
+          "lineNumber": 67
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Bio).HasColumnName",
+          "lineNumber": 67
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 67
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Gender).HasColumnName(\"gender\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 68
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Gender).HasColumnName(\"gender\").HasConversion<string>",
+          "lineNumber": 68
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Gender).HasColumnName",
+          "lineNumber": 68
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 68
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.BirthDate).HasColumnName",
+          "lineNumber": 69
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 69
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Phone).HasColumnName(\"phone\").HasMaxLength",
+          "lineNumber": 70
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Phone).HasColumnName",
+          "lineNumber": 70
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 70
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Website).HasColumnName(\"website\").HasMaxLength",
+          "lineNumber": 71
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Website).HasColumnName",
+          "lineNumber": 71
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 71
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Location).HasColumnName(\"location\").HasMaxLength",
+          "lineNumber": 72
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.Location).HasColumnName",
+          "lineNumber": 72
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 72
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.IsVerified).HasColumnName",
+          "lineNumber": 73
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 73
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.IsPrivate).HasColumnName",
+          "lineNumber": 74
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 74
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.IsActive).HasColumnName",
+          "lineNumber": 75
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 75
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.IsBanned).HasColumnName",
+          "lineNumber": 76
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 76
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.LastSeenAt).HasColumnName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 77
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.CreatedAt).HasColumnName",
+          "lineNumber": 78
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 78
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(u => u.UpdatedAt).HasColumnName",
+          "lineNumber": 79
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 79
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex(u => u.Username).IsUnique",
+          "lineNumber": 81
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 81
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex(u => u.Email).IsUnique",
+          "lineNumber": 82
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 82
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<UserSettings>",
+          "lineNumber": 86
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 88
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 89
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.Id).HasColumnName",
+          "lineNumber": 90
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 90
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.UserId).HasColumnName",
+          "lineNumber": 91
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 91
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.EmailNotifications).HasColumnName",
+          "lineNumber": 92
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 92
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.PushNotifications).HasColumnName",
+          "lineNumber": 93
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 93
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.MessageNotifications).HasColumnName",
+          "lineNumber": 94
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 94
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.DarkMode).HasColumnName",
+          "lineNumber": 95
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 95
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.Language).HasColumnName(\"language\").HasMaxLength",
+          "lineNumber": 96
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.Language).HasColumnName",
+          "lineNumber": 96
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 96
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.ShowOnlineStatus).HasColumnName",
+          "lineNumber": 97
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 97
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.AllowTagging).HasColumnName",
+          "lineNumber": 98
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 98
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.CreatedAt).HasColumnName",
+          "lineNumber": 99
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 99
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(us => us.UpdatedAt).HasColumnName",
+          "lineNumber": 100
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 100
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex(us => us.UserId).IsUnique",
+          "lineNumber": 102
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 102
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(us => us.User).WithOne(u => u.UserSettings)\n                .HasForeignKey<UserSettings>(us => us.UserId).OnDelete",
+          "lineNumber": 103
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(us => us.User).WithOne(u => u.UserSettings)\n                .HasForeignKey<UserSettings>",
+          "lineNumber": 103
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(us => us.User).WithOne",
+          "lineNumber": 103
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 103
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<RefreshToken>",
+          "lineNumber": 108
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 110
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 111
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.Id).HasColumnName",
+          "lineNumber": 112
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 112
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.UserId).HasColumnName",
+          "lineNumber": 113
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 113
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.Token).HasColumnName(\"token\").HasMaxLength(500).IsRequired",
+          "lineNumber": 114
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.Token).HasColumnName(\"token\").HasMaxLength",
+          "lineNumber": 114
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.Token).HasColumnName",
+          "lineNumber": 114
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 114
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.ExpiresAt).HasColumnName",
+          "lineNumber": 115
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 115
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.Revoked).HasColumnName",
+          "lineNumber": 116
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 116
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(rt => rt.CreatedAt).HasColumnName",
+          "lineNumber": 117
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 117
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(rt => rt.User).WithMany(u => u.RefreshTokens)\n                .HasForeignKey(rt => rt.UserId).OnDelete",
+          "lineNumber": 119
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(rt => rt.User).WithMany(u => u.RefreshTokens)\n                .HasForeignKey",
+          "lineNumber": 119
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(rt => rt.User).WithMany",
+          "lineNumber": 119
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 119
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<UserSession>",
+          "lineNumber": 124
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 126
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 127
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.Id).HasColumnName",
+          "lineNumber": 128
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 128
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.UserId).HasColumnName",
+          "lineNumber": 129
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 129
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.IpAddress).HasColumnName(\"ip_address\").HasMaxLength",
+          "lineNumber": 130
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.IpAddress).HasColumnName",
+          "lineNumber": 130
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 130
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.UserAgent).HasColumnName(\"user_agent\").HasColumnType",
+          "lineNumber": 131
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.UserAgent).HasColumnName",
+          "lineNumber": 131
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 131
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.DeviceName).HasColumnName(\"device_name\").HasMaxLength",
+          "lineNumber": 132
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.DeviceName).HasColumnName",
+          "lineNumber": 132
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 132
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.LoginAt).HasColumnName",
+          "lineNumber": 133
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 133
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.LogoutAt).HasColumnName",
+          "lineNumber": 134
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 134
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.UserSessions)\n                .HasForeignKey(s => s.UserId).OnDelete",
+          "lineNumber": 136
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.UserSessions)\n                .HasForeignKey",
+          "lineNumber": 136
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany",
+          "lineNumber": 136
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 136
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Follow>",
+          "lineNumber": 141
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 143
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 144
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(f => f.FollowerId).HasColumnName",
+          "lineNumber": 145
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 145
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(f => f.FollowingId).HasColumnName",
+          "lineNumber": 146
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 146
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(f => f.CreatedAt).HasColumnName",
+          "lineNumber": 147
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 147
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Follower).WithMany(u => u.Following)\n                .HasForeignKey(f => f.FollowerId).OnDelete",
+          "lineNumber": 149
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Follower).WithMany(u => u.Following)\n                .HasForeignKey",
+          "lineNumber": 149
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Follower).WithMany",
+          "lineNumber": 149
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 149
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Following).WithMany(u => u.Followers)\n                .HasForeignKey(f => f.FollowingId).OnDelete",
+          "lineNumber": 151
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Following).WithMany(u => u.Followers)\n                .HasForeignKey",
+          "lineNumber": 151
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(f => f.Following).WithMany",
+          "lineNumber": 151
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 151
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<FollowRequest>",
+          "lineNumber": 156
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 158
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 159
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.Id).HasColumnName",
+          "lineNumber": 160
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 160
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.SenderId).HasColumnName",
+          "lineNumber": 161
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 161
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.ReceiverId).HasColumnName",
+          "lineNumber": 162
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 162
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.Status).HasColumnName(\"status\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 163
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.Status).HasColumnName(\"status\").HasConversion<string>",
+          "lineNumber": 163
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.Status).HasColumnName",
+          "lineNumber": 163
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 163
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(fr => fr.CreatedAt).HasColumnName",
+          "lineNumber": 164
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 164
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Sender).WithMany(u => u.SentFollowRequests)\n                .HasForeignKey(fr => fr.SenderId).OnDelete",
+          "lineNumber": 166
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Sender).WithMany(u => u.SentFollowRequests)\n                .HasForeignKey",
+          "lineNumber": 166
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Sender).WithMany",
+          "lineNumber": 166
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 166
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Receiver).WithMany(u => u.ReceivedFollowRequests)\n                .HasForeignKey(fr => fr.ReceiverId).OnDelete",
+          "lineNumber": 168
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Receiver).WithMany(u => u.ReceivedFollowRequests)\n                .HasForeignKey",
+          "lineNumber": 168
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(fr => fr.Receiver).WithMany",
+          "lineNumber": 168
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 168
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Block>",
+          "lineNumber": 173
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 175
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 176
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(b => b.BlockerId).HasColumnName",
+          "lineNumber": 177
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 177
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(b => b.BlockedId).HasColumnName",
+          "lineNumber": 178
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 178
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(b => b.CreatedAt).HasColumnName",
+          "lineNumber": 179
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 179
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocker).WithMany(u => u.BlockedUsers)\n                .HasForeignKey(b => b.BlockerId).OnDelete",
+          "lineNumber": 181
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocker).WithMany(u => u.BlockedUsers)\n                .HasForeignKey",
+          "lineNumber": 181
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocker).WithMany",
+          "lineNumber": 181
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 181
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocked).WithMany(u => u.BlockedByUsers)\n                .HasForeignKey(b => b.BlockedId).OnDelete",
+          "lineNumber": 183
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocked).WithMany(u => u.BlockedByUsers)\n                .HasForeignKey",
+          "lineNumber": 183
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(b => b.Blocked).WithMany",
+          "lineNumber": 183
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 183
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Post>",
+          "lineNumber": 188
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 190
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 191
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Id).HasColumnName",
+          "lineNumber": 192
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 192
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.UserId).HasColumnName",
+          "lineNumber": 193
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 193
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Content).HasColumnName(\"content\").HasColumnType",
+          "lineNumber": 194
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Content).HasColumnName",
+          "lineNumber": 194
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 194
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Visibility).HasColumnName(\"visibility\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 195
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Visibility).HasColumnName(\"visibility\").HasConversion<string>",
+          "lineNumber": 195
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.Visibility).HasColumnName",
+          "lineNumber": 195
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 195
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.LikeCount).HasColumnName",
+          "lineNumber": 196
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 196
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.CommentCount).HasColumnName",
+          "lineNumber": 197
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 197
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.ShareCount).HasColumnName",
+          "lineNumber": 198
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 198
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.IsEdited).HasColumnName",
+          "lineNumber": 199
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 199
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.IsDeleted).HasColumnName",
+          "lineNumber": 200
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 200
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.CreatedAt).HasColumnName",
+          "lineNumber": 201
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 201
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(p => p.UpdatedAt).HasColumnName",
+          "lineNumber": 202
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 202
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 204
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 205
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(p => p.User).WithMany(u => u.Posts)\n                .HasForeignKey(p => p.UserId).OnDelete",
+          "lineNumber": 207
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(p => p.User).WithMany(u => u.Posts)\n                .HasForeignKey",
+          "lineNumber": 207
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(p => p.User).WithMany",
+          "lineNumber": 207
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 207
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<PostMedia>",
+          "lineNumber": 212
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 214
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 215
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.Id).HasColumnName",
+          "lineNumber": 216
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 216
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.PostId).HasColumnName",
+          "lineNumber": 217
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 217
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaUrl).HasColumnName(\"media_url\").HasColumnType(\"text\").IsRequired",
+          "lineNumber": 218
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaUrl).HasColumnName(\"media_url\").HasColumnType",
+          "lineNumber": 218
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaUrl).HasColumnName",
+          "lineNumber": 218
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 218
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaType).HasColumnName(\"media_type\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 219
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaType).HasColumnName(\"media_type\").HasConversion<string>",
+          "lineNumber": 219
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.MediaType).HasColumnName",
+          "lineNumber": 219
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 219
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(pm => pm.CreatedAt).HasColumnName",
+          "lineNumber": 220
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 220
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(pm => pm.Post).WithMany(p => p.Media)\n                .HasForeignKey(pm => pm.PostId).OnDelete",
+          "lineNumber": 222
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(pm => pm.Post).WithMany(p => p.Media)\n                .HasForeignKey",
+          "lineNumber": 222
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(pm => pm.Post).WithMany",
+          "lineNumber": 222
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 222
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Like>",
+          "lineNumber": 227
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 229
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 230
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(l => l.UserId).HasColumnName",
+          "lineNumber": 231
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 231
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(l => l.PostId).HasColumnName",
+          "lineNumber": 232
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 232
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(l => l.CreatedAt).HasColumnName",
+          "lineNumber": 233
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 233
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 235
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.User).WithMany(u => u.Likes)\n                .HasForeignKey(l => l.UserId).OnDelete",
+          "lineNumber": 237
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.User).WithMany(u => u.Likes)\n                .HasForeignKey",
+          "lineNumber": 237
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.User).WithMany",
+          "lineNumber": 237
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 237
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.Post).WithMany(p => p.Likes)\n                .HasForeignKey(l => l.PostId).OnDelete",
+          "lineNumber": 239
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.Post).WithMany(p => p.Likes)\n                .HasForeignKey",
+          "lineNumber": 239
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(l => l.Post).WithMany",
+          "lineNumber": 239
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 239
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Comment>",
+          "lineNumber": 244
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 246
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 247
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Id).HasColumnName",
+          "lineNumber": 248
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 248
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.PostId).HasColumnName",
+          "lineNumber": 249
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 249
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.UserId).HasColumnName",
+          "lineNumber": 250
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 250
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.ParentCommentId).HasColumnName",
+          "lineNumber": 251
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 251
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Content).HasColumnName(\"content\").HasColumnType(\"text\").IsRequired",
+          "lineNumber": 252
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Content).HasColumnName(\"content\").HasColumnType",
+          "lineNumber": 252
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Content).HasColumnName",
+          "lineNumber": 252
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 252
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.LikeCount).HasColumnName",
+          "lineNumber": 253
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 253
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.IsEdited).HasColumnName",
+          "lineNumber": 254
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 254
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.IsDeleted).HasColumnName",
+          "lineNumber": 255
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 255
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.CreatedAt).HasColumnName",
+          "lineNumber": 256
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 256
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.UpdatedAt).HasColumnName",
+          "lineNumber": 257
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 257
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 259
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Post).WithMany(p => p.Comments)\n                .HasForeignKey(c => c.PostId).OnDelete",
+          "lineNumber": 261
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Post).WithMany(p => p.Comments)\n                .HasForeignKey",
+          "lineNumber": 261
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Post).WithMany",
+          "lineNumber": 261
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 261
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.User).WithMany(u => u.Comments)\n                .HasForeignKey(c => c.UserId).OnDelete",
+          "lineNumber": 263
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.User).WithMany(u => u.Comments)\n                .HasForeignKey",
+          "lineNumber": 263
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.User).WithMany",
+          "lineNumber": 263
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 263
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.ParentComment).WithMany(c => c.Replies)\n                .HasForeignKey(c => c.ParentCommentId).OnDelete",
+          "lineNumber": 265
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.ParentComment).WithMany(c => c.Replies)\n                .HasForeignKey",
+          "lineNumber": 265
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.ParentComment).WithMany",
+          "lineNumber": 265
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 265
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Share>",
+          "lineNumber": 270
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 272
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 273
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.Id).HasColumnName",
+          "lineNumber": 274
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 274
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.UserId).HasColumnName",
+          "lineNumber": 275
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 275
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.PostId).HasColumnName",
+          "lineNumber": 276
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 276
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.SharedText).HasColumnName(\"shared_text\").HasColumnType",
+          "lineNumber": 277
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.SharedText).HasColumnName",
+          "lineNumber": 277
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 277
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.CreatedAt).HasColumnName",
+          "lineNumber": 278
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 278
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.Shares)\n                .HasForeignKey(s => s.UserId).OnDelete",
+          "lineNumber": 280
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.Shares)\n                .HasForeignKey",
+          "lineNumber": 280
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany",
+          "lineNumber": 280
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 280
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.Post).WithMany(p => p.Shares)\n                .HasForeignKey(s => s.PostId).OnDelete",
+          "lineNumber": 282
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.Post).WithMany(p => p.Shares)\n                .HasForeignKey",
+          "lineNumber": 282
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.Post).WithMany",
+          "lineNumber": 282
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 282
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<SavedPost>",
+          "lineNumber": 287
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 289
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 290
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sp => sp.UserId).HasColumnName",
+          "lineNumber": 291
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 291
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sp => sp.PostId).HasColumnName",
+          "lineNumber": 292
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 292
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sp => sp.CreatedAt).HasColumnName",
+          "lineNumber": 293
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 293
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.User).WithMany(u => u.SavedPosts)\n                .HasForeignKey(sp => sp.UserId).OnDelete",
+          "lineNumber": 295
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.User).WithMany(u => u.SavedPosts)\n                .HasForeignKey",
+          "lineNumber": 295
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.User).WithMany",
+          "lineNumber": 295
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 295
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.Post).WithMany(p => p.SavedByUsers)\n                .HasForeignKey(sp => sp.PostId).OnDelete",
+          "lineNumber": 297
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.Post).WithMany(p => p.SavedByUsers)\n                .HasForeignKey",
+          "lineNumber": 297
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sp => sp.Post).WithMany",
+          "lineNumber": 297
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 297
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Story>",
+          "lineNumber": 302
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 304
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 305
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.Id).HasColumnName",
+          "lineNumber": 306
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 306
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.UserId).HasColumnName",
+          "lineNumber": 307
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 307
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaUrl).HasColumnName(\"media_url\").HasColumnType(\"text\").IsRequired",
+          "lineNumber": 308
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaUrl).HasColumnName(\"media_url\").HasColumnType",
+          "lineNumber": 308
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaUrl).HasColumnName",
+          "lineNumber": 308
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 308
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaType).HasColumnName(\"media_type\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 309
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaType).HasColumnName(\"media_type\").HasConversion<string>",
+          "lineNumber": 309
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.MediaType).HasColumnName",
+          "lineNumber": 309
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 309
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.Caption).HasColumnName(\"caption\").HasColumnType",
+          "lineNumber": 310
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.Caption).HasColumnName",
+          "lineNumber": 310
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 310
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.ExpiresAt).HasColumnName",
+          "lineNumber": 311
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 311
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(s => s.CreatedAt).HasColumnName",
+          "lineNumber": 312
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 312
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 314
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.Stories)\n                .HasForeignKey(s => s.UserId).OnDelete",
+          "lineNumber": 316
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany(u => u.Stories)\n                .HasForeignKey",
+          "lineNumber": 316
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(s => s.User).WithMany",
+          "lineNumber": 316
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 316
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<StoryView>",
+          "lineNumber": 321
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 323
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 324
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sv => sv.StoryId).HasColumnName",
+          "lineNumber": 325
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 325
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sv => sv.ViewerId).HasColumnName",
+          "lineNumber": 326
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 326
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(sv => sv.ViewedAt).HasColumnName",
+          "lineNumber": 327
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 327
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Story).WithMany(s => s.Views)\n                .HasForeignKey(sv => sv.StoryId).OnDelete",
+          "lineNumber": 329
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Story).WithMany(s => s.Views)\n                .HasForeignKey",
+          "lineNumber": 329
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Story).WithMany",
+          "lineNumber": 329
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 329
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Viewer).WithMany(u => u.StoryViews)\n                .HasForeignKey(sv => sv.ViewerId).OnDelete",
+          "lineNumber": 331
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Viewer).WithMany(u => u.StoryViews)\n                .HasForeignKey",
+          "lineNumber": 331
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(sv => sv.Viewer).WithMany",
+          "lineNumber": 331
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 331
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Hashtag>",
+          "lineNumber": 336
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 338
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 339
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(h => h.Id).HasColumnName",
+          "lineNumber": 340
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 340
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(h => h.Name).HasColumnName(\"name\").HasMaxLength(100).IsRequired",
+          "lineNumber": 341
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(h => h.Name).HasColumnName(\"name\").HasMaxLength",
+          "lineNumber": 341
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(h => h.Name).HasColumnName",
+          "lineNumber": 341
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 341
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(h => h.CreatedAt).HasColumnName",
+          "lineNumber": 342
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 342
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex(h => h.Name).IsUnique",
+          "lineNumber": 344
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 344
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<PostHashtag>",
+          "lineNumber": 348
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 350
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 351
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ph => ph.PostId).HasColumnName",
+          "lineNumber": 352
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 352
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ph => ph.HashtagId).HasColumnName",
+          "lineNumber": 353
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 353
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Post).WithMany(p => p.PostHashtags)\n                .HasForeignKey(ph => ph.PostId).OnDelete",
+          "lineNumber": 355
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Post).WithMany(p => p.PostHashtags)\n                .HasForeignKey",
+          "lineNumber": 355
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Post).WithMany",
+          "lineNumber": 355
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 355
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Hashtag).WithMany(h => h.PostHashtags)\n                .HasForeignKey(ph => ph.HashtagId).OnDelete",
+          "lineNumber": 357
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Hashtag).WithMany(h => h.PostHashtags)\n                .HasForeignKey",
+          "lineNumber": 357
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ph => ph.Hashtag).WithMany",
+          "lineNumber": 357
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 357
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Report>",
+          "lineNumber": 362
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 364
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 365
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Id).HasColumnName",
+          "lineNumber": 366
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 366
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.ReporterId).HasColumnName",
+          "lineNumber": 367
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 367
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.ReportedUserId).HasColumnName",
+          "lineNumber": 368
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 368
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.ReportedPostId).HasColumnName",
+          "lineNumber": 369
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 369
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.ReportedCommentId).HasColumnName",
+          "lineNumber": 370
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 370
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Reason).HasColumnName(\"reason\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 371
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Reason).HasColumnName(\"reason\").HasConversion<string>",
+          "lineNumber": 371
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Reason).HasColumnName",
+          "lineNumber": 371
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 371
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Description).HasColumnName(\"description\").HasColumnType",
+          "lineNumber": 372
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Description).HasColumnName",
+          "lineNumber": 372
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 372
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Status).HasColumnName(\"status\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 373
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Status).HasColumnName(\"status\").HasConversion<string>",
+          "lineNumber": 373
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.Status).HasColumnName",
+          "lineNumber": 373
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 373
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(r => r.CreatedAt).HasColumnName",
+          "lineNumber": 374
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 374
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.Reporter).WithMany(u => u.FiledReports)\n                .HasForeignKey(r => r.ReporterId).OnDelete",
+          "lineNumber": 376
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.Reporter).WithMany(u => u.FiledReports)\n                .HasForeignKey",
+          "lineNumber": 376
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.Reporter).WithMany",
+          "lineNumber": 376
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 376
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedUser).WithMany()\n                .HasForeignKey(r => r.ReportedUserId).OnDelete",
+          "lineNumber": 378
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedUser).WithMany()\n                .HasForeignKey",
+          "lineNumber": 378
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedUser).WithMany",
+          "lineNumber": 378
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 378
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedPost).WithMany()\n                .HasForeignKey(r => r.ReportedPostId).OnDelete",
+          "lineNumber": 380
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedPost).WithMany()\n                .HasForeignKey",
+          "lineNumber": 380
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedPost).WithMany",
+          "lineNumber": 380
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 380
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedComment).WithMany()\n                .HasForeignKey(r => r.ReportedCommentId).OnDelete",
+          "lineNumber": 382
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedComment).WithMany()\n                .HasForeignKey",
+          "lineNumber": 382
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(r => r.ReportedComment).WithMany",
+          "lineNumber": 382
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 382
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Notification>",
+          "lineNumber": 387
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 389
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 390
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Id).HasColumnName",
+          "lineNumber": 391
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 391
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.SenderId).HasColumnName",
+          "lineNumber": 392
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 392
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.ReceiverId).HasColumnName",
+          "lineNumber": 393
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 393
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Type).HasColumnName(\"type\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 394
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Type).HasColumnName(\"type\").HasConversion<string>",
+          "lineNumber": 394
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Type).HasColumnName",
+          "lineNumber": 394
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 394
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.ReferenceId).HasColumnName",
+          "lineNumber": 395
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 395
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Content).HasColumnName(\"content\").HasColumnType",
+          "lineNumber": 396
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.Content).HasColumnName",
+          "lineNumber": 396
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 396
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.IsRead).HasColumnName",
+          "lineNumber": 397
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 397
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.CreatedAt).HasColumnName",
+          "lineNumber": 398
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 398
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(n => n.UpdatedAt).HasColumnName",
+          "lineNumber": 399
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 399
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 402
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex(n => new { n.ReceiverId, n.Type, n.ReferenceId })\n                .HasDatabaseName",
+          "lineNumber": 403
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 403
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Sender).WithMany(u => u.SentNotifications)\n                .HasForeignKey(n => n.SenderId).OnDelete",
+          "lineNumber": 406
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Sender).WithMany(u => u.SentNotifications)\n                .HasForeignKey",
+          "lineNumber": 406
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Sender).WithMany",
+          "lineNumber": 406
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 406
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Receiver).WithMany(u => u.ReceivedNotifications)\n                .HasForeignKey(n => n.ReceiverId).OnDelete",
+          "lineNumber": 408
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Receiver).WithMany(u => u.ReceivedNotifications)\n                .HasForeignKey",
+          "lineNumber": 408
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(n => n.Receiver).WithMany",
+          "lineNumber": 408
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 408
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Conversation>",
+          "lineNumber": 413
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 415
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 416
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Id).HasColumnName",
+          "lineNumber": 417
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 417
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Type).HasColumnName(\"type\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 418
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Type).HasColumnName(\"type\").HasConversion<string>",
+          "lineNumber": 418
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Type).HasColumnName",
+          "lineNumber": 418
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 418
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Name).HasColumnName(\"name\").HasMaxLength",
+          "lineNumber": 419
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.Name).HasColumnName",
+          "lineNumber": 419
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 419
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.AvatarUrl).HasColumnName(\"avatar_url\").HasColumnType",
+          "lineNumber": 420
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.AvatarUrl).HasColumnName",
+          "lineNumber": 420
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 420
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.CreatedBy).HasColumnName",
+          "lineNumber": 421
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 421
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.LastMessageId).HasColumnName",
+          "lineNumber": 422
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 422
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.CreatedAt).HasColumnName",
+          "lineNumber": 423
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 423
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(c => c.UpdatedAt).HasColumnName",
+          "lineNumber": 424
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 424
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Creator).WithMany(u => u.CreatedConversations)\n                .HasForeignKey(c => c.CreatedBy).OnDelete",
+          "lineNumber": 426
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Creator).WithMany(u => u.CreatedConversations)\n                .HasForeignKey",
+          "lineNumber": 426
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.Creator).WithMany",
+          "lineNumber": 426
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 426
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.LastMessage).WithMany()\n                .HasForeignKey(c => c.LastMessageId).OnDelete",
+          "lineNumber": 428
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.LastMessage).WithMany()\n                .HasForeignKey",
+          "lineNumber": 428
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(c => c.LastMessage).WithMany",
+          "lineNumber": 428
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 428
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<ConversationMember>",
+          "lineNumber": 433
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 435
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 436
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.ConversationId).HasColumnName",
+          "lineNumber": 437
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 437
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.UserId).HasColumnName",
+          "lineNumber": 438
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 438
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.Role).HasColumnName(\"role\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 439
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.Role).HasColumnName(\"role\").HasConversion<string>",
+          "lineNumber": 439
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.Role).HasColumnName",
+          "lineNumber": 439
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 439
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.JoinedAt).HasColumnName",
+          "lineNumber": 440
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 440
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.LeftAt).HasColumnName",
+          "lineNumber": 441
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 441
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(cm => cm.IsMuted).HasColumnName",
+          "lineNumber": 442
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 442
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.Conversation).WithMany(c => c.Members)\n                .HasForeignKey(cm => cm.ConversationId).OnDelete",
+          "lineNumber": 444
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.Conversation).WithMany(c => c.Members)\n                .HasForeignKey",
+          "lineNumber": 444
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.Conversation).WithMany",
+          "lineNumber": 444
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 444
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.User).WithMany(u => u.ConversationMemberships)\n                .HasForeignKey(cm => cm.UserId).OnDelete",
+          "lineNumber": 446
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.User).WithMany(u => u.ConversationMemberships)\n                .HasForeignKey",
+          "lineNumber": 446
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(cm => cm.User).WithMany",
+          "lineNumber": 446
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 446
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<Message>",
+          "lineNumber": 451
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 453
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 454
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.Id).HasColumnName",
+          "lineNumber": 455
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 455
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.ConversationId).HasColumnName",
+          "lineNumber": 456
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 456
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.SenderId).HasColumnName",
+          "lineNumber": 457
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 457
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.ReplyToMessageId).HasColumnName",
+          "lineNumber": 458
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 458
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.MessageType).HasColumnName(\"message_type\").HasConversion<string>().HasMaxLength",
+          "lineNumber": 459
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.MessageType).HasColumnName(\"message_type\").HasConversion<string>",
+          "lineNumber": 459
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.MessageType).HasColumnName",
+          "lineNumber": 459
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 459
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.Content).HasColumnName(\"content\").HasColumnType",
+          "lineNumber": 460
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.Content).HasColumnName",
+          "lineNumber": 460
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 460
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.IsEdited).HasColumnName",
+          "lineNumber": 461
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 461
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.IsDeleted).HasColumnName",
+          "lineNumber": 462
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 462
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.SentAt).HasColumnName",
+          "lineNumber": 463
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 463
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(m => m.EditedAt).HasColumnName",
+          "lineNumber": 464
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 464
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 466
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 467
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasIndex",
+          "lineNumber": 468
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Conversation).WithMany(c => c.Messages)\n                .HasForeignKey(m => m.ConversationId).OnDelete",
+          "lineNumber": 470
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Conversation).WithMany(c => c.Messages)\n                .HasForeignKey",
+          "lineNumber": 470
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Conversation).WithMany",
+          "lineNumber": 470
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 470
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Sender).WithMany(u => u.Messages)\n                .HasForeignKey(m => m.SenderId).OnDelete",
+          "lineNumber": 472
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Sender).WithMany(u => u.Messages)\n                .HasForeignKey",
+          "lineNumber": 472
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.Sender).WithMany",
+          "lineNumber": 472
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 472
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.ReplyToMessage).WithMany(m => m.Replies)\n                .HasForeignKey(m => m.ReplyToMessageId).OnDelete",
+          "lineNumber": 474
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.ReplyToMessage).WithMany(m => m.Replies)\n                .HasForeignKey",
+          "lineNumber": 474
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(m => m.ReplyToMessage).WithMany",
+          "lineNumber": 474
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 474
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<MessageAttachment>",
+          "lineNumber": 479
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 481
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 482
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.Id).HasColumnName",
+          "lineNumber": 483
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 483
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.MessageId).HasColumnName",
+          "lineNumber": 484
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 484
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileUrl).HasColumnName(\"file_url\").HasColumnType(\"text\").IsRequired",
+          "lineNumber": 485
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileUrl).HasColumnName(\"file_url\").HasColumnType",
+          "lineNumber": 485
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileUrl).HasColumnName",
+          "lineNumber": 485
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 485
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileName).HasColumnName(\"file_name\").HasMaxLength",
+          "lineNumber": 486
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileName).HasColumnName",
+          "lineNumber": 486
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 486
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.FileSize).HasColumnName",
+          "lineNumber": 487
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 487
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.MimeType).HasColumnName(\"mime_type\").HasMaxLength",
+          "lineNumber": 488
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.MimeType).HasColumnName",
+          "lineNumber": 488
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 488
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(ma => ma.CreatedAt).HasColumnName",
+          "lineNumber": 489
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 489
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ma => ma.Message).WithMany(m => m.Attachments)\n                .HasForeignKey(ma => ma.MessageId).OnDelete",
+          "lineNumber": 491
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ma => ma.Message).WithMany(m => m.Attachments)\n                .HasForeignKey",
+          "lineNumber": 491
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(ma => ma.Message).WithMany",
+          "lineNumber": 491
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 491
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "modelBuilder.Entity<MessageRead>",
+          "lineNumber": 496
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.ToTable",
+          "lineNumber": 498
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasKey",
+          "lineNumber": 499
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(mr => mr.MessageId).HasColumnName",
+          "lineNumber": 500
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 500
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(mr => mr.UserId).HasColumnName",
+          "lineNumber": 501
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 501
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property(mr => mr.ReadAt).HasColumnName",
+          "lineNumber": 502
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.Property",
+          "lineNumber": 502
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.Message).WithMany(m => m.ReadBy)\n                .HasForeignKey(mr => mr.MessageId).OnDelete",
+          "lineNumber": 504
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.Message).WithMany(m => m.ReadBy)\n                .HasForeignKey",
+          "lineNumber": 504
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.Message).WithMany",
+          "lineNumber": 504
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 504
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.User).WithMany(u => u.MessageReads)\n                .HasForeignKey(mr => mr.UserId).OnDelete",
+          "lineNumber": 506
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.User).WithMany(u => u.MessageReads)\n                .HasForeignKey",
+          "lineNumber": 506
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne(mr => mr.User).WithMany",
+          "lineNumber": 506
+        },
+        {
+          "caller": "OnModelCreating",
+          "callee": "e.HasOne",
+          "lineNumber": 506
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 26,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/MessageRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "MessageRepository",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "GetConversationMessagesAsync",
+          "startLine": 12,
+          "endLine": 24,
+          "params": [
+            "conversationId",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "GetUserConversationsAsync",
+          "startLine": 26,
+          "endLine": 40,
+          "params": [
+            "userId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MessageRepository",
+          "startLine": 8,
+          "endLine": 41,
+          "methods": [
+            "MessageRepository",
+            "GetConversationMessagesAsync",
+            "GetUserConversationsAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessageRepository",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GetConversationMessagesAsync",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "GetUserConversationsAsync",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "MessageRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include(m => m.Attachments)\n            .OrderByDescending(m => m.SentAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking()\n            .ToListAsync",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include(m => m.Attachments)\n            .OrderByDescending(m => m.SentAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include(m => m.Attachments)\n            .OrderByDescending(m => m.SentAt)\n            .Skip((page - 1) * pageSize)\n            .Take",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include(m => m.Attachments)\n            .OrderByDescending(m => m.SentAt)\n            .Skip",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include(m => m.Attachments)\n            .OrderByDescending",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include(m => m.Sender)\n            .Include",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where(m => m.ConversationId == conversationId && !m.IsDeleted)\n            .Include",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetConversationMessagesAsync",
+          "callee": "_dbSet\n            .Where",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.Members)\n                    .ThenInclude(m => m.User)\n            .Select(cm => cm.Conversation)\n            .OrderByDescending(c => c.UpdatedAt)\n            .AsNoTracking()\n            .ToListAsync",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.Members)\n                    .ThenInclude(m => m.User)\n            .Select(cm => cm.Conversation)\n            .OrderByDescending(c => c.UpdatedAt)\n            .AsNoTracking",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.Members)\n                    .ThenInclude(m => m.User)\n            .Select(cm => cm.Conversation)\n            .OrderByDescending",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.Members)\n                    .ThenInclude(m => m.User)\n            .Select",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.Members)\n                    .ThenInclude",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include(cm => cm.Conversation)\n                .ThenInclude",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude(m => m.Sender)\n            .Include",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude(c => c.LastMessage!)\n                    .ThenInclude",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include(cm => cm.Conversation)\n                .ThenInclude",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where(cm => cm.UserId == userId && cm.LeftAt == null)\n            .Include",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetUserConversationsAsync",
+          "callee": "_context.ConversationMembers\n            .Where",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/NotificationRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "NotificationRepository",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "GetByReceiverIdAsync",
+          "startLine": 15,
+          "endLine": 24,
+          "params": [
+            "receiverId",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "CountUnreadAsync",
+          "startLine": 26,
+          "endLine": 30,
+          "params": [
+            "receiverId"
+          ]
+        },
+        {
+          "name": "GetWithSenderAsync",
+          "startLine": 32,
+          "endLine": 37,
+          "params": [
+            "notificationId"
+          ]
+        },
+        {
+          "name": "FindGroupedAsync",
+          "startLine": 39,
+          "endLine": 47,
+          "params": [
+            "receiverId",
+            "type",
+            "referenceId"
+          ]
+        },
+        {
+          "name": "DeleteGroupedAsync",
+          "startLine": 49,
+          "endLine": 62,
+          "params": [
+            "receiverId",
+            "type",
+            "referenceId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationRepository",
+          "startLine": 9,
+          "endLine": 63,
+          "methods": [
+            "NotificationRepository",
+            "GetByReceiverIdAsync",
+            "CountUnreadAsync",
+            "GetWithSenderAsync",
+            "FindGroupedAsync",
+            "DeleteGroupedAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationRepository",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "GetByReceiverIdAsync",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "CountUnreadAsync",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "GetWithSenderAsync",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "FindGroupedAsync",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "DeleteGroupedAsync",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where(n => n.ReceiverId == receiverId)\n            .OrderByDescending(n => n.UpdatedAt)   // Sắp xếp theo UpdatedAt để gom nhóm lên đầu\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .Include(n => n.Sender)\n            .ToListAsync",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where(n => n.ReceiverId == receiverId)\n            .OrderByDescending(n => n.UpdatedAt)   // Sắp xếp theo UpdatedAt để gom nhóm lên đầu\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .Include",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where(n => n.ReceiverId == receiverId)\n            .OrderByDescending(n => n.UpdatedAt)   // Sắp xếp theo UpdatedAt để gom nhóm lên đầu\n            .Skip((page - 1) * pageSize)\n            .Take",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where(n => n.ReceiverId == receiverId)\n            .OrderByDescending(n => n.UpdatedAt)   // Sắp xếp theo UpdatedAt để gom nhóm lên đầu\n            .Skip",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where(n => n.ReceiverId == receiverId)\n            .OrderByDescending",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GetByReceiverIdAsync",
+          "callee": "_context.Notifications\n            .Where",
+          "lineNumber": 17
+        },
+        {
+          "caller": "CountUnreadAsync",
+          "callee": "_context.Notifications\n            .CountAsync",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GetWithSenderAsync",
+          "callee": "_context.Notifications\n            .Include(n => n.Sender)\n            .FirstOrDefaultAsync",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GetWithSenderAsync",
+          "callee": "_context.Notifications\n            .Include",
+          "lineNumber": 34
+        },
+        {
+          "caller": "FindGroupedAsync",
+          "callee": "_context.Notifications\n            .Include(n => n.Sender)\n            .FirstOrDefaultAsync",
+          "lineNumber": 41
+        },
+        {
+          "caller": "FindGroupedAsync",
+          "callee": "_context.Notifications\n            .Include",
+          "lineNumber": 41
+        },
+        {
+          "caller": "DeleteGroupedAsync",
+          "callee": "_context.Notifications\n            .FirstOrDefaultAsync",
+          "lineNumber": 51
+        },
+        {
+          "caller": "DeleteGroupedAsync",
+          "callee": "_context.Notifications.Remove",
+          "lineNumber": 59
+        },
+        {
+          "caller": "DeleteGroupedAsync",
+          "callee": "_context.SaveChangesAsync",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/PostRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "PostRepository",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "GetPostsWithDetailsAsync",
+          "startLine": 12,
+          "endLine": 23,
+          "params": [
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "GetUserPostsAsync",
+          "startLine": 25,
+          "endLine": 36,
+          "params": [
+            "userId",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "GetPostWithDetailsAsync",
+          "startLine": 38,
+          "endLine": 47,
+          "params": [
+            "postId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PostRepository",
+          "startLine": 8,
+          "endLine": 48,
+          "methods": [
+            "PostRepository",
+            "GetPostsWithDetailsAsync",
+            "GetUserPostsAsync",
+            "GetPostWithDetailsAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostRepository",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GetPostsWithDetailsAsync",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "GetUserPostsAsync",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "GetPostWithDetailsAsync",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "PostRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking()\n            .ToListAsync",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include(p => p.User)\n            .Include",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted)\n            .Include",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetPostsWithDetailsAsync",
+          "callee": "_dbSet\n            .Where",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking()\n            .ToListAsync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take(pageSize)\n            .AsNoTracking",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip((page - 1) * pageSize)\n            .Take",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending(p => p.CreatedAt)\n            .Skip",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .OrderByDescending",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include(p => p.User)\n            .Include",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where(p => !p.IsDeleted && p.UserId == userId)\n            .Include",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetUserPostsAsync",
+          "callee": "_dbSet\n            .Where",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .Include(p => p.Comments.Where(c => !c.IsDeleted))\n                .ThenInclude(c => c.User)\n            .AsNoTracking()\n            .FirstOrDefaultAsync",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .Include(p => p.Comments.Where(c => !c.IsDeleted))\n                .ThenInclude(c => c.User)\n            .AsNoTracking",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .Include(p => p.Comments.Where(c => !c.IsDeleted))\n                .ThenInclude",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include(p => p.User)\n            .Include(p => p.Media)\n            .Include",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include(p => p.User)\n            .Include",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "_dbSet\n            .Include",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GetPostWithDetailsAsync",
+          "callee": "p.Comments.Where",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/Repository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 52,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "Repository",
+          "startLine": 13,
+          "endLine": 17,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "GetByIdAsync",
+          "startLine": 19,
+          "endLine": 20,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "GetAllAsync",
+          "startLine": 22,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "FindAsync",
+          "startLine": 25,
+          "endLine": 26,
+          "params": [
+            "predicate"
+          ]
+        },
+        {
+          "name": "AddAsync",
+          "startLine": 28,
+          "endLine": 33,
+          "params": [
+            "entity"
+          ]
+        },
+        {
+          "name": "UpdateAsync",
+          "startLine": 35,
+          "endLine": 39,
+          "params": [
+            "entity"
+          ]
+        },
+        {
+          "name": "DeleteAsync",
+          "startLine": 41,
+          "endLine": 45,
+          "params": [
+            "entity"
+          ]
+        },
+        {
+          "name": "SaveChangesAsync",
+          "startLine": 47,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "Query",
+          "startLine": 50,
+          "endLine": 51,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Repository",
+          "startLine": 8,
+          "endLine": 52,
+          "methods": [
+            "Repository",
+            "GetByIdAsync",
+            "GetAllAsync",
+            "FindAsync",
+            "AddAsync",
+            "UpdateAsync",
+            "DeleteAsync",
+            "SaveChangesAsync",
+            "Query"
+          ],
+          "properties": [
+            "_context",
+            "_dbSet"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Repository",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "GetByIdAsync",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "GetAllAsync",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FindAsync",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "AddAsync",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "UpdateAsync",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "DeleteAsync",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "SaveChangesAsync",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "Query",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "Repository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Repository",
+          "callee": "context.Set<T>",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GetByIdAsync",
+          "callee": "_dbSet.FindAsync",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GetAllAsync",
+          "callee": "_dbSet.ToListAsync",
+          "lineNumber": 23
+        },
+        {
+          "caller": "FindAsync",
+          "callee": "_dbSet.Where(predicate).ToListAsync",
+          "lineNumber": 26
+        },
+        {
+          "caller": "FindAsync",
+          "callee": "_dbSet.Where",
+          "lineNumber": 26
+        },
+        {
+          "caller": "AddAsync",
+          "callee": "_dbSet.AddAsync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "AddAsync",
+          "callee": "_context.SaveChangesAsync",
+          "lineNumber": 31
+        },
+        {
+          "caller": "UpdateAsync",
+          "callee": "_dbSet.Update",
+          "lineNumber": 37
+        },
+        {
+          "caller": "UpdateAsync",
+          "callee": "_context.SaveChangesAsync",
+          "lineNumber": 38
+        },
+        {
+          "caller": "DeleteAsync",
+          "callee": "_dbSet.Remove",
+          "lineNumber": 43
+        },
+        {
+          "caller": "DeleteAsync",
+          "callee": "_context.SaveChangesAsync",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SaveChangesAsync",
+          "callee": "_context.SaveChangesAsync",
+          "lineNumber": 48
+        },
+        {
+          "caller": "Query",
+          "callee": "_dbSet.AsQueryable",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/Repositories/UserRepository.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "UserRepository",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "context"
+          ]
+        },
+        {
+          "name": "GetByUsernameAsync",
+          "startLine": 12,
+          "endLine": 13,
+          "params": [
+            "username"
+          ]
+        },
+        {
+          "name": "GetByEmailAsync",
+          "startLine": 15,
+          "endLine": 16,
+          "params": [
+            "email"
+          ]
+        },
+        {
+          "name": "ExistsByUsernameAsync",
+          "startLine": 18,
+          "endLine": 19,
+          "params": [
+            "username"
+          ]
+        },
+        {
+          "name": "ExistsByEmailAsync",
+          "startLine": 21,
+          "endLine": 22,
+          "params": [
+            "email"
+          ]
+        },
+        {
+          "name": "SearchUsersAsync",
+          "startLine": 24,
+          "endLine": 34,
+          "params": [
+            "query",
+            "count"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserRepository",
+          "startLine": 8,
+          "endLine": 35,
+          "methods": [
+            "UserRepository",
+            "GetByUsernameAsync",
+            "GetByEmailAsync",
+            "ExistsByUsernameAsync",
+            "ExistsByEmailAsync",
+            "SearchUsersAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserRepository",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GetByUsernameAsync",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "GetByEmailAsync",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "ExistsByUsernameAsync",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "ExistsByEmailAsync",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "SearchUsersAsync",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "UserRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetByUsernameAsync",
+          "callee": "_dbSet.FirstOrDefaultAsync",
+          "lineNumber": 13
+        },
+        {
+          "caller": "GetByEmailAsync",
+          "callee": "_dbSet.FirstOrDefaultAsync",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ExistsByUsernameAsync",
+          "callee": "_dbSet.AnyAsync",
+          "lineNumber": 19
+        },
+        {
+          "caller": "ExistsByEmailAsync",
+          "callee": "_dbSet.AnyAsync",
+          "lineNumber": 22
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 26
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "Enumerable.Empty<User>",
+          "lineNumber": 27
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "query.Trim().ToLower",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "query.Trim",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "_dbSet\n            .Where(u => u.Username.ToLower().Contains(query) || (u.FullName != null && u.FullName.ToLower().Contains(query)))\n            .Take(count)\n            .ToListAsync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "_dbSet\n            .Where(u => u.Username.ToLower().Contains(query) || (u.FullName != null && u.FullName.ToLower().Contains(query)))\n            .Take",
+          "lineNumber": 30
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "_dbSet\n            .Where",
+          "lineNumber": 30
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "u.Username.ToLower().Contains",
+          "lineNumber": 31
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "u.Username.ToLower",
+          "lineNumber": 31
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "u.FullName.ToLower().Contains",
+          "lineNumber": 31
+        },
+        {
+          "caller": "SearchUsersAsync",
+          "callee": "u.FullName.ToLower",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Infrastructure/SocialNetwork.Infrastructure.csproj",
+      "language": "csproj",
+      "fileCategory": "config",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "metrics": {}
+    }
+  ]
+}

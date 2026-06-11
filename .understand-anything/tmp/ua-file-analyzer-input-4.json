@@ -1,0 +1,84 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Frontend/src/pages/user/ChatViewPage.css",
+      "language": "css",
+      "sizeLines": 246,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/CreatePostPage.css",
+      "language": "css",
+      "sizeLines": 194,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/InboxPage.css",
+      "language": "css",
+      "sizeLines": 183,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/LoginPage.css",
+      "language": "css",
+      "sizeLines": 209,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/NewsFeedPage.css",
+      "language": "css",
+      "sizeLines": 288,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/NotificationsPage.css",
+      "language": "css",
+      "sizeLines": 160,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/OnboardingPage.css",
+      "language": "css",
+      "sizeLines": 129,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/PostDetailPage.css",
+      "language": "css",
+      "sizeLines": 194,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/RegisterPage.css",
+      "language": "css",
+      "sizeLines": 135,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/SettingsPage.css",
+      "language": "css",
+      "sizeLines": 614,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/src/pages/user/UserProfilePage.css",
+      "language": "css",
+      "sizeLines": 239,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "Frontend/src/pages/user/ChatViewPage.css": [],
+    "Frontend/src/pages/user/CreatePostPage.css": [],
+    "Frontend/src/pages/user/InboxPage.css": [],
+    "Frontend/src/pages/user/LoginPage.css": [],
+    "Frontend/src/pages/user/NewsFeedPage.css": [],
+    "Frontend/src/pages/user/NotificationsPage.css": [],
+    "Frontend/src/pages/user/OnboardingPage.css": [],
+    "Frontend/src/pages/user/PostDetailPage.css": [],
+    "Frontend/src/pages/user/RegisterPage.css": [],
+    "Frontend/src/pages/user/SettingsPage.css": [],
+    "Frontend/src/pages/user/UserProfilePage.css": []
+  }
+}

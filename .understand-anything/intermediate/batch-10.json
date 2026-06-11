@@ -1,0 +1,1664 @@
+{
+  "nodes": [
+    {
+      "id": "file:Frontend/src/contexts/PageStateContext.jsx",
+      "type": "file",
+      "name": "PageStateContext.jsx",
+      "filePath": "Frontend/src/contexts/PageStateContext.jsx",
+      "summary": "React context provider managing global state for PageStateContext.",
+      "tags": [
+        "context",
+        "react",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/PageStateContext.jsx:FeedScrollProvider",
+      "type": "function",
+      "name": "FeedScrollProvider",
+      "filePath": "Frontend/src/contexts/PageStateContext.jsx",
+      "lineRange": [
+        6,
+        14
+      ],
+      "summary": "Function FeedScrollProvider implementing logic inside PageStateContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/PageStateContext.jsx:useFeedScroll",
+      "type": "function",
+      "name": "useFeedScroll",
+      "filePath": "Frontend/src/contexts/PageStateContext.jsx",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "Function useFeedScroll implementing logic inside PageStateContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/PageStateContext.jsx:InboxStateProvider",
+      "type": "function",
+      "name": "InboxStateProvider",
+      "filePath": "Frontend/src/contexts/PageStateContext.jsx",
+      "lineRange": [
+        23,
+        31
+      ],
+      "summary": "Function InboxStateProvider implementing logic inside PageStateContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/PageStateContext.jsx:useInboxState",
+      "type": "function",
+      "name": "useInboxState",
+      "filePath": "Frontend/src/contexts/PageStateContext.jsx",
+      "lineRange": [
+        33,
+        35
+      ],
+      "summary": "Function useInboxState implementing logic inside PageStateContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/contexts/SignalRContext.jsx",
+      "type": "file",
+      "name": "SignalRContext.jsx",
+      "filePath": "Frontend/src/contexts/SignalRContext.jsx",
+      "summary": "React context provider managing global state for SignalRContext.",
+      "tags": [
+        "context",
+        "react",
+        "state-management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/contexts/SignalRContext.jsx:buildConnection",
+      "type": "function",
+      "name": "buildConnection",
+      "filePath": "Frontend/src/contexts/SignalRContext.jsx",
+      "lineRange": [
+        41,
+        53
+      ],
+      "summary": "Function buildConnection implementing logic inside SignalRContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/contexts/SignalRContext.jsx:SignalRProvider",
+      "type": "function",
+      "name": "SignalRProvider",
+      "filePath": "Frontend/src/contexts/SignalRContext.jsx",
+      "lineRange": [
+        58,
+        246
+      ],
+      "summary": "Function SignalRProvider implementing logic inside SignalRContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/contexts/SignalRContext.jsx:useSignalR",
+      "type": "function",
+      "name": "useSignalR",
+      "filePath": "Frontend/src/contexts/SignalRContext.jsx",
+      "lineRange": [
+        249,
+        255
+      ],
+      "summary": "Function useSignalR implementing logic inside SignalRContext.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/useAppearance.js",
+      "type": "file",
+      "name": "useAppearance.js",
+      "filePath": "Frontend/src/hooks/useAppearance.js",
+      "summary": "Custom React hook encapsulating stateful logic for useAppearance.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useAppearance.js:applyAppearance",
+      "type": "function",
+      "name": "applyAppearance",
+      "filePath": "Frontend/src/hooks/useAppearance.js",
+      "lineRange": [
+        104,
+        155
+      ],
+      "summary": "Function applyAppearance implementing logic inside useAppearance.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useAppearance.js:loadAndApplyAppearance",
+      "type": "function",
+      "name": "loadAndApplyAppearance",
+      "filePath": "Frontend/src/hooks/useAppearance.js",
+      "lineRange": [
+        158,
+        168
+      ],
+      "summary": "Function loadAndApplyAppearance implementing logic inside useAppearance.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useAppearance.js:saveAppearance",
+      "type": "function",
+      "name": "saveAppearance",
+      "filePath": "Frontend/src/hooks/useAppearance.js",
+      "lineRange": [
+        171,
+        178
+      ],
+      "summary": "Function saveAppearance implementing logic inside useAppearance.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useAppearance.js:getStoredAppearance",
+      "type": "function",
+      "name": "getStoredAppearance",
+      "filePath": "Frontend/src/hooks/useAppearance.js",
+      "lineRange": [
+        181,
+        188
+      ],
+      "summary": "Function getStoredAppearance implementing logic inside useAppearance.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/useComments.js",
+      "type": "file",
+      "name": "useComments.js",
+      "filePath": "Frontend/src/hooks/useComments.js",
+      "summary": "Custom React hook encapsulating stateful logic for useComments.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useComments.js:formatComment",
+      "type": "function",
+      "name": "formatComment",
+      "filePath": "Frontend/src/hooks/useComments.js",
+      "lineRange": [
+        18,
+        32
+      ],
+      "summary": "Function formatComment implementing logic inside useComments.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useComments.js:useComments",
+      "type": "function",
+      "name": "useComments",
+      "filePath": "Frontend/src/hooks/useComments.js",
+      "lineRange": [
+        37,
+        51
+      ],
+      "summary": "Function useComments implementing logic inside useComments.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useComments.js:useAddComment",
+      "type": "function",
+      "name": "useAddComment",
+      "filePath": "Frontend/src/hooks/useComments.js",
+      "lineRange": [
+        60,
+        85
+      ],
+      "summary": "Function useAddComment implementing logic inside useComments.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/useMessages.js",
+      "type": "file",
+      "name": "useMessages.js",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "summary": "Custom React hook encapsulating stateful logic for useMessages.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useMessages.js:formatConversation",
+      "type": "function",
+      "name": "formatConversation",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "lineRange": [
+        24,
+        41
+      ],
+      "summary": "Function formatConversation implementing logic inside useMessages.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useMessages.js:formatMessage",
+      "type": "function",
+      "name": "formatMessage",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "lineRange": [
+        47,
+        62
+      ],
+      "summary": "Function formatMessage implementing logic inside useMessages.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useMessages.js:useConversations",
+      "type": "function",
+      "name": "useConversations",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "lineRange": [
+        67,
+        80
+      ],
+      "summary": "Function useConversations implementing logic inside useMessages.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useMessages.js:useMessages",
+      "type": "function",
+      "name": "useMessages",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "lineRange": [
+        85,
+        98
+      ],
+      "summary": "Function useMessages implementing logic inside useMessages.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useMessages.js:useSendMessage",
+      "type": "function",
+      "name": "useSendMessage",
+      "filePath": "Frontend/src/hooks/useMessages.js",
+      "lineRange": [
+        108,
+        162
+      ],
+      "summary": "Function useSendMessage implementing logic inside useMessages.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/hooks/useNotifications.js",
+      "type": "file",
+      "name": "useNotifications.js",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "summary": "Custom React hook encapsulating stateful logic for useNotifications.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:formatNotification",
+      "type": "function",
+      "name": "formatNotification",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        38,
+        56
+      ],
+      "summary": "Function formatNotification implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:timeSince",
+      "type": "function",
+      "name": "timeSince",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        58,
+        69
+      ],
+      "summary": "Function timeSince implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:useNotifications",
+      "type": "function",
+      "name": "useNotifications",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        74,
+        89
+      ],
+      "summary": "Function useNotifications implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:useMarkAsRead",
+      "type": "function",
+      "name": "useMarkAsRead",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        94,
+        106
+      ],
+      "summary": "Function useMarkAsRead implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:useMarkAllAsRead",
+      "type": "function",
+      "name": "useMarkAllAsRead",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        111,
+        123
+      ],
+      "summary": "Function useMarkAllAsRead implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useNotifications.js:useUnreadNotificationCount",
+      "type": "function",
+      "name": "useUnreadNotificationCount",
+      "filePath": "Frontend/src/hooks/useNotifications.js",
+      "lineRange": [
+        128,
+        131
+      ],
+      "summary": "Function useUnreadNotificationCount implementing logic inside useNotifications.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/usePost.js",
+      "type": "file",
+      "name": "usePost.js",
+      "filePath": "Frontend/src/hooks/usePost.js",
+      "summary": "Custom React hook encapsulating stateful logic for usePost.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePost.js:usePost",
+      "type": "function",
+      "name": "usePost",
+      "filePath": "Frontend/src/hooks/usePost.js",
+      "lineRange": [
+        15,
+        44
+      ],
+      "summary": "Function usePost implementing logic inside usePost.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/usePosts.js",
+      "type": "file",
+      "name": "usePosts.js",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "summary": "Custom React hook encapsulating stateful logic for usePosts.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:formatPost",
+      "type": "function",
+      "name": "formatPost",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        13,
+        40
+      ],
+      "summary": "Function formatPost implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:timeSince",
+      "type": "function",
+      "name": "timeSince",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        48,
+        61
+      ],
+      "summary": "Function timeSince implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:usePosts",
+      "type": "function",
+      "name": "usePosts",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        75,
+        86
+      ],
+      "summary": "Function usePosts implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:useToggleLike",
+      "type": "function",
+      "name": "useToggleLike",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        96,
+        149
+      ],
+      "summary": "Function useToggleLike implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:useToggleSave",
+      "type": "function",
+      "name": "useToggleSave",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        154,
+        191
+      ],
+      "summary": "Function useToggleSave implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/usePosts.js:useCreatePost",
+      "type": "function",
+      "name": "useCreatePost",
+      "filePath": "Frontend/src/hooks/usePosts.js",
+      "lineRange": [
+        203,
+        218
+      ],
+      "summary": "Function useCreatePost implementing logic inside usePosts.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/hooks/useUsers.js",
+      "type": "file",
+      "name": "useUsers.js",
+      "filePath": "Frontend/src/hooks/useUsers.js",
+      "summary": "Custom React hook encapsulating stateful logic for useUsers.",
+      "tags": [
+        "hook",
+        "react",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useUsers.js:useSuggestedUsers",
+      "type": "function",
+      "name": "useSuggestedUsers",
+      "filePath": "Frontend/src/hooks/useUsers.js",
+      "lineRange": [
+        24,
+        49
+      ],
+      "summary": "Function useSuggestedUsers implementing logic inside useUsers.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/hooks/useUsers.js:useToggleFollow",
+      "type": "function",
+      "name": "useToggleFollow",
+      "filePath": "Frontend/src/hooks/useUsers.js",
+      "lineRange": [
+        61,
+        106
+      ],
+      "summary": "Function useToggleFollow implementing logic inside useUsers.js.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "Frontend/src/index.css",
+      "summary": "Frontend configuration or resource: index.css.",
+      "tags": [
+        "style",
+        "css"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "Frontend/src/main.jsx",
+      "summary": "Frontend app entrypoint rendering the React root and routing providers.",
+      "tags": [
+        "entry-point",
+        "react",
+        "boot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "type": "file",
+      "name": "AdminDashboardPage.jsx",
+      "filePath": "Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "summary": "React page layout representing the AdminDashboardPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminDashboardPage.jsx:AdminDashboardPage",
+      "type": "function",
+      "name": "AdminDashboardPage",
+      "filePath": "Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "lineRange": [
+        84,
+        235
+      ],
+      "summary": "Function AdminDashboardPage implementing logic inside AdminDashboardPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "type": "file",
+      "name": "AdminModerationPage.jsx",
+      "filePath": "Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "summary": "React page layout representing the AdminModerationPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminModerationPage.jsx:AdminModerationPage",
+      "type": "function",
+      "name": "AdminModerationPage",
+      "filePath": "Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "lineRange": [
+        80,
+        252
+      ],
+      "summary": "Function AdminModerationPage implementing logic inside AdminModerationPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "type": "file",
+      "name": "AdminSettingsPage.jsx",
+      "filePath": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "summary": "React page layout representing the AdminSettingsPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:SettingRow",
+      "type": "function",
+      "name": "SettingRow",
+      "filePath": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "lineRange": [
+        40,
+        50
+      ],
+      "summary": "Function SettingRow implementing logic inside AdminSettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:SectionCard",
+      "type": "function",
+      "name": "SectionCard",
+      "filePath": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "lineRange": [
+        52,
+        62
+      ],
+      "summary": "Function SectionCard implementing logic inside AdminSettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:AdminSettingsPage",
+      "type": "function",
+      "name": "AdminSettingsPage",
+      "filePath": "Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "lineRange": [
+        65,
+        737
+      ],
+      "summary": "Function AdminSettingsPage implementing logic inside AdminSettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "type": "file",
+      "name": "AdminUserManagementPage.jsx",
+      "filePath": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "summary": "React page layout representing the AdminUserManagementPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:UserDetailModal",
+      "type": "function",
+      "name": "UserDetailModal",
+      "filePath": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "lineRange": [
+        24,
+        74
+      ],
+      "summary": "Function UserDetailModal implementing logic inside AdminUserManagementPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:ConfirmModal",
+      "type": "function",
+      "name": "ConfirmModal",
+      "filePath": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "lineRange": [
+        77,
+        103
+      ],
+      "summary": "Function ConfirmModal implementing logic inside AdminUserManagementPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:AdminUserManagementPage",
+      "type": "function",
+      "name": "AdminUserManagementPage",
+      "filePath": "Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "lineRange": [
+        106,
+        343
+      ],
+      "summary": "Function AdminUserManagementPage implementing logic inside AdminUserManagementPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/ChatViewPage.jsx",
+      "type": "file",
+      "name": "ChatViewPage.jsx",
+      "filePath": "Frontend/src/pages/user/ChatViewPage.jsx",
+      "summary": "React page layout representing the ChatViewPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/ChatViewPage.jsx:ChatViewPage",
+      "type": "function",
+      "name": "ChatViewPage",
+      "filePath": "Frontend/src/pages/user/ChatViewPage.jsx",
+      "lineRange": [
+        20,
+        162
+      ],
+      "summary": "Function ChatViewPage implementing logic inside ChatViewPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/CreatePostPage.jsx",
+      "type": "file",
+      "name": "CreatePostPage.jsx",
+      "filePath": "Frontend/src/pages/user/CreatePostPage.jsx",
+      "summary": "React page layout representing the CreatePostPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/CreatePostPage.jsx:CreatePostPage",
+      "type": "function",
+      "name": "CreatePostPage",
+      "filePath": "Frontend/src/pages/user/CreatePostPage.jsx",
+      "lineRange": [
+        7,
+        234
+      ],
+      "summary": "Function CreatePostPage implementing logic inside CreatePostPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/InboxPage.jsx",
+      "type": "file",
+      "name": "InboxPage.jsx",
+      "filePath": "Frontend/src/pages/user/InboxPage.jsx",
+      "summary": "React page layout representing the InboxPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/InboxPage.jsx:formatTime",
+      "type": "function",
+      "name": "formatTime",
+      "filePath": "Frontend/src/pages/user/InboxPage.jsx",
+      "lineRange": [
+        21,
+        44
+      ],
+      "summary": "Function formatTime implementing logic inside InboxPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/InboxPage.jsx:ChatView",
+      "type": "function",
+      "name": "ChatView",
+      "filePath": "Frontend/src/pages/user/InboxPage.jsx",
+      "lineRange": [
+        47,
+        195
+      ],
+      "summary": "Function ChatView implementing logic inside InboxPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/InboxPage.jsx:InboxPage",
+      "type": "function",
+      "name": "InboxPage",
+      "filePath": "Frontend/src/pages/user/InboxPage.jsx",
+      "lineRange": [
+        198,
+        319
+      ],
+      "summary": "Function InboxPage implementing logic inside InboxPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/LoginPage.jsx",
+      "type": "file",
+      "name": "LoginPage.jsx",
+      "filePath": "Frontend/src/pages/user/LoginPage.jsx",
+      "summary": "React page layout representing the LoginPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/LoginPage.jsx:LoginPage",
+      "type": "function",
+      "name": "LoginPage",
+      "filePath": "Frontend/src/pages/user/LoginPage.jsx",
+      "lineRange": [
+        8,
+        145
+      ],
+      "summary": "Function LoginPage implementing logic inside LoginPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/NewsFeedPage.jsx",
+      "type": "file",
+      "name": "NewsFeedPage.jsx",
+      "filePath": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "summary": "React page layout representing the NewsFeedPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/NewsFeedPage.jsx:MediaGallery",
+      "type": "function",
+      "name": "MediaGallery",
+      "filePath": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "lineRange": [
+        52,
+        113
+      ],
+      "summary": "Function MediaGallery implementing logic inside NewsFeedPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/NewsFeedPage.jsx:PostCard",
+      "type": "function",
+      "name": "PostCard",
+      "filePath": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "lineRange": [
+        116,
+        205
+      ],
+      "summary": "Function PostCard implementing logic inside NewsFeedPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/NewsFeedPage.jsx:NewsFeedPage",
+      "type": "function",
+      "name": "NewsFeedPage",
+      "filePath": "Frontend/src/pages/user/NewsFeedPage.jsx",
+      "lineRange": [
+        208,
+        424
+      ],
+      "summary": "Function NewsFeedPage implementing logic inside NewsFeedPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/NotificationsPage.jsx",
+      "type": "file",
+      "name": "NotificationsPage.jsx",
+      "filePath": "Frontend/src/pages/user/NotificationsPage.jsx",
+      "summary": "React page layout representing the NotificationsPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/NotificationsPage.jsx:NotificationsPage",
+      "type": "function",
+      "name": "NotificationsPage",
+      "filePath": "Frontend/src/pages/user/NotificationsPage.jsx",
+      "lineRange": [
+        19,
+        175
+      ],
+      "summary": "Function NotificationsPage implementing logic inside NotificationsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/OnboardingPage.jsx",
+      "type": "file",
+      "name": "OnboardingPage.jsx",
+      "filePath": "Frontend/src/pages/user/OnboardingPage.jsx",
+      "summary": "React page layout representing the OnboardingPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/OnboardingPage.jsx:OnboardingPage",
+      "type": "function",
+      "name": "OnboardingPage",
+      "filePath": "Frontend/src/pages/user/OnboardingPage.jsx",
+      "lineRange": [
+        5,
+        73
+      ],
+      "summary": "Function OnboardingPage implementing logic inside OnboardingPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/PostDetailPage.jsx",
+      "type": "file",
+      "name": "PostDetailPage.jsx",
+      "filePath": "Frontend/src/pages/user/PostDetailPage.jsx",
+      "summary": "React page layout representing the PostDetailPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/PostDetailPage.jsx:PostDetailPage",
+      "type": "function",
+      "name": "PostDetailPage",
+      "filePath": "Frontend/src/pages/user/PostDetailPage.jsx",
+      "lineRange": [
+        27,
+        312
+      ],
+      "summary": "Function PostDetailPage implementing logic inside PostDetailPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/RegisterPage.jsx",
+      "type": "file",
+      "name": "RegisterPage.jsx",
+      "filePath": "Frontend/src/pages/user/RegisterPage.jsx",
+      "summary": "React page layout representing the RegisterPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/RegisterPage.jsx:RegisterPage",
+      "type": "function",
+      "name": "RegisterPage",
+      "filePath": "Frontend/src/pages/user/RegisterPage.jsx",
+      "lineRange": [
+        8,
+        158
+      ],
+      "summary": "Function RegisterPage implementing logic inside RegisterPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/pages/user/SettingsPage.jsx",
+      "type": "file",
+      "name": "SettingsPage.jsx",
+      "filePath": "Frontend/src/pages/user/SettingsPage.jsx",
+      "summary": "React page layout representing the SettingsPage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/SettingsPage.jsx:SettingRow",
+      "type": "function",
+      "name": "SettingRow",
+      "filePath": "Frontend/src/pages/user/SettingsPage.jsx",
+      "lineRange": [
+        38,
+        48
+      ],
+      "summary": "Function SettingRow implementing logic inside SettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/SettingsPage.jsx:SectionCard",
+      "type": "function",
+      "name": "SectionCard",
+      "filePath": "Frontend/src/pages/user/SettingsPage.jsx",
+      "lineRange": [
+        51,
+        61
+      ],
+      "summary": "Function SectionCard implementing logic inside SettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/SettingsPage.jsx:SettingsPage",
+      "type": "function",
+      "name": "SettingsPage",
+      "filePath": "Frontend/src/pages/user/SettingsPage.jsx",
+      "lineRange": [
+        64,
+        653
+      ],
+      "summary": "Function SettingsPage implementing logic inside SettingsPage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Frontend/src/contexts/PageStateContext.jsx",
+      "target": "function:Frontend/src/contexts/PageStateContext.jsx:FeedScrollProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/PageStateContext.jsx",
+      "target": "function:Frontend/src/contexts/PageStateContext.jsx:useFeedScroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/PageStateContext.jsx",
+      "target": "function:Frontend/src/contexts/PageStateContext.jsx:InboxStateProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/PageStateContext.jsx",
+      "target": "function:Frontend/src/contexts/PageStateContext.jsx:useInboxState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/SignalRContext.jsx",
+      "target": "function:Frontend/src/contexts/SignalRContext.jsx:buildConnection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/SignalRContext.jsx",
+      "target": "function:Frontend/src/contexts/SignalRContext.jsx:SignalRProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/contexts/SignalRContext.jsx",
+      "target": "function:Frontend/src/contexts/SignalRContext.jsx:useSignalR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useAppearance.js",
+      "target": "function:Frontend/src/hooks/useAppearance.js:applyAppearance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useAppearance.js",
+      "target": "function:Frontend/src/hooks/useAppearance.js:loadAndApplyAppearance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useAppearance.js",
+      "target": "function:Frontend/src/hooks/useAppearance.js:saveAppearance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useAppearance.js",
+      "target": "function:Frontend/src/hooks/useAppearance.js:getStoredAppearance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useComments.js",
+      "target": "function:Frontend/src/hooks/useComments.js:formatComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useComments.js",
+      "target": "function:Frontend/src/hooks/useComments.js:useComments",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useComments.js",
+      "target": "function:Frontend/src/hooks/useComments.js:useAddComment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useMessages.js",
+      "target": "function:Frontend/src/hooks/useMessages.js:formatConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useMessages.js",
+      "target": "function:Frontend/src/hooks/useMessages.js:formatMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useMessages.js",
+      "target": "function:Frontend/src/hooks/useMessages.js:useConversations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useMessages.js",
+      "target": "function:Frontend/src/hooks/useMessages.js:useMessages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useMessages.js",
+      "target": "function:Frontend/src/hooks/useMessages.js:useSendMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:formatNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:timeSince",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:useNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:useMarkAsRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:useMarkAllAsRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useNotifications.js",
+      "target": "function:Frontend/src/hooks/useNotifications.js:useUnreadNotificationCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePost.js",
+      "target": "function:Frontend/src/hooks/usePost.js:usePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:formatPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:timeSince",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:usePosts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:useToggleLike",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:useToggleSave",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/usePosts.js",
+      "target": "function:Frontend/src/hooks/usePosts.js:useCreatePost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useUsers.js",
+      "target": "function:Frontend/src/hooks/useUsers.js:useSuggestedUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/hooks/useUsers.js",
+      "target": "function:Frontend/src/hooks/useUsers.js:useToggleFollow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminDashboardPage.jsx:AdminDashboardPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminModerationPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminModerationPage.jsx:AdminModerationPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:SettingRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:SectionCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminSettingsPage.jsx:AdminSettingsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:UserDetailModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:ConfirmModal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/admin/AdminUserManagementPage.jsx",
+      "target": "function:Frontend/src/pages/admin/AdminUserManagementPage.jsx:AdminUserManagementPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/ChatViewPage.jsx",
+      "target": "function:Frontend/src/pages/user/ChatViewPage.jsx:ChatViewPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/CreatePostPage.jsx",
+      "target": "function:Frontend/src/pages/user/CreatePostPage.jsx:CreatePostPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/InboxPage.jsx",
+      "target": "function:Frontend/src/pages/user/InboxPage.jsx:formatTime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/InboxPage.jsx",
+      "target": "function:Frontend/src/pages/user/InboxPage.jsx:ChatView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/InboxPage.jsx",
+      "target": "function:Frontend/src/pages/user/InboxPage.jsx:InboxPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/LoginPage.jsx",
+      "target": "function:Frontend/src/pages/user/LoginPage.jsx:LoginPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/NewsFeedPage.jsx",
+      "target": "function:Frontend/src/pages/user/NewsFeedPage.jsx:MediaGallery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/NewsFeedPage.jsx",
+      "target": "function:Frontend/src/pages/user/NewsFeedPage.jsx:PostCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/NewsFeedPage.jsx",
+      "target": "function:Frontend/src/pages/user/NewsFeedPage.jsx:NewsFeedPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/NotificationsPage.jsx",
+      "target": "function:Frontend/src/pages/user/NotificationsPage.jsx:NotificationsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/OnboardingPage.jsx",
+      "target": "function:Frontend/src/pages/user/OnboardingPage.jsx:OnboardingPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/PostDetailPage.jsx",
+      "target": "function:Frontend/src/pages/user/PostDetailPage.jsx:PostDetailPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/RegisterPage.jsx",
+      "target": "function:Frontend/src/pages/user/RegisterPage.jsx:RegisterPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/SettingsPage.jsx",
+      "target": "function:Frontend/src/pages/user/SettingsPage.jsx:SettingRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/SettingsPage.jsx",
+      "target": "function:Frontend/src/pages/user/SettingsPage.jsx:SectionCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:Frontend/src/pages/user/SettingsPage.jsx",
+      "target": "function:Frontend/src/pages/user/SettingsPage.jsx:SettingsPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

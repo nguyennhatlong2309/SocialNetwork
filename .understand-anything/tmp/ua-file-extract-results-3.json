@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "Frontend/src/pages/admin/AdminDashboardPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 341,
+      "nonEmptyLines": 293,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminModerationPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 311,
+      "nonEmptyLines": 272,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminSettingsPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 467,
+      "nonEmptyLines": 409,
+      "metrics": {}
+    },
+    {
+      "path": "Frontend/src/pages/admin/AdminUserManagementPage.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 432,
+      "nonEmptyLines": 373,
+      "metrics": {}
+    }
+  ]
+}

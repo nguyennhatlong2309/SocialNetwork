@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "file:Frontend/src/pages/admin/AdminDashboardPage.css",
+      "type": "file",
+      "name": "AdminDashboardPage.css",
+      "filePath": "Frontend/src/pages/admin/AdminDashboardPage.css",
+      "summary": "React page layout representing the AdminDashboardPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminModerationPage.css",
+      "type": "file",
+      "name": "AdminModerationPage.css",
+      "filePath": "Frontend/src/pages/admin/AdminModerationPage.css",
+      "summary": "React page layout representing the AdminModerationPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminSettingsPage.css",
+      "type": "file",
+      "name": "AdminSettingsPage.css",
+      "filePath": "Frontend/src/pages/admin/AdminSettingsPage.css",
+      "summary": "React page layout representing the AdminSettingsPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:Frontend/src/pages/admin/AdminUserManagementPage.css",
+      "type": "file",
+      "name": "AdminUserManagementPage.css",
+      "filePath": "Frontend/src/pages/admin/AdminUserManagementPage.css",
+      "summary": "React page layout representing the AdminUserManagementPage.css view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

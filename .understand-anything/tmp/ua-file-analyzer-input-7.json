@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Backend/SocialNetwork.Application/Services/LikeService.cs",
+      "language": "csharp",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/MessageService.cs",
+      "language": "csharp",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/NotificationService.cs",
+      "language": "csharp",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/PostService.cs",
+      "language": "csharp",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/TokenService.cs",
+      "language": "csharp",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/Services/UserService.cs",
+      "language": "csharp",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/SocialNetwork.Application.csproj",
+      "language": "csproj",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Block.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Comment.cs",
+      "language": "csharp",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Conversation.cs",
+      "language": "csharp",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/ConversationMember.cs",
+      "language": "csharp",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Follow.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/FollowRequest.cs",
+      "language": "csharp",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Hashtag.cs",
+      "language": "csharp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Like.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Message.cs",
+      "language": "csharp",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs",
+      "language": "csharp",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/MessageRead.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Notification.cs",
+      "language": "csharp",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Post.cs",
+      "language": "csharp",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/PostHashtag.cs",
+      "language": "csharp",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/PostMedia.cs",
+      "language": "csharp",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/RefreshToken.cs",
+      "language": "csharp",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/Report.cs",
+      "language": "csharp",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "Backend/SocialNetwork.Domain/Entities/SavedPost.cs",
+      "language": "csharp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "Backend/SocialNetwork.Application/Services/LikeService.cs": [],
+    "Backend/SocialNetwork.Application/Services/MessageService.cs": [],
+    "Backend/SocialNetwork.Application/Services/NotificationService.cs": [],
+    "Backend/SocialNetwork.Application/Services/PostService.cs": [],
+    "Backend/SocialNetwork.Application/Services/TokenService.cs": [],
+    "Backend/SocialNetwork.Application/Services/UserService.cs": [],
+    "Backend/SocialNetwork.Application/SocialNetwork.Application.csproj": [],
+    "Backend/SocialNetwork.Domain/Entities/Block.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Comment.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Conversation.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/ConversationMember.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Follow.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/FollowRequest.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Hashtag.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Like.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Message.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/MessageAttachment.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/MessageRead.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Notification.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Post.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/PostHashtag.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/PostMedia.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/RefreshToken.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/Report.cs": [],
+    "Backend/SocialNetwork.Domain/Entities/SavedPost.cs": []
+  }
+}

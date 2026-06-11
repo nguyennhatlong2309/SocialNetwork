@@ -1,0 +1,35 @@
+{
+  "projectRoot": "C:/Long/hk2_2025-2026/PersonalProject/SocialNetworkP",
+  "batchFiles": [
+    {
+      "path": "Frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Frontend/index.html",
+      "language": "html",
+      "sizeLines": 27,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "Frontend/lint_output.txt",
+      "language": "txt",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Frontend/package.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "Frontend/README.md": [],
+    "Frontend/index.html": [],
+    "Frontend/lint_output.txt": [],
+    "Frontend/package.json": []
+  }
+}

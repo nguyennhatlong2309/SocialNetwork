@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    {
+      "id": "file:Frontend/src/pages/user/UserProfilePage.jsx",
+      "type": "file",
+      "name": "UserProfilePage.jsx",
+      "filePath": "Frontend/src/pages/user/UserProfilePage.jsx",
+      "summary": "React page layout representing the UserProfilePage view.",
+      "tags": [
+        "component",
+        "react",
+        "page"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:Frontend/src/pages/user/UserProfilePage.jsx:UserProfilePage",
+      "type": "function",
+      "name": "UserProfilePage",
+      "filePath": "Frontend/src/pages/user/UserProfilePage.jsx",
+      "lineRange": [
+        24,
+        392
+      ],
+      "summary": "Function UserProfilePage implementing logic inside UserProfilePage.jsx.",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:Frontend/src/services/userService.js",
+      "type": "file",
+      "name": "userService.js",
+      "filePath": "Frontend/src/services/userService.js",
+      "summary": "Frontend configuration or resource: userService.js.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/update_fonts.cjs",
+      "type": "file",
+      "name": "update_fonts.cjs",
+      "filePath": "Frontend/update_fonts.cjs",
+      "summary": "Frontend configuration or resource: update_fonts.cjs.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Frontend/vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "Frontend/vite.config.js",
+      "summary": "Frontend configuration or resource: vite.config.js.",
+      "tags": [
+        "configuration",
+        "javascript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project documentation file: README.md.",
+      "tags": [
+        "documentation",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:test_api.ps1",
+      "type": "file",
+      "name": "test_api.ps1",
+      "filePath": "test_api.ps1",
+      "summary": "Workspace configuration file: test_api.ps1.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:zCommand",
+      "type": "file",
+      "name": "zCommand",
+      "filePath": "zCommand",
+      "summary": "Workspace configuration file: zCommand.",
+      "tags": [
+        "configuration",
+        "build-system"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:Frontend/src/pages/user/UserProfilePage.jsx",
+      "target": "function:Frontend/src/pages/user/UserProfilePage.jsx:UserProfilePage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,3396 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".aiignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "metrics": {}
+    },
+    {
+      "path": ".cursorignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 34,
+      "metrics": {}
+    },
+    {
+      "path": "Backend/SocialNetwork.API/appsettings.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 20,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "ConnectionStrings",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "JwtSettings",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "Logging",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "AllowedHosts",
+          "level": 1,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AdminController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "AdminController",
+          "startLine": 15,
+          "endLine": 18,
+          "params": [
+            "userService"
+          ]
+        },
+        {
+          "name": "GetAllUsers",
+          "startLine": 20,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "BanUser",
+          "startLine": 27,
+          "endLine": 33,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "UnbanUser",
+          "startLine": 35,
+          "endLine": 41,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "PromoteToAdmin",
+          "startLine": 43,
+          "endLine": 49,
+          "params": [
+            "userId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminController",
+          "startLine": 8,
+          "endLine": 50,
+          "methods": [
+            "AdminController",
+            "GetAllUsers",
+            "BanUser",
+            "UnbanUser",
+            "PromoteToAdmin"
+          ],
+          "properties": [
+            "_userService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminController",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "GetAllUsers",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "BanUser",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "UnbanUser",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "PromoteToAdmin",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "AdminController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetAllUsers",
+          "callee": "_userService.GetAllAdminUsersAsync",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GetAllUsers",
+          "callee": "Ok",
+          "lineNumber": 24
+        },
+        {
+          "caller": "BanUser",
+          "callee": "_userService.BanUserAsync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "BanUser",
+          "callee": "NotFound",
+          "lineNumber": 31
+        },
+        {
+          "caller": "BanUser",
+          "callee": "Ok",
+          "lineNumber": 32
+        },
+        {
+          "caller": "UnbanUser",
+          "callee": "_userService.UnbanUserAsync",
+          "lineNumber": 38
+        },
+        {
+          "caller": "UnbanUser",
+          "callee": "NotFound",
+          "lineNumber": 39
+        },
+        {
+          "caller": "UnbanUser",
+          "callee": "Ok",
+          "lineNumber": 40
+        },
+        {
+          "caller": "PromoteToAdmin",
+          "callee": "_userService.PromoteToAdminAsync",
+          "lineNumber": 46
+        },
+        {
+          "caller": "PromoteToAdmin",
+          "callee": "NotFound",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PromoteToAdmin",
+          "callee": "Ok",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/AuthController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "AuthController",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "authService"
+          ]
+        },
+        {
+          "name": "Register",
+          "startLine": 22,
+          "endLine": 34,
+          "params": [
+            "dto"
+          ]
+        },
+        {
+          "name": "Login",
+          "startLine": 39,
+          "endLine": 51,
+          "params": [
+            "dto"
+          ]
+        },
+        {
+          "name": "RefreshToken",
+          "startLine": 56,
+          "endLine": 68,
+          "params": [
+            "dto"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 8,
+          "endLine": 69,
+          "methods": [
+            "AuthController",
+            "Register",
+            "Login",
+            "RefreshToken"
+          ],
+          "properties": [
+            "_authService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthController",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Register",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Login",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshToken",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "AuthController",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Register",
+          "callee": "_authService.RegisterAsync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Register",
+          "callee": "Ok",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Register",
+          "callee": "ApiResponse<AuthResponseDto>.SuccessResponse",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Register",
+          "callee": "BadRequest",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Register",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Login",
+          "callee": "_authService.LoginAsync",
+          "lineNumber": 44
+        },
+        {
+          "caller": "Login",
+          "callee": "Ok",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Login",
+          "callee": "ApiResponse<AuthResponseDto>.SuccessResponse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Login",
+          "callee": "Unauthorized",
+          "lineNumber": 49
+        },
+        {
+          "caller": "Login",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 49
+        },
+        {
+          "caller": "RefreshToken",
+          "callee": "_authService.RefreshTokenAsync",
+          "lineNumber": 61
+        },
+        {
+          "caller": "RefreshToken",
+          "callee": "Ok",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RefreshToken",
+          "callee": "ApiResponse<AuthResponseDto>.SuccessResponse",
+          "lineNumber": 62
+        },
+        {
+          "caller": "RefreshToken",
+          "callee": "Unauthorized",
+          "lineNumber": 66
+        },
+        {
+          "caller": "RefreshToken",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/MessagesController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "MessagesController",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "messageService"
+          ]
+        },
+        {
+          "name": "GetCurrentUserId",
+          "startLine": 22,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "GetConversations",
+          "startLine": 28,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "GetOrCreateDirectConversation",
+          "startLine": 39,
+          "endLine": 52,
+          "params": [
+            "otherUserId"
+          ]
+        },
+        {
+          "name": "GetMessages",
+          "startLine": 57,
+          "endLine": 74,
+          "params": [
+            "conversationId",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "SendMessage",
+          "startLine": 79,
+          "endLine": 92,
+          "params": [
+            "dto"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MessagesController",
+          "startLine": 10,
+          "endLine": 93,
+          "methods": [
+            "MessagesController",
+            "GetCurrentUserId",
+            "GetConversations",
+            "GetOrCreateDirectConversation",
+            "GetMessages",
+            "SendMessage"
+          ],
+          "properties": [
+            "_messageService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MessagesController",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "GetConversations",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "GetOrCreateDirectConversation",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "GetMessages",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "SendMessage",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "MessagesController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetCurrentUserId",
+          "callee": "long.Parse",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GetCurrentUserId",
+          "callee": "User.FindFirstValue",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GetConversations",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GetConversations",
+          "callee": "_messageService.GetUserConversationsAsync",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GetConversations",
+          "callee": "Ok",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GetConversations",
+          "callee": "ApiResponse<IEnumerable<ConversationDto>>.SuccessResponse",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GetOrCreateDirectConversation",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GetOrCreateDirectConversation",
+          "callee": "_messageService.GetOrCreateDirectConversationAsync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "GetOrCreateDirectConversation",
+          "callee": "Ok",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GetOrCreateDirectConversation",
+          "callee": "ApiResponse<ConversationDto>.SuccessResponse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GetOrCreateDirectConversation",
+          "callee": "Forbid",
+          "lineNumber": 50
+        },
+        {
+          "caller": "GetMessages",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "GetMessages",
+          "callee": "_messageService\n                .GetConversationMessagesAsync",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GetMessages",
+          "callee": "Ok",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GetMessages",
+          "callee": "ApiResponse<IEnumerable<MessageDto>>.SuccessResponse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "GetMessages",
+          "callee": "Forbid",
+          "lineNumber": 72
+        },
+        {
+          "caller": "SendMessage",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "SendMessage",
+          "callee": "_messageService.SendMessageAsync",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SendMessage",
+          "callee": "Ok",
+          "lineNumber": 86
+        },
+        {
+          "caller": "SendMessage",
+          "callee": "ApiResponse<MessageDto>.SuccessResponse",
+          "lineNumber": 86
+        },
+        {
+          "caller": "SendMessage",
+          "callee": "Forbid",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/NotificationsController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "NotificationsController",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "notificationService"
+          ]
+        },
+        {
+          "name": "GetNotifications",
+          "startLine": 28,
+          "endLine": 37,
+          "params": [
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "GetUnreadCount",
+          "startLine": 42,
+          "endLine": 47,
+          "params": []
+        },
+        {
+          "name": "MarkAsRead",
+          "startLine": 52,
+          "endLine": 57,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "MarkAllAsRead",
+          "startLine": 62,
+          "endLine": 67,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationsController",
+          "startLine": 10,
+          "endLine": 68,
+          "methods": [
+            "NotificationsController",
+            "GetNotifications",
+            "GetUnreadCount",
+            "MarkAsRead",
+            "MarkAllAsRead"
+          ],
+          "properties": [
+            "_notificationService",
+            "CurrentUserId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationsController",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "GetNotifications",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "GetUnreadCount",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "MarkAsRead",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "MarkAllAsRead",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationsController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetNotifications",
+          "callee": "_notificationService\n            .GetNotificationsAsync",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GetNotifications",
+          "callee": "Ok",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GetNotifications",
+          "callee": "ApiResponse<IEnumerable<NotificationDto>>.SuccessResponse",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GetUnreadCount",
+          "callee": "_notificationService.GetUnreadCountAsync",
+          "lineNumber": 45
+        },
+        {
+          "caller": "GetUnreadCount",
+          "callee": "Ok",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GetUnreadCount",
+          "callee": "ApiResponse<int>.SuccessResponse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "MarkAsRead",
+          "callee": "_notificationService.MarkAsReadAsync",
+          "lineNumber": 55
+        },
+        {
+          "caller": "MarkAsRead",
+          "callee": "Ok",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MarkAsRead",
+          "callee": "ApiResponse<object>.SuccessResponse",
+          "lineNumber": 56
+        },
+        {
+          "caller": "MarkAllAsRead",
+          "callee": "_notificationService.MarkAllAsReadAsync",
+          "lineNumber": 65
+        },
+        {
+          "caller": "MarkAllAsRead",
+          "callee": "Ok",
+          "lineNumber": 66
+        },
+        {
+          "caller": "MarkAllAsRead",
+          "callee": "ApiResponse<object>.SuccessResponse",
+          "lineNumber": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/PostsController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 143,
+      "nonEmptyLines": 128,
+      "functions": [
+        {
+          "name": "PostsController",
+          "startLine": 20,
+          "endLine": 30,
+          "params": [
+            "postService",
+            "likeService",
+            "commentService",
+            "fileStorageService"
+          ]
+        },
+        {
+          "name": "GetPosts",
+          "startLine": 38,
+          "endLine": 43,
+          "params": [
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "GetPost",
+          "startLine": 48,
+          "endLine": 56,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "CreatePost",
+          "startLine": 62,
+          "endLine": 98,
+          "params": [
+            "dto",
+            "MediaFiles"
+          ]
+        },
+        {
+          "name": "ToggleLike",
+          "startLine": 103,
+          "endLine": 108,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "GetComments",
+          "startLine": 113,
+          "endLine": 121,
+          "params": [
+            "id",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "AddComment",
+          "startLine": 126,
+          "endLine": 131,
+          "params": [
+            "id",
+            "dto"
+          ]
+        },
+        {
+          "name": "DeleteComment",
+          "startLine": 136,
+          "endLine": 141,
+          "params": [
+            "postId",
+            "commentId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PostsController",
+          "startLine": 10,
+          "endLine": 142,
+          "methods": [
+            "PostsController",
+            "GetPosts",
+            "GetPost",
+            "CreatePost",
+            "ToggleLike",
+            "GetComments",
+            "AddComment",
+            "DeleteComment"
+          ],
+          "properties": [
+            "_postService",
+            "_likeService",
+            "_commentService",
+            "_fileStorageService",
+            "CurrentUserId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PostsController",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "GetPosts",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "GetPost",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "CreatePost",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleLike",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "GetComments",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "AddComment",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "DeleteComment",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "PostsController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetPosts",
+          "callee": "_postService.GetPostsAsync",
+          "lineNumber": 41
+        },
+        {
+          "caller": "GetPosts",
+          "callee": "Ok",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GetPosts",
+          "callee": "ApiResponse<IEnumerable<PostDto>>.SuccessResponse",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GetPost",
+          "callee": "_postService.GetPostByIdAsync",
+          "lineNumber": 51
+        },
+        {
+          "caller": "GetPost",
+          "callee": "NotFound",
+          "lineNumber": 53
+        },
+        {
+          "caller": "GetPost",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 53
+        },
+        {
+          "caller": "GetPost",
+          "callee": "Ok",
+          "lineNumber": 55
+        },
+        {
+          "caller": "GetPost",
+          "callee": "ApiResponse<PostDetailDto>.SuccessResponse",
+          "lineNumber": 55
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 69
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "BadRequest",
+          "lineNumber": 70
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 70
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "new List<(string Url, string MediaType)>",
+          "lineNumber": 74
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "file.OpenReadStream",
+          "lineNumber": 82
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "_fileStorageService.SaveFileAsync",
+          "lineNumber": 83
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "mediaList.Add",
+          "lineNumber": 85
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "BadRequest",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "ApiResponse<object>.ErrorResponse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "_postService.CreatePostAsync",
+          "lineNumber": 95
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "CreatedAtAction",
+          "lineNumber": 96
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "nameof",
+          "lineNumber": 96
+        },
+        {
+          "caller": "CreatePost",
+          "callee": "ApiResponse<PostDto>.SuccessResponse",
+          "lineNumber": 97
+        },
+        {
+          "caller": "ToggleLike",
+          "callee": "_likeService.ToggleLikeAsync",
+          "lineNumber": 106
+        },
+        {
+          "caller": "ToggleLike",
+          "callee": "Ok",
+          "lineNumber": 107
+        },
+        {
+          "caller": "ToggleLike",
+          "callee": "ApiResponse<LikeResultDto>.SuccessResponse",
+          "lineNumber": 107
+        },
+        {
+          "caller": "GetComments",
+          "callee": "_commentService.GetCommentsAsync",
+          "lineNumber": 119
+        },
+        {
+          "caller": "GetComments",
+          "callee": "Ok",
+          "lineNumber": 120
+        },
+        {
+          "caller": "GetComments",
+          "callee": "ApiResponse<IEnumerable<CommentDto>>.SuccessResponse",
+          "lineNumber": 120
+        },
+        {
+          "caller": "AddComment",
+          "callee": "_commentService.AddCommentAsync",
+          "lineNumber": 129
+        },
+        {
+          "caller": "AddComment",
+          "callee": "Ok",
+          "lineNumber": 130
+        },
+        {
+          "caller": "AddComment",
+          "callee": "ApiResponse<CommentDto>.SuccessResponse",
+          "lineNumber": 130
+        },
+        {
+          "caller": "DeleteComment",
+          "callee": "_commentService.DeleteCommentAsync",
+          "lineNumber": 139
+        },
+        {
+          "caller": "DeleteComment",
+          "callee": "Ok",
+          "lineNumber": 140
+        },
+        {
+          "caller": "DeleteComment",
+          "callee": "ApiResponse<object>.SuccessResponse",
+          "lineNumber": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Controllers/UsersController.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 75,
+      "functions": [
+        {
+          "name": "UsersController",
+          "startLine": 18,
+          "endLine": 22,
+          "params": [
+            "userService",
+            "postService"
+          ]
+        },
+        {
+          "name": "GetCurrentUserId",
+          "startLine": 24,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "GetProfile",
+          "startLine": 30,
+          "endLine": 40,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "GetSuggested",
+          "startLine": 42,
+          "endLine": 50,
+          "params": [
+            "count"
+          ]
+        },
+        {
+          "name": "ToggleFollow",
+          "startLine": 52,
+          "endLine": 67,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "GetUserPosts",
+          "startLine": 69,
+          "endLine": 77,
+          "params": [
+            "id",
+            "page",
+            "pageSize"
+          ]
+        },
+        {
+          "name": "SearchUsers",
+          "startLine": 79,
+          "endLine": 90,
+          "params": [
+            "q",
+            "count"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UsersController",
+          "startLine": 10,
+          "endLine": 91,
+          "methods": [
+            "UsersController",
+            "GetCurrentUserId",
+            "GetProfile",
+            "GetSuggested",
+            "ToggleFollow",
+            "GetUserPosts",
+            "SearchUsers"
+          ],
+          "properties": [
+            "_userService",
+            "_postService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UsersController",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "GetProfile",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "GetSuggested",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "ToggleFollow",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "GetUserPosts",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "SearchUsers",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "UsersController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GetCurrentUserId",
+          "callee": "User.FindFirst",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GetCurrentUserId",
+          "callee": "long.TryParse",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GetProfile",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GetProfile",
+          "callee": "Unauthorized",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GetProfile",
+          "callee": "_userService.GetUserProfileAsync",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GetProfile",
+          "callee": "NotFound",
+          "lineNumber": 37
+        },
+        {
+          "caller": "GetProfile",
+          "callee": "Ok",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GetSuggested",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 45
+        },
+        {
+          "caller": "GetSuggested",
+          "callee": "Unauthorized",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GetSuggested",
+          "callee": "_userService.GetSuggestedUsersAsync",
+          "lineNumber": 48
+        },
+        {
+          "caller": "GetSuggested",
+          "callee": "Ok",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ToggleFollow",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 55
+        },
+        {
+          "caller": "ToggleFollow",
+          "callee": "Unauthorized",
+          "lineNumber": 56
+        },
+        {
+          "caller": "ToggleFollow",
+          "callee": "_userService.ToggleFollowAsync",
+          "lineNumber": 60
+        },
+        {
+          "caller": "ToggleFollow",
+          "callee": "Ok",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ToggleFollow",
+          "callee": "BadRequest",
+          "lineNumber": 65
+        },
+        {
+          "caller": "GetUserPosts",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 72
+        },
+        {
+          "caller": "GetUserPosts",
+          "callee": "Unauthorized",
+          "lineNumber": 73
+        },
+        {
+          "caller": "GetUserPosts",
+          "callee": "_postService.GetUserPostsAsync",
+          "lineNumber": 75
+        },
+        {
+          "caller": "GetUserPosts",
+          "callee": "Ok",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "GetCurrentUserId",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "Unauthorized",
+          "lineNumber": 83
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "string.IsNullOrWhiteSpace",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "Ok",
+          "lineNumber": 86
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "new List<UserDto>",
+          "lineNumber": 86
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "_userService.SearchUsersAsync",
+          "lineNumber": 88
+        },
+        {
+          "caller": "SearchUsers",
+          "callee": "Ok",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/DatabaseSeeder.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 199,
+      "nonEmptyLines": 184,
+      "functions": [
+        {
+          "name": "SeedAsync",
+          "startLine": 17,
+          "endLine": 198,
+          "params": [
+            "app"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "startLine": 15,
+          "endLine": 199,
+          "methods": [
+            "SeedAsync"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SeedAsync",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "DatabaseSeeder",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SeedAsync",
+          "callee": "app.ApplicationServices.CreateScope",
+          "lineNumber": 19
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "scope.ServiceProvider.GetRequiredService<SocialNetworkDbContext>",
+          "lineNumber": 20
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "scope.ServiceProvider.GetRequiredService<ILoggerFactory>().CreateLogger",
+          "lineNumber": 21
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "scope.ServiceProvider.GetRequiredService<ILoggerFactory>",
+          "lineNumber": 21
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Database.EnsureCreatedAsync",
+          "lineNumber": 25
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Users.AnyAsync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "logger.LogInformation",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Users.AnyAsync",
+          "lineNumber": 30
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "logger.LogInformation",
+          "lineNumber": 32
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<User>",
+          "lineNumber": 33
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 39
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 39
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 40
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 41
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 41
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 42
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 42
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 43
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 47
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 47
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 48
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 48
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 49
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Users.AddRangeAsync",
+          "lineNumber": 51
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.SaveChangesAsync",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "logger.LogInformation",
+          "lineNumber": 57
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<User>",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 61
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 65
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 77
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 81
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new User",
+          "lineNumber": 91
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "BCrypt.Net.BCrypt.HashPassword",
+          "lineNumber": 95
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Users.AddRangeAsync",
+          "lineNumber": 107
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.SaveChangesAsync",
+          "lineNumber": 108
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<Post>",
+          "lineNumber": 114
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Post",
+          "lineNumber": 116
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 123
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 124
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<PostMedia>",
+          "lineNumber": 125
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new PostMedia",
+          "lineNumber": 127
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 131
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Post",
+          "lineNumber": 135
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 142
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 143
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Posts.AddRangeAsync",
+          "lineNumber": 147
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.SaveChangesAsync",
+          "lineNumber": 148
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<Comment>",
+          "lineNumber": 150
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Comment",
+          "lineNumber": 152
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 157
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 158
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Comment",
+          "lineNumber": 160
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddMinutes",
+          "lineNumber": 165
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddMinutes",
+          "lineNumber": 166
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Comment",
+          "lineNumber": 168
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 173
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "DateTime.UtcNow.AddHours",
+          "lineNumber": 174
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Comments.AddRangeAsync",
+          "lineNumber": 178
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.SaveChangesAsync",
+          "lineNumber": 179
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new List<Like>",
+          "lineNumber": 181
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Like",
+          "lineNumber": 183
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Like",
+          "lineNumber": 184
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Like",
+          "lineNumber": 185
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "new Like",
+          "lineNumber": 186
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.Likes.AddRangeAsync",
+          "lineNumber": 189
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "context.SaveChangesAsync",
+          "lineNumber": 190
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "logger.LogInformation",
+          "lineNumber": 192
+        },
+        {
+          "caller": "SeedAsync",
+          "callee": "logger.LogError",
+          "lineNumber": 196
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Extensions/UtcDateTimeConverter.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "Read",
+          "startLine": 19,
+          "endLine": 26,
+          "params": [
+            "reader",
+            "typeToConvert",
+            "options"
+          ]
+        },
+        {
+          "name": "Write",
+          "startLine": 28,
+          "endLine": 37,
+          "params": [
+            "writer",
+            "value",
+            "options"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UtcDateTimeConverter",
+          "startLine": 17,
+          "endLine": 38,
+          "methods": [
+            "Read",
+            "Write"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Read",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "Write",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "UtcDateTimeConverter",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Read",
+          "callee": "reader.GetDateTime",
+          "lineNumber": 22
+        },
+        {
+          "caller": "Read",
+          "callee": "DateTime.SpecifyKind",
+          "lineNumber": 24
+        },
+        {
+          "caller": "Read",
+          "callee": "value.ToUniversalTime",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Write",
+          "callee": "DateTime.SpecifyKind",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Write",
+          "callee": "value.ToUniversalTime",
+          "lineNumber": 34
+        },
+        {
+          "caller": "Write",
+          "callee": "writer.WriteStringValue",
+          "lineNumber": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/ChatHub.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "ChatHub",
+          "startLine": 17,
+          "endLine": 20,
+          "params": [
+            "logger"
+          ]
+        },
+        {
+          "name": "OnConnectedAsync",
+          "startLine": 22,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "OnDisconnectedAsync",
+          "startLine": 31,
+          "endLine": 38,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "JoinConversation",
+          "startLine": 44,
+          "endLine": 50,
+          "params": [
+            "conversationId"
+          ]
+        },
+        {
+          "name": "LeaveConversation",
+          "startLine": 55,
+          "endLine": 59,
+          "params": [
+            "conversationId"
+          ]
+        },
+        {
+          "name": "GetUserId",
+          "startLine": 61,
+          "endLine": 65,
+          "params": []
+        },
+        {
+          "name": "GetGroupName",
+          "startLine": 67,
+          "endLine": 67,
+          "params": [
+            "conversationId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ChatHub",
+          "startLine": 12,
+          "endLine": 68,
+          "methods": [
+            "ChatHub",
+            "OnConnectedAsync",
+            "OnDisconnectedAsync",
+            "JoinConversation",
+            "LeaveConversation",
+            "GetUserId",
+            "GetGroupName"
+          ],
+          "properties": [
+            "_logger"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatHub",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "OnConnectedAsync",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "OnDisconnectedAsync",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "JoinConversation",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "LeaveConversation",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "GetGroupName",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "ChatHub",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "GetUserId",
+          "lineNumber": 24
+        },
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "_logger.LogInformation",
+          "lineNumber": 25
+        },
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "base.OnConnectedAsync",
+          "lineNumber": 28
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "GetUserId",
+          "lineNumber": 33
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "_logger.LogInformation",
+          "lineNumber": 34
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "base.OnDisconnectedAsync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "JoinConversation",
+          "callee": "GetGroupName",
+          "lineNumber": 46
+        },
+        {
+          "caller": "JoinConversation",
+          "callee": "Groups.AddToGroupAsync",
+          "lineNumber": 47
+        },
+        {
+          "caller": "JoinConversation",
+          "callee": "_logger.LogDebug",
+          "lineNumber": 48
+        },
+        {
+          "caller": "LeaveConversation",
+          "callee": "GetGroupName",
+          "lineNumber": 57
+        },
+        {
+          "caller": "LeaveConversation",
+          "callee": "Groups.RemoveFromGroupAsync",
+          "lineNumber": 58
+        },
+        {
+          "caller": "GetUserId",
+          "callee": "Context.User?.FindFirstValue",
+          "lineNumber": 63
+        },
+        {
+          "caller": "GetUserId",
+          "callee": "long.TryParse",
+          "lineNumber": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Hubs/NotificationHub.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "NotificationHub",
+          "startLine": 18,
+          "endLine": 22,
+          "params": [
+            "connectionManager",
+            "logger"
+          ]
+        },
+        {
+          "name": "OnConnectedAsync",
+          "startLine": 24,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "OnDisconnectedAsync",
+          "startLine": 38,
+          "endLine": 50,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "GetUserId",
+          "startLine": 52,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationHub",
+          "startLine": 12,
+          "endLine": 57,
+          "methods": [
+            "NotificationHub",
+            "OnConnectedAsync",
+            "OnDisconnectedAsync",
+            "GetUserId"
+          ],
+          "properties": [
+            "_connectionManager",
+            "_logger"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationHub",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "OnConnectedAsync",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "OnDisconnectedAsync",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationHub",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "GetUserId",
+          "lineNumber": 26
+        },
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "_connectionManager.Add",
+          "lineNumber": 29
+        },
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "_logger.LogInformation",
+          "lineNumber": 30
+        },
+        {
+          "caller": "OnConnectedAsync",
+          "callee": "base.OnConnectedAsync",
+          "lineNumber": 35
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "GetUserId",
+          "lineNumber": 40
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "_connectionManager.Remove",
+          "lineNumber": 43
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "_logger.LogInformation",
+          "lineNumber": 44
+        },
+        {
+          "caller": "OnDisconnectedAsync",
+          "callee": "base.OnDisconnectedAsync",
+          "lineNumber": 49
+        },
+        {
+          "caller": "GetUserId",
+          "callee": "Context.User?.FindFirstValue",
+          "lineNumber": 54
+        },
+        {
+          "caller": "GetUserId",
+          "callee": "long.TryParse",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Program.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 210,
+      "nonEmptyLines": 183,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Properties/launchSettings.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/ConnectionManager.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "Add",
+          "startLine": 23,
+          "endLine": 34,
+          "params": [
+            "userId",
+            "connectionId"
+          ]
+        },
+        {
+          "name": "Remove",
+          "startLine": 36,
+          "endLine": 47,
+          "params": [
+            "userId",
+            "connectionId"
+          ]
+        },
+        {
+          "name": "GetConnections",
+          "startLine": 49,
+          "endLine": 57,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "HasConnections",
+          "startLine": 59,
+          "endLine": 63,
+          "params": [
+            "userId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "IConnectionManager",
+          "startLine": 9,
+          "endLine": 15,
+          "methods": [
+            "Add",
+            "Remove",
+            "GetConnections",
+            "HasConnections"
+          ],
+          "properties": []
+        },
+        {
+          "name": "ConnectionManager",
+          "startLine": 17,
+          "endLine": 64,
+          "methods": [
+            "Add",
+            "Remove",
+            "GetConnections",
+            "HasConnections"
+          ],
+          "properties": [
+            "_connections",
+            "_lock"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "IConnectionManager",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Add",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "Remove",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "GetConnections",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "HasConnections",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "ConnectionManager",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Add",
+          "callee": "_connections.TryGetValue",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Add",
+          "callee": "new HashSet<string>",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Add",
+          "callee": "connections.Add",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Remove",
+          "callee": "_connections.TryGetValue",
+          "lineNumber": 40
+        },
+        {
+          "caller": "Remove",
+          "callee": "connections.Remove",
+          "lineNumber": 42
+        },
+        {
+          "caller": "Remove",
+          "callee": "_connections.TryRemove",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GetConnections",
+          "callee": "_connections.TryGetValue",
+          "lineNumber": 53
+        },
+        {
+          "caller": "GetConnections",
+          "callee": "new HashSet<string>",
+          "lineNumber": 55
+        },
+        {
+          "caller": "HasConnections",
+          "callee": "_connections.TryGetValue",
+          "lineNumber": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubChatService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "HubChatService",
+          "startLine": 17,
+          "endLine": 21,
+          "params": [
+            "hubContext",
+            "logger"
+          ]
+        },
+        {
+          "name": "PushNewMessageAsync",
+          "startLine": 23,
+          "endLine": 33,
+          "params": [
+            "conversationId",
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HubChatService",
+          "startLine": 12,
+          "endLine": 34,
+          "methods": [
+            "HubChatService",
+            "PushNewMessageAsync"
+          ],
+          "properties": [
+            "_hubContext",
+            "_logger"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "HubChatService",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "PushNewMessageAsync",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "HubChatService",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PushNewMessageAsync",
+          "callee": "ChatHub.GetGroupName",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PushNewMessageAsync",
+          "callee": "_hubContext.Clients\n            .Group(groupName)\n            .SendAsync",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PushNewMessageAsync",
+          "callee": "_hubContext.Clients\n            .Group",
+          "lineNumber": 27
+        },
+        {
+          "caller": "PushNewMessageAsync",
+          "callee": "_logger.LogDebug",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/HubNotificationService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "HubNotificationService",
+          "startLine": 19,
+          "endLine": 27,
+          "params": [
+            "hubContext",
+            "connectionManager",
+            "logger"
+          ]
+        },
+        {
+          "name": "PushAsync",
+          "startLine": 29,
+          "endLine": 49,
+          "params": [
+            "userId",
+            "notification"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "HubNotificationService",
+          "startLine": 13,
+          "endLine": 50,
+          "methods": [
+            "HubNotificationService",
+            "PushAsync"
+          ],
+          "properties": [
+            "_hubContext",
+            "_connectionManager",
+            "_logger"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "HubNotificationService",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "PushAsync",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "HubNotificationService",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PushAsync",
+          "callee": "_connectionManager.GetConnections",
+          "lineNumber": 31
+        },
+        {
+          "caller": "PushAsync",
+          "callee": "connectionIds.Any",
+          "lineNumber": 33
+        },
+        {
+          "caller": "PushAsync",
+          "callee": "_logger.LogDebug",
+          "lineNumber": 35
+        },
+        {
+          "caller": "PushAsync",
+          "callee": "_hubContext.Clients\n            .Clients(connectionIds)\n            .SendAsync",
+          "lineNumber": 42
+        },
+        {
+          "caller": "PushAsync",
+          "callee": "_hubContext.Clients\n            .Clients",
+          "lineNumber": 42
+        },
+        {
+          "caller": "PushAsync",
+          "callee": "_logger.LogDebug",
+          "lineNumber": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/Services/LocalFileStorageService.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "LocalFileStorageService",
+          "startLine": 24,
+          "endLine": 27,
+          "params": [
+            "env"
+          ]
+        },
+        {
+          "name": "SaveFileAsync",
+          "startLine": 29,
+          "endLine": 63,
+          "params": [
+            "fileStream",
+            "fileName",
+            "contentType",
+            "folder"
+          ]
+        },
+        {
+          "name": "DeleteFileAsync",
+          "startLine": 65,
+          "endLine": 79,
+          "params": [
+            "fileUrl"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LocalFileStorageService",
+          "startLine": 10,
+          "endLine": 80,
+          "methods": [
+            "LocalFileStorageService",
+            "SaveFileAsync",
+            "DeleteFileAsync"
+          ],
+          "properties": [
+            "_env",
+            "AllowedTypes",
+            "MaxFileSizeBytes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LocalFileStorageService",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "SaveFileAsync",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "DeleteFileAsync",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "LocalFileStorageService",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SaveFileAsync",
+          "callee": "AllowedTypes.Contains",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "contentType.ToLower",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "new ArgumentException",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "new ArgumentException",
+          "lineNumber": 41
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Path.GetExtension",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "string.IsNullOrEmpty",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "contentType.StartsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Guid.NewGuid",
+          "lineNumber": 48
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Path.Combine",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Directory.GetCurrentDirectory",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Path.Combine",
+          "lineNumber": 53
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Directory.CreateDirectory",
+          "lineNumber": 54
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "Path.Combine",
+          "lineNumber": 57
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "new FileStream",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SaveFileAsync",
+          "callee": "fileStream.CopyToAsync",
+          "lineNumber": 59
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "string.IsNullOrEmpty",
+          "lineNumber": 67
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "Path.Combine",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "Directory.GetCurrentDirectory",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "fileUrl.TrimStart('/').Replace",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "fileUrl.TrimStart",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "Path.Combine",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "File.Exists",
+          "lineNumber": 75
+        },
+        {
+          "caller": "DeleteFileAsync",
+          "callee": "File.Delete",
+          "lineNumber": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.csproj",
+      "language": "csproj",
+      "fileCategory": "config",
+      "totalLines": 25,
+      "nonEmptyLines": 21,
+      "metrics": {}
+    },
+    {
+      "path": "Backend/SocialNetwork.API/SocialNetwork.API.http",
+      "language": "http",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Auth/AuthDtos.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 39,
+      "classes": [
+        {
+          "name": "RegisterDto",
+          "startLine": 5,
+          "endLine": 24,
+          "methods": [],
+          "properties": [
+            "Username",
+            "Email",
+            "Password",
+            "FirstName",
+            "LastName",
+            "FullName"
+          ]
+        },
+        {
+          "name": "LoginDto",
+          "startLine": 26,
+          "endLine": 33,
+          "methods": [],
+          "properties": [
+            "UsernameOrEmail",
+            "Password"
+          ]
+        },
+        {
+          "name": "RefreshTokenDto",
+          "startLine": 35,
+          "endLine": 39,
+          "methods": [],
+          "properties": [
+            "RefreshToken"
+          ]
+        },
+        {
+          "name": "AuthResponseDto",
+          "startLine": 41,
+          "endLine": 50,
+          "methods": [],
+          "properties": [
+            "UserId",
+            "Username",
+            "Email",
+            "Role",
+            "AccessToken",
+            "RefreshToken",
+            "ExpiresAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Username",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "Email",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "Password",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "FirstName",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "LastName",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "FullName",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "RegisterDto",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "UsernameOrEmail",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "Password",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "LoginDto",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshToken",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshTokenDto",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Email",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "Role",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "AccessToken",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshToken",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "ExpiresAt",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "AuthResponseDto",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 20,
+        "functionCount": 0,
+        "classCount": 4
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Common/ApiResponse.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "SuccessResponse",
+          "startLine": 9,
+          "endLine": 10,
+          "params": [
+            "data",
+            "message"
+          ]
+        },
+        {
+          "name": "ErrorResponse",
+          "startLine": 12,
+          "endLine": 13,
+          "params": [
+            "message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApiResponse",
+          "startLine": 3,
+          "endLine": 14,
+          "methods": [
+            "SuccessResponse",
+            "ErrorResponse"
+          ],
+          "properties": [
+            "Success",
+            "Message",
+            "Data"
+          ]
+        },
+        {
+          "name": "PagedResponse",
+          "startLine": 16,
+          "endLine": 23,
+          "methods": [],
+          "properties": [
+            "Success",
+            "Data",
+            "Page",
+            "PageSize",
+            "TotalCount"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Success",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "Message",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "Data",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "SuccessResponse",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "ErrorResponse",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "ApiResponse",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "Success",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "Data",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "Page",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "PageSize",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "TotalCount",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "PagedResponse",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 2,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "Backend/SocialNetwork.Application/DTOs/Message/MessageDtos.cs",
+      "language": "csharp",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 49,
+      "classes": [
+        {
+          "name": "MessageDto",
+          "startLine": 6,
+          "endLine": 18,
+          "methods": [],
+          "properties": [
+            "Id",
+            "ConversationId",
+            "Content",
+            "MessageType",
+            "IsEdited",
+            "SentAt",
+            "ReplyToMessageId",
+            "Sender",
+            "Attachments"
+          ]
+        },
+        {
+          "name": "MessageAttachmentDto",
+          "startLine": 20,
+          "endLine": 27,
+          "methods": [],
+          "properties": [
+            "Id",
+            "FileUrl",
+            "FileName",
+            "FileSize",
+            "MimeType"
+          ]
+        },
+        {
+          "name": "SendMessageDto",
+          "startLine": 29,
+          "endLine": 39,
+          "methods": [],
+          "properties": [
+            "ConversationId",
+            "Content",
+            "MessageType",
+            "ReplyToMessageId"
+          ]
+        },
+        {
+          "name": "ConversationDto",
+          "startLine": 41,
+          "endLine": 51,
+          "methods": [],
+          "properties": [
+            "Id",
+            "Type",
+            "Name",
+            "AvatarUrl",
+            "UpdatedAt",
+            "LastMessage",
+            "Members"
+          ]
+        },
+        {
+          "name": "ConversationMemberDto",
+          "startLine": 53,
+          "endLine": 60,
+          "methods": [],
+          "properties": [
+            "UserId",
+            "Username",
+            "FullName",
+            "AvatarUrl",
+            "Role"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Id",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationId",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "MessageType",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "IsEdited",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "SentAt",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "ReplyToMessageId",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "Sender",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "Attachments",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "MessageDto",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "Id",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "FileUrl",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "FileName",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "FileSize",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "MimeType",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "MessageAttachmentDto",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationId",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "Content",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "MessageType",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "ReplyToMessageId",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "SendMessageDto",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "Id",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "Type",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "Name",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "AvatarUrl",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "UpdatedAt",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "LastMessage",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "Members",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationDto",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "UserId",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "Username",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "FullName",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "AvatarUrl",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "Role",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "ConversationMemberDto",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 35,
+        "functionCount": 0,
+        "classCount": 5
+      }
+    }
+  ]
+}
